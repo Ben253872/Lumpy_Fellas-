@@ -14,4 +14,4 @@
 
 ## Processed sales outputs
 
-`src/prepare_data.py` creates the processed files from the raw extract. Each contains only the identifiers, monthly demand, demand-type label, collision flag, and available location/channel context needed for analysis. This keeps the working data compact while preserving the original source in `data/raw/`.
+`src/prepare_data.py` creates the processed files from the raw extract. Each keeps the standardized identifiers (`sku_id`, `month`, `demand`), the demand-type label, the row-level collision indicator, and all remaining raw feature columns to support feature-driven modelling.

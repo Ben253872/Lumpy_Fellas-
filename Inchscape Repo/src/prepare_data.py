@@ -12,7 +12,6 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parents[1]
 RAW_FILE = ROOT / "data" / "raw" / "chile_suzuki_historical_sales.csv"
 CHUNK_SIZE = 100_000
-KEEP_COLUMNS = ["ts_id", "Date", "value", "collision_flag", "Country", "Brand", "Channel", "REGION"]
 VARIANTS = {"collision_flag_only", "all_sku_history"}
 
 
@@ -44,7 +43,7 @@ def make_sku_profile(variant: str) -> tuple[pd.DataFrame, pd.DataFrame]:
     seen_pairs: set[tuple[str, pd.Timestamp]] = set()
 
     collision_skus = find_collision_skus() if variant == "all_sku_history" else set()
-    for raw in pd.read_csv(RAW_FILE, usecols=KEEP_COLUMNS, chunksize=CHUNK_SIZE):
+    for raw in pd.read_csv(RAW_FILE, chunksize=CHUNK_SIZE):
         data = clean_chunk(raw)
         data = data.loc[data["sku_id"].isin(collision_skus)] if variant == "all_sku_history" else data.loc[data["is_collision"]]
         quality["rows"] += len(data)
@@ -94,17 +93,17 @@ def write_segment_files(profile: pd.DataFrame, output_dir: Path, variant: str) -
     classifications = profile.set_index("sku_id")["demand_type"]
     names = ["Smooth", "Intermittent", "Erratic", "Lumpy", "No demand observed"]
     paths = {name: output_dir / f"collision_sales_{name.lower().replace(' ', '_')}.csv" for name in names}
-    for path in paths.values():
-        path.unlink(missing_ok=True)
 
     first_write = {name: True for name in names}
     collision_skus = find_collision_skus() if variant == "all_sku_history" else set()
-    for raw in pd.read_csv(RAW_FILE, usecols=KEEP_COLUMNS, chunksize=CHUNK_SIZE):
+    for raw in pd.read_csv(RAW_FILE, chunksize=CHUNK_SIZE):
         data = clean_chunk(raw)
         data = data.loc[data["sku_id"].isin(collision_skus)] if variant == "all_sku_history" else data.loc[data["is_collision"]]
         data["demand_type"] = data["sku_id"].map(classifications)
         data = data.rename(columns={"is_collision": "row_is_collision"})
-        data = data[["sku_id", "month", "demand", "demand_type", "row_is_collision", "collision_flag", "Country", "Brand", "Channel", "REGION"]]
+        preferred_order = ["sku_id", "month", "demand", "demand_type", "row_is_collision"]
+        ordered_columns = preferred_order + [column for column in data.columns if column not in preferred_order]
+        data = data[ordered_columns]
         for name, part in data.groupby("demand_type", dropna=False):
             if pd.isna(name):
                 continue
