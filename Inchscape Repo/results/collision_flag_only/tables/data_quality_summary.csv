@@ -1,0 +1,7 @@
+metric,value
+rows,180422
+invalid_dates,0
+negative_demand_rows,0
+duplicate_sku_month_rows,0
+selection_variant,collision_flag_only
+collision_skus_identified,8097

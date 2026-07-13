@@ -4,12 +4,11 @@ __pycache__/
 .ipynb_checkpoints/
 .venv/
 
-# Raw and derived data are local project assets
-data/raw/*.csv
-data/processed/**/*.csv
-results/**/*.csv
-results/**/*.png
+
 
 # Keep documentation and notebooks under version control
 !docs/*.xlsx
 !notebooks/*.ipynb
+
+# Ignore only the raw source file
+data/raw/chile_suzuki_historical_sales.csv
