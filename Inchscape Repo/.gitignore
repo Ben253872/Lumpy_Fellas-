@@ -12,3 +12,6 @@ __pycache__/
 
 # Ignore only the raw source file
 data/raw/chile_suzuki_historical_sales.csv
+
+# Ignore lumpy outputs
+lumpy_outputs/
