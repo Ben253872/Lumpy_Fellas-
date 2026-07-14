@@ -15,3 +15,4 @@ data/raw/chile_suzuki_historical_sales.csv
 
 # Ignore lumpy outputs
 lumpy_outputs/
+results/lumpy_05_future_forecasting/
