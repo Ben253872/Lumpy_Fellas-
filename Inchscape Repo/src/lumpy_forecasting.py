@@ -1,9 +1,9 @@
 """Lean lumpy-demand forecasting workflow.
 
-The default model path keeps cheap controls and intermittent-demand references:
-Zero Forecast, SBA/Croston, Recent Mean 6m, and TSB. Legacy Aggregate
-Allocation and Hurdle Random Forest remain available as explicit opt-in
-diagnostics, not default runtime work.
+The default model path keeps cheap controls and intermittent-demand references,
+then adds shape-aware SBA challengers for the lumpy collision use case. Legacy
+Aggregate Allocation and Hurdle Random Forest remain available as explicit
+opt-in diagnostics, not default runtime work.
 """
 
 from __future__ import annotations
@@ -44,8 +44,11 @@ DEFAULT_SELECTED_EXTERNAL_MATCHES = (
 DEFAULT_MODEL_NAMES = (
     "zero",
     "sba_croston",
+    "sba_croston_tuned",
+    "seasonal_sba_croston",
     "recent_mean_6",
     "tsb",
+    "boosted_sba_hybrid",
 )
 
 OPTIONAL_MODEL_NAMES = (
@@ -379,6 +382,182 @@ def _forecast_frame(test: pd.DataFrame, forecast: np.ndarray | pd.Series, model:
     )
 
 
+SBA_ALPHA_GRID = (0.05, 0.1, 0.2, 0.3, 0.5)
+SEASONAL_STRENGTH_GRID = (0.0, 0.35, 0.7, 1.0)
+DEFAULT_SBA_ALPHA = 0.2
+DEFAULT_SEASONAL_STRENGTH = 0.7
+
+
+def _sba_rate_from_values(values: np.ndarray, alpha: float = DEFAULT_SBA_ALPHA) -> float:
+    """True SBA/Croston rate using exponential smoothing.
+
+    The legacy baseline in models.benchmarks is retained for continuity. These
+    newer variants use the standard SBA correction, which gives us a tunable
+    intermittent-demand baseline without changing old result labels.
+    """
+    demand = np.clip(np.asarray(values, dtype=float), 0.0, None)
+    if len(demand) == 0:
+        return 0.0
+
+    positive_positions = np.flatnonzero(demand > 0)
+    if len(positive_positions) == 0:
+        return 0.0
+    if len(positive_positions) == 1:
+        return float(demand[positive_positions[0]] / max(len(demand), 1))
+
+    alpha = float(np.clip(alpha, 1e-6, 0.999999))
+    positive_values = demand[positive_positions]
+    size = float(positive_values[0])
+    interval = float(np.diff(positive_positions).mean())
+    previous_position = int(positive_positions[0])
+
+    for position in positive_positions[1:]:
+        observed_interval = max(1.0, float(position - previous_position))
+        size = alpha * float(demand[position]) + (1.0 - alpha) * size
+        interval = alpha * observed_interval + (1.0 - alpha) * interval
+        previous_position = int(position)
+
+    return float(max(0.0, (1.0 - alpha / 2.0) * size / max(interval, 1e-6)))
+
+
+def _sba_rates_by_sku(train: pd.DataFrame, alpha: float = DEFAULT_SBA_ALPHA) -> pd.Series:
+    rates = {}
+    for sku, history in train.sort_values(MONTH_COLUMN).groupby(SKU_COLUMN, sort=False):
+        rates[sku] = _sba_rate_from_values(history[TARGET_COLUMN].to_numpy(), alpha=alpha)
+    return pd.Series(rates, dtype=float)
+
+
+def _latest_inner_validation_split(
+    train: pd.DataFrame,
+    config: LumpyConfig,
+    validation_months: int = 6,
+) -> tuple[pd.DataFrame, pd.DataFrame] | None:
+    months = pd.Series(pd.to_datetime(train[MONTH_COLUMN].dropna().unique())).sort_values().tolist()
+    if len(months) < max(12, config.gap_months + validation_months + 3):
+        return None
+
+    validation_months = min(validation_months, max(3, len(months) // 4))
+    validation_end = months[-1]
+    validation_start = validation_end - pd.DateOffset(months=validation_months - 1)
+    inner_train_end = validation_start - pd.DateOffset(months=config.gap_months + 1)
+
+    inner_train = train.loc[train[MONTH_COLUMN].le(inner_train_end)].copy()
+    validation = train.loc[train[MONTH_COLUMN].between(validation_start, validation_end)].copy()
+    if inner_train[MONTH_COLUMN].nunique() < 6 or validation.empty:
+        return None
+    return inner_train, validation
+
+
+def _score_monthly_rolling_wmape(candidate: pd.DataFrame) -> float:
+    if candidate.empty:
+        return float("inf")
+    monthly = summarize_monthly_totals(candidate)
+    if monthly.empty:
+        return float("inf")
+    _, ranking = summarize_monthly_total_tables(monthly)
+    if ranking.empty or ranking["mean_rolling_3m_wmape_percent"].isna().all():
+        return float("inf")
+    return float(ranking["mean_rolling_3m_wmape_percent"].min())
+
+
+def _seasonal_factors_by_month(
+    train: pd.DataFrame,
+    forecast_months: pd.Series | np.ndarray,
+    strength: float = DEFAULT_SEASONAL_STRENGTH,
+) -> pd.Series:
+    months = pd.to_datetime(pd.Series(forecast_months)).drop_duplicates().sort_values()
+    if months.empty:
+        return pd.Series(dtype=float)
+
+    monthly_total = train.groupby(MONTH_COLUMN)[TARGET_COLUMN].sum().sort_index()
+    if monthly_total.empty or monthly_total.mean() <= 0 or monthly_total.index.nunique() < 12:
+        return pd.Series(1.0, index=months.values)
+
+    month_index = (
+        monthly_total.reset_index()
+        .assign(month_number=lambda frame: frame[MONTH_COLUMN].dt.month)
+        .groupby("month_number")[TARGET_COLUMN]
+        .mean()
+        / monthly_total.mean()
+    )
+    raw = months.dt.month.map(month_index).fillna(1.0).astype(float)
+    factor = 1.0 + float(strength) * (raw - 1.0)
+    factor = factor.clip(lower=0.25, upper=2.5)
+    if factor.mean() > 0:
+        factor = factor / factor.mean()
+    return pd.Series(factor.to_numpy(), index=months.values)
+
+
+def _forecast_corrected_sba(
+    train: pd.DataFrame,
+    test: pd.DataFrame,
+    alpha: float = DEFAULT_SBA_ALPHA,
+    model_label: str = "SBA Croston Tuned",
+) -> pd.DataFrame:
+    rates = _sba_rates_by_sku(train, alpha=alpha)
+    forecast = test[SKU_COLUMN].map(rates).fillna(0.0)
+    frame = _forecast_frame(test, forecast, model_label)
+    frame["sba_alpha"] = float(alpha)
+    return frame
+
+
+def _forecast_seasonal_sba(
+    train: pd.DataFrame,
+    test: pd.DataFrame,
+    alpha: float = DEFAULT_SBA_ALPHA,
+    strength: float = DEFAULT_SEASONAL_STRENGTH,
+    model_label: str = "Seasonal SBA Croston",
+) -> pd.DataFrame:
+    rates = _sba_rates_by_sku(train, alpha=alpha)
+    factors = _seasonal_factors_by_month(train, test[MONTH_COLUMN], strength=strength)
+    base_forecast = test[SKU_COLUMN].map(rates).fillna(0.0)
+    month_factor = pd.to_datetime(test[MONTH_COLUMN]).map(factors).fillna(1.0)
+    frame = _forecast_frame(test, base_forecast.to_numpy() * month_factor.to_numpy(), model_label)
+    frame["sba_alpha"] = float(alpha)
+    frame["seasonal_strength"] = float(strength)
+    return frame
+
+
+def _select_sba_alpha(train: pd.DataFrame, config: LumpyConfig) -> float:
+    split = _latest_inner_validation_split(train, config)
+    if split is None:
+        return DEFAULT_SBA_ALPHA
+
+    inner_train, validation = split
+    scores = []
+    for alpha in SBA_ALPHA_GRID:
+        candidate = _forecast_corrected_sba(
+            inner_train,
+            validation,
+            alpha=alpha,
+            model_label="SBA Croston Tuned",
+        )
+        scores.append((alpha, _score_monthly_rolling_wmape(candidate)))
+    scores = sorted(scores, key=lambda item: (item[1], item[0]))
+    return float(scores[0][0])
+
+
+def _select_seasonal_sba_parameters(train: pd.DataFrame, config: LumpyConfig) -> tuple[float, float]:
+    split = _latest_inner_validation_split(train, config)
+    if split is None:
+        return DEFAULT_SBA_ALPHA, DEFAULT_SEASONAL_STRENGTH
+
+    inner_train, validation = split
+    scores = []
+    for alpha in SBA_ALPHA_GRID:
+        for strength in SEASONAL_STRENGTH_GRID:
+            candidate = _forecast_seasonal_sba(
+                inner_train,
+                validation,
+                alpha=alpha,
+                strength=strength,
+                model_label="Seasonal SBA Croston",
+            )
+            scores.append((alpha, strength, _score_monthly_rolling_wmape(candidate)))
+    scores = sorted(scores, key=lambda item: (item[2], item[0], item[1]))
+    return float(scores[0][0]), float(scores[0][1])
+
+
 def forecast_zero(train: pd.DataFrame, test: pd.DataFrame) -> pd.DataFrame:
     return _forecast_frame(test, np.zeros(len(test)), "Zero Forecast")
 
@@ -410,6 +589,24 @@ def _benchmark_forecast(train: pd.DataFrame, test: pd.DataFrame, model_name: str
 
 def forecast_sba(train: pd.DataFrame, test: pd.DataFrame) -> pd.DataFrame:
     return _benchmark_forecast(train, test, "SBA Croston")
+
+
+def forecast_sba_tuned(train: pd.DataFrame, test: pd.DataFrame, config: LumpyConfig | None = None) -> pd.DataFrame:
+    config = config or LumpyConfig()
+    alpha = _select_sba_alpha(train, config)
+    return _forecast_corrected_sba(train, test, alpha=alpha, model_label="SBA Croston Tuned")
+
+
+def forecast_seasonal_sba(train: pd.DataFrame, test: pd.DataFrame, config: LumpyConfig | None = None) -> pd.DataFrame:
+    config = config or LumpyConfig()
+    alpha, strength = _select_seasonal_sba_parameters(train, config)
+    return _forecast_seasonal_sba(
+        train,
+        test,
+        alpha=alpha,
+        strength=strength,
+        model_label="Seasonal SBA Croston",
+    )
 
 
 def forecast_tsb(train: pd.DataFrame, test: pd.DataFrame) -> pd.DataFrame:
@@ -447,6 +644,228 @@ def forecast_aggregate_allocation(train: pd.DataFrame, test: pd.DataFrame) -> pd
     forecast["forecast"] = forecast["forecast"].fillna(0.0).clip(lower=0.0)
     forecast["model"] = "Aggregate Allocation"
     return forecast
+
+
+def _monthly_total_fallback_forecast(train: pd.DataFrame, months: pd.Series | np.ndarray) -> pd.Series:
+    monthly_total = train.groupby(MONTH_COLUMN)[TARGET_COLUMN].sum().sort_index()
+    months = pd.to_datetime(pd.Series(months)).drop_duplicates().sort_values()
+    if monthly_total.empty:
+        return pd.Series(0.0, index=months.values)
+
+    recent_total = float(monthly_total.tail(6).mean())
+    seasonal_total = (
+        monthly_total.reset_index()
+        .assign(month_number=lambda frame: frame[MONTH_COLUMN].dt.month)
+        .groupby("month_number")[TARGET_COLUMN]
+        .mean()
+    )
+    values = [
+        float(seasonal_total.get(pd.Timestamp(month).month, recent_total))
+        for month in months
+    ]
+    return pd.Series(np.maximum(0.0, values), index=months.values)
+
+
+def _anchor_monthly_total_forecast_to_recent_history(
+    train: pd.DataFrame,
+    forecast: pd.Series,
+) -> pd.Series:
+    """Keep learned monthly shape but anchor level to recent aggregate demand."""
+    monthly_total = train.groupby(MONTH_COLUMN)[TARGET_COLUMN].sum().sort_index()
+    forecast = pd.Series(forecast, dtype=float).clip(lower=0.0)
+    if monthly_total.empty or forecast.empty or forecast.mean() <= 0:
+        return forecast
+
+    recent = monthly_total.tail(12) if len(monthly_total) >= 12 else monthly_total.tail(6)
+    level_anchor = float(recent.mean()) if len(recent) else float(monthly_total.mean())
+    if level_anchor <= 0:
+        return forecast
+
+    shape = forecast / forecast.mean()
+    anchored = (shape * level_anchor).clip(lower=0.0)
+    upper_cap = max(level_anchor * 1.75, float(recent.quantile(0.9)) * 1.1)
+    return anchored.clip(upper=upper_cap)
+
+
+def _aggregate_feature_rows(
+    train: pd.DataFrame,
+    test: pd.DataFrame,
+    config: LumpyConfig,
+) -> pd.DataFrame:
+    monthly_total = train.groupby(MONTH_COLUMN)[TARGET_COLUMN].sum().sort_index()
+    combined = pd.concat([train, test], ignore_index=True, sort=False)
+    feature_columns = [
+        column
+        for column in combined.columns
+        if column in CALENDAR_FEATURE_COLUMNS or column.startswith("external_known__")
+    ]
+    month_features = (
+        combined[[MONTH_COLUMN] + feature_columns]
+        .drop_duplicates(MONTH_COLUMN)
+        .set_index(MONTH_COLUMN)
+        .sort_index()
+    )
+
+    rows = []
+    for month, feature_values in month_features.iterrows():
+        cutoff = pd.Timestamp(month) - pd.DateOffset(months=config.gap_months + 1)
+        known = monthly_total.loc[monthly_total.index <= cutoff]
+        positive_known = known.loc[known > 0]
+        recent_6 = known.tail(6)
+        previous_6 = known.iloc[-12:-6] if len(known) >= 12 else pd.Series(dtype=float)
+        last_known_month = known.index.max() if len(known) else pd.NaT
+        last_positive_month = positive_known.index.max() if len(positive_known) else pd.NaT
+
+        row = {
+            MONTH_COLUMN: month,
+            "aggregate_known_months": float(len(known)),
+            "aggregate_known_total": float(known.sum()) if len(known) else 0.0,
+            "aggregate_known_mean": float(known.mean()) if len(known) else 0.0,
+            "aggregate_known_last": float(known.iloc[-1]) if len(known) else 0.0,
+            "aggregate_known_recent_3m": float(known.tail(3).mean()) if len(known) else 0.0,
+            "aggregate_known_recent_6m": float(recent_6.mean()) if len(recent_6) else 0.0,
+            "aggregate_known_recent_12m": float(known.tail(12).mean()) if len(known) else 0.0,
+            "aggregate_known_recent_6m_vs_previous_6m": (
+                float(recent_6.mean() - previous_6.mean())
+                if len(recent_6) and len(previous_6)
+                else 0.0
+            ),
+            "aggregate_months_since_known": (
+                float(_months_between(pd.Timestamp(month), pd.Timestamp(last_known_month)))
+                if pd.notna(last_known_month)
+                else 999.0
+            ),
+            "aggregate_months_since_positive_total": (
+                float(_months_between(pd.Timestamp(month), pd.Timestamp(last_positive_month)))
+                if pd.notna(last_positive_month)
+                else 999.0
+            ),
+            "aggregate_target_total": float(monthly_total.get(month, np.nan)),
+        }
+        for column in feature_columns:
+            row[column] = feature_values[column]
+        rows.append(row)
+
+    return pd.DataFrame(rows)
+
+
+def _forecast_boosted_monthly_totals(
+    train: pd.DataFrame,
+    test: pd.DataFrame,
+    config: LumpyConfig,
+) -> tuple[pd.Series, str, str]:
+    feature_rows = _aggregate_feature_rows(train, test, config)
+    test_months = pd.Series(pd.to_datetime(test[MONTH_COLUMN].unique())).sort_values()
+    if feature_rows.empty:
+        fallback = _monthly_total_fallback_forecast(train, test_months)
+        return (
+            _anchor_monthly_total_forecast_to_recent_history(train, fallback),
+            "seasonal_fallback",
+            "no_feature_rows_recent_level_anchor",
+        )
+
+    train_months = set(pd.to_datetime(train[MONTH_COLUMN].unique()))
+    test_month_set = set(pd.to_datetime(test[MONTH_COLUMN].unique()))
+    train_rows = feature_rows.loc[
+        feature_rows[MONTH_COLUMN].isin(train_months)
+        & feature_rows["aggregate_target_total"].notna()
+        & feature_rows["aggregate_known_months"].ge(6)
+    ].copy()
+    test_rows = feature_rows.loc[feature_rows[MONTH_COLUMN].isin(test_month_set)].copy()
+
+    feature_columns = [
+        column
+        for column in feature_rows.columns
+        if column not in {MONTH_COLUMN, "aggregate_target_total"}
+        and pd.api.types.is_numeric_dtype(feature_rows[column])
+    ]
+    if len(train_rows) < 8 or test_rows.empty or not feature_columns:
+        fallback = _monthly_total_fallback_forecast(train, test_months)
+        return (
+            _anchor_monthly_total_forecast_to_recent_history(train, fallback),
+            "seasonal_fallback",
+            "insufficient_training_months_recent_level_anchor",
+        )
+
+    try:
+        from sklearn.ensemble import HistGradientBoostingRegressor
+        from sklearn.impute import SimpleImputer
+    except ModuleNotFoundError:
+        fallback = _monthly_total_fallback_forecast(train, test_months)
+        return (
+            _anchor_monthly_total_forecast_to_recent_history(train, fallback),
+            "seasonal_fallback",
+            "sklearn_missing_recent_level_anchor",
+        )
+
+    imputer = SimpleImputer(strategy="median")
+    x_train = imputer.fit_transform(train_rows[feature_columns])
+    x_test = imputer.transform(test_rows[feature_columns])
+    y_train = train_rows["aggregate_target_total"].astype(float).to_numpy()
+
+    backend = "hist_gradient_boosting"
+    try:
+        import xgboost as xgb
+
+        model = xgb.XGBRegressor(
+            objective="reg:squarederror",
+            n_estimators=220,
+            max_depth=2,
+            learning_rate=0.05,
+            subsample=0.85,
+            colsample_bytree=0.9,
+            reg_lambda=5.0,
+            random_state=config.random_state,
+            n_jobs=1,
+        )
+        backend = "xgboost"
+    except ModuleNotFoundError:
+        model = HistGradientBoostingRegressor(
+            loss="squared_error",
+            max_iter=220,
+            learning_rate=0.05,
+            max_leaf_nodes=15,
+            l2_regularization=0.1,
+            random_state=config.random_state,
+        )
+
+    model.fit(x_train, y_train)
+    predictions = np.maximum(0.0, model.predict(x_test))
+    prediction_series = pd.Series(predictions, index=pd.to_datetime(test_rows[MONTH_COLUMN]).to_numpy())
+    return (
+        _anchor_monthly_total_forecast_to_recent_history(train, prediction_series),
+        backend,
+        "fit_recent_level_anchor",
+    )
+
+
+def forecast_boosted_sba_hybrid(
+    train: pd.DataFrame,
+    test: pd.DataFrame,
+    config: LumpyConfig | None = None,
+) -> pd.DataFrame:
+    """Forecast monthly total shape with boosting, then allocate using SBA rates."""
+    config = config or LumpyConfig()
+    monthly_totals, backend, status = _forecast_boosted_monthly_totals(train, test, config)
+    alpha = _select_sba_alpha(train, config)
+
+    rates = _sba_rates_by_sku(train, alpha=alpha)
+    test_skus = pd.Index(test[SKU_COLUMN].unique())
+    weights = rates.reindex(test_skus).fillna(0.0).clip(lower=0.0)
+    if weights.sum() <= 0:
+        demand_weights = train.groupby(SKU_COLUMN)[TARGET_COLUMN].sum().reindex(test_skus).fillna(0.0)
+        weights = demand_weights.clip(lower=0.0)
+    if weights.sum() <= 0 and len(test_skus):
+        weights = pd.Series(1.0, index=test_skus)
+    weights = weights / weights.sum() if weights.sum() > 0 else weights
+
+    forecast_total = pd.to_datetime(test[MONTH_COLUMN]).map(monthly_totals).fillna(0.0)
+    forecast = forecast_total.to_numpy() * test[SKU_COLUMN].map(weights).fillna(0.0).to_numpy()
+    frame = _forecast_frame(test, forecast, "Boosted SBA Hybrid")
+    frame["sba_alpha"] = float(alpha)
+    frame["hybrid_backend"] = backend
+    frame["hybrid_status"] = status
+    return frame
 
 
 def _months_between(later: pd.Timestamp, earlier: pd.Timestamp) -> int:
@@ -798,8 +1217,14 @@ def run_model(name: str, train: pd.DataFrame, test: pd.DataFrame, config: LumpyC
         return forecast_recent_mean(train, test, window=6)
     if name == "sba_croston":
         return forecast_sba(train, test)
+    if name == "sba_croston_tuned":
+        return forecast_sba_tuned(train, test, config=config)
+    if name == "seasonal_sba_croston":
+        return forecast_seasonal_sba(train, test, config=config)
     if name == "tsb":
         return forecast_tsb(train, test)
+    if name == "boosted_sba_hybrid":
+        return forecast_boosted_sba_hybrid(train, test, config=config)
     if name == "aggregate_allocation":
         return forecast_aggregate_allocation(train, test)
     if name == "hurdle_random_forest":
