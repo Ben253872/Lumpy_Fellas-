@@ -1,0 +1,12 @@
+check,value,passed
+observed_rows,312.0,True
+observed_duplicate_months,0.0,True
+observed_missing_months,0.0,True
+month_day_reconciliation_difference_cells,4.0,True
+month_hour_reconciliation_difference_cells,4.0,True
+month_day_reconciliation_max_abs_difference,1.0,True
+month_hour_reconciliation_max_abs_difference,1.0,True
+safe_feature_rows,64.0,True
+safe_feature_null_cells,0.0,True
+handoff_duplicate_dates,0.0,True
+annual_collision_columns_remaining,0.0,True

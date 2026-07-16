@@ -1,0 +1,2 @@
+expected_skus,classification_skus,established_forecast_skus,cold_start_forecast_skus,final_forecast_skus,complete_coverage
+690,690,650,40,690,True

@@ -1,0 +1,3 @@
+result,chronology_safe,all_sku_count,valid_positive_sku_count,under_50_skus,under_70_skus,under_100_skus,under_50_share,under_70_share,median_sku_block_wmape,p75_sku_block_wmape,median_sku_block_mase,portfolio_block_wmape,actual_total,forecast_total,bias_pct
+11 original overlapping development selector,False,650,602,61,178,354,0.10132890365448505,0.2956810631229236,85.05420735667622,117.5214927829802,0.3922357034276832,97.91266500312798,8336.0,6847.909590889429,-17.85137247013641
+13 selected strict policy: frequency_champion,True,650,602,53,164,348,0.08803986710963455,0.2724252491694352,88.17466534083874,160.52600268006282,0.48924731182795705,99.80484065115829,8336.0,6148.249287940098,-26.244610269432606

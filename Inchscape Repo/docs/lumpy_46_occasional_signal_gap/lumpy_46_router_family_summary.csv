@@ -1,0 +1,4 @@
+router_family,router_configurations,best_under_50,best_under_70,best_under_100,best_median_wmape
+grouped_random_forest,5,7,9,20,100.12231698402992
+peer_neighbour,6,6,16,33,100.0
+same_sku_history,1,22,31,57,87.81393324578559

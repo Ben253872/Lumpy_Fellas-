@@ -1,0 +1,23 @@
+[
+  {
+    "candidate_id":"pool10__margin10__weight1.00",
+    "policy_id":"pool10__margin10__weight1.00",
+    "pool_size":10,
+    "margin":10.0,
+    "specialist_weight":1.0,
+    "routed_skus":8,
+    "all_skus":35,
+    "positive_skus":35,
+    "under_50":2,
+    "under_70":8,
+    "under_100":19,
+    "median_wmape":97.1952028613,
+    "p75_wmape":170.3783072821,
+    "median_mase":0.2972142978,
+    "portfolio_wmape":121.5539029456,
+    "actual_total":68.0,
+    "forecast_total":138.1019845295,
+    "bias_pct":103.0911537198,
+    "abs_bias":103.0911537198
+  }
+]

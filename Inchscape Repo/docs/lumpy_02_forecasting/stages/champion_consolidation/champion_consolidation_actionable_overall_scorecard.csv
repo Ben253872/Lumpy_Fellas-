@@ -1,0 +1,2 @@
+segment,all_skus,positive_skus,under_50,under_70,under_100,median_wmape,portfolio_wmape,actual_total,forecast_total,bias_pct,pct_below_50,pct_below_70,pct_below_100
+all,637,597,59,197,372,82.64144529680698,86.75214658590264,8923.0,5648.545649636166,-36.69678751948711,9.882747068676716,32.99832495812395,62.311557788944725

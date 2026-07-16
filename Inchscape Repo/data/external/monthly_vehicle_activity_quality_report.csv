@@ -1,0 +1,11 @@
+check,value,passed
+mop_source_rows,64,True
+mop_missing_source_months,4,True
+mop_invalid_source_months,1,True
+anac_report_months,66,True
+anac_months_with_suzuki_models,50,True
+anac_months_with_market_total,32,True
+suzuki_model_mix_rows,528,True
+forecast_safe_rows,72,True
+handoff_duplicate_dates,0,True
+new_feature_columns,33,True

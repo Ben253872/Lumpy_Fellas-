@@ -1,0 +1,3 @@
+result_lane,horizon_months,gap_months,block_months,status,comparison_rule
+required,18,3,3,official,A/B/C reported together
+recommended_challenger,9,1,3,not_yet_run_for_all_abc,must be run for A/B/C together before recommendation

@@ -1,0 +1,2 @@
+candidate_id,positive_cases,under_50,under_70,under_100,median_wmape,portfolio_wmape,actual_total,forecast_total,share_50,share_70,share_100
+blend__block_hurdle_d2_full_log__cold_subfamily_mean__short_weight_0.75__scale_1.00,199,7,28,49,201.91515956191847,139.18938051823534,2700.0,3197.7550581366686,0.035175879396984924,0.1407035175879397,0.24623115577889448

@@ -1,0 +1,7 @@
+fold_id,role,train_end,test_start,dormant_skus,positive_horizon_skus,history_case_rows_before_forecast
+6,prior_training_only,2023-04-01,2023-08-01,26,23,0
+5,development,2023-07-01,2023-11-01,41,33,156
+4,development,2023-10-01,2024-02-01,56,50,402
+3,development,2024-01-01,2024-05-01,72,69,738
+2,development,2024-04-01,2024-08-01,80,51,1170
+1,official,2024-07-01,2024-11-01,53,45,1650

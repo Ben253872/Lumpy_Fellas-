@@ -1,0 +1,2 @@
+candidate_id,positive_skus,under_50,under_70,under_100,median_wmape,portfolio_wmape,actual_total,forecast_total
+launch_knn20__expected__threshold_0.00__scale_0.75,28,3,8,15,94.01930025421059,97.40285024968979,451.0,351.2533898538435

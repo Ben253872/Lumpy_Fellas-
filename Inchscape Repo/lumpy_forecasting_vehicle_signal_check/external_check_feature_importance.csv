@@ -1,0 +1,190 @@
+feature,importance,demand_type,model,is_external_feature
+NEW_ENTRY_STOCK,0.9762935135274746,smooth,Internal only,False
+Inflation_Rate,0.0042835759268383886,smooth,Internal only,False
+Total_Vehicle_Sales,0.003922232970928481,smooth,Internal only,False
+Core_Inflation_Rate,0.0036738828418331213,smooth,Internal only,False
+Food_Inflation,0.0021700654944869337,smooth,Internal only,False
+Leading_Economic_Index,0.00205058964440861,smooth,Internal only,False
+STOCK_START_MONTH,0.002027809822603368,smooth,Internal only,False
+Building_Permits,0.0017138550172354358,smooth,Internal only,False
+Producer_Prices_Change,0.001555084049893778,smooth,Internal only,False
+Imports,0.0013175695960897502,smooth,Internal only,False
+Inflation_Rate_MoM,0.0009918211082074095,smooth,Internal only,False
+NEW_ENTRY_STOCK,0.9693234200836097,smooth,Internal + external,False
+mop_available_last_yoy,0.0026778980231347963,smooth,Internal + external,True
+Inflation_Rate,0.002309025818788287,smooth,Internal + external,False
+anac_available_last_market_units,0.0022471974762861315,smooth,Internal + external,True
+anac_available_last_fleet_proxy_age_0_12m,0.0021612704867645027,smooth,Internal + external,True
+conaset_available_last_injuries_per_collision,0.0016051708429506003,smooth,Internal + external,True
+cmf_available_damaged_insured_vehicles,0.0012923444616634778,smooth,Internal + external,True
+Leading_Economic_Index,0.001204104769277644,smooth,Internal + external,False
+cmf_available_repair_delay_days,0.0011176182959526063,smooth,Internal + external,True
+Core_Inflation_Rate,0.0010439445731760214,smooth,Internal + external,False
+STOCK_START_MONTH,0.0010155192916373181,smooth,Internal + external,False
+conaset_available_expected5y_injuries_per_collision,0.0009898490448121647,smooth,Internal + external,True
+mop_available_last_heavy_passages,0.0009595233435625804,smooth,Internal + external,True
+conaset_available_expected5y_total_injuries,0.0008589163855940956,smooth,Internal + external,True
+Total_Vehicle_Sales,0.000844967557147549,smooth,Internal + external,False
+Building_Permits,0.000840895267786431,smooth,Internal + external,False
+conaset_available_expected3y_injuries_per_collision,0.0008101313890373133,smooth,Internal + external,True
+conaset_available_expected3y_weekend_collision_share,0.0007071210591031175,smooth,Internal + external,True
+conaset_available_expected5y_serious_injuries,0.000678035469587766,smooth,Internal + external,True
+conaset_available_last_weekend_fatality_share,0.0006010962031156475,smooth,Internal + external,True
+conaset_available_expected3y_weekend_fatality_share,0.0005592033033536942,smooth,Internal + external,True
+conaset_available_last_fatalities_per_collision,0.0005302744972145206,smooth,Internal + external,True
+conaset_available_expected3y_collisions,0.0004950550947920308,smooth,Internal + external,True
+conaset_available_expected3y_total_injuries,0.00048017341913693005,smooth,Internal + external,True
+Producer_Prices_Change,0.000462185112324185,smooth,Internal + external,False
+Food_Inflation,0.000458554532781859,smooth,Internal + external,False
+cmf_available_claim_rate,0.0004537725750306318,smooth,Internal + external,True
+mop_available_last_light_passages,0.00041049701446382744,smooth,Internal + external,True
+mop_available_last_total_passages,0.0003715426136130571,smooth,Internal + external,True
+conaset_available_expected5y_weekend_collision_share,0.00034748095821664877,smooth,Internal + external,True
+Imports,0.00033968073455598876,smooth,Internal + external,False
+Inflation_Rate_MoM,0.00033204697829637876,smooth,Internal + external,False
+mop_available_expected3y_yoy,0.00030200102587971724,smooth,Internal + external,True
+conaset_available_expected5y_collisions,0.0002884030175936584,smooth,Internal + external,True
+conaset_available_expected3y_night_collision_share,0.0002594000358907201,smooth,Internal + external,True
+conaset_available_expected5y_night_fatality_share,0.00022227604137653939,smooth,Internal + external,True
+mop_available_last_rolling3,0.00021901371568891,smooth,Internal + external,True
+conaset_available_expected3y_night_fatality_share,9.429161900256512e-05,smooth,Internal + external,True
+conaset_available_expected5y_night_collision_share,8.609786779997016e-05,smooth,Internal + external,True
+NEW_ENTRY_STOCK,0.9773942751145435,intermittent,Internal only,False
+STOCK_START_MONTH,0.00756096931332167,intermittent,Internal only,False
+Total_Vehicle_Sales,0.004586472172533568,intermittent,Internal only,False
+Core_Inflation_Rate,0.0021976117289912015,intermittent,Internal only,False
+Producer_Prices_Change,0.0016471114481247267,intermittent,Internal only,False
+Unemployment_Rate,0.0015015120672581999,intermittent,Internal only,False
+Inflation_Rate,0.0013854671332651756,intermittent,Internal only,False
+Leading_Economic_Index,0.0012268982098661762,intermittent,Internal only,False
+Imports,0.0012144370009859106,intermittent,Internal only,False
+Building_Permits,0.0009028069863006611,intermittent,Internal only,False
+Inflation_Rate_MoM,0.0003824388248091955,intermittent,Internal only,False
+NEW_ENTRY_STOCK,0.9768518410194339,intermittent,Internal + external,False
+STOCK_START_MONTH,0.007428441765634276,intermittent,Internal + external,False
+anac_available_last_market_units,0.0035958012275519773,intermittent,Internal + external,True
+cmf_available_repair_delay_days,0.0015865473553583053,intermittent,Internal + external,True
+cmf_available_damaged_insured_vehicles,0.0013927025514833332,intermittent,Internal + external,True
+Total_Vehicle_Sales,0.0013548212253253612,intermittent,Internal + external,False
+Imports,0.0008672216455943085,intermittent,Internal + external,False
+cmf_available_claim_rate,0.0007192146899227172,intermittent,Internal + external,True
+conaset_available_expected3y_collisions,0.0005503850554168739,intermittent,Internal + external,True
+conaset_available_expected5y_weekend_collision_share,0.00043293609922314275,intermittent,Internal + external,True
+conaset_available_expected3y_night_fatality_share,0.00033772443737737056,intermittent,Internal + external,True
+mop_available_expected3y_light_share,0.00033575387074839786,intermittent,Internal + external,True
+conaset_available_expected3y_total_injuries,0.0003238717577734421,intermittent,Internal + external,True
+Producer_Prices_Change,0.00031098209684221064,intermittent,Internal + external,False
+conaset_available_expected3y_weekend_collision_share,0.00030619418340145144,intermittent,Internal + external,True
+conaset_available_expected5y_total_injuries,0.0002908747819220881,intermittent,Internal + external,True
+mop_available_last_yoy,0.0002356725245630614,intermittent,Internal + external,True
+Leading_Economic_Index,0.0002269565291862868,intermittent,Internal + external,False
+conaset_available_expected5y_injuries_per_collision,0.00022166921698870854,intermittent,Internal + external,True
+Inflation_Rate,0.00021994338587197264,intermittent,Internal + external,False
+conaset_available_expected3y_night_collision_share,0.00021318215702956992,intermittent,Internal + external,True
+conaset_available_expected3y_injuries_per_collision,0.00020883045392808302,intermittent,Internal + external,True
+conaset_available_last_injuries_per_collision,0.00019334896665270624,intermittent,Internal + external,True
+mop_available_last_heavy_passages,0.00018608710450597834,intermittent,Internal + external,True
+Inflation_Rate_MoM,0.00018489493382882003,intermittent,Internal + external,False
+conaset_available_expected5y_collisions,0.0001713325267236005,intermittent,Internal + external,True
+Core_Inflation_Rate,0.0001652639625009028,intermittent,Internal + external,False
+Building_Permits,0.00016318915737291244,intermittent,Internal + external,False
+conaset_available_expected5y_night_collision_share,0.00014568152387739282,intermittent,Internal + external,True
+conaset_available_expected5y_night_fatality_share,0.0001456421147150526,intermittent,Internal + external,True
+conaset_available_expected3y_serious_injuries,0.00013876485470647423,intermittent,Internal + external,True
+conaset_available_expected5y_serious_injuries,0.00012708557716568382,intermittent,Internal + external,True
+conaset_available_last_fatalities_per_collision,0.00012318413480032951,intermittent,Internal + external,True
+mop_available_expected3y_yoy,0.00012317027290051233,intermittent,Internal + external,True
+Unemployment_Rate,0.00012078683967286185,intermittent,Internal + external,False
+NEW_ENTRY_STOCK,0.9708082897690935,erratic,Internal only,False
+Total_Vehicle_Sales,0.006087766601284332,erratic,Internal only,False
+Retail_Sales_MoM,0.005088455762450165,erratic,Internal only,False
+Inflation_Rate_MoM,0.005059357257473591,erratic,Internal only,False
+Building_Permits,0.0038903302636464922,erratic,Internal only,False
+Leading_Economic_Index,0.00281658913530321,erratic,Internal only,False
+STOCK_START_MONTH,0.002102756718463329,erratic,Internal only,False
+Imports,0.0014503624497137872,erratic,Internal only,False
+Core_Inflation_Rate,0.000841773987591031,erratic,Internal only,False
+Unemployment_Rate,0.000726674913526373,erratic,Internal only,False
+Producer_Prices_Change,0.0006455688029142072,erratic,Internal only,False
+Inflation_Rate,0.00048207433853999175,erratic,Internal only,False
+NEW_ENTRY_STOCK,0.964495530441704,erratic,Internal + external,False
+cmf_available_repair_delay_days,0.004460883160194101,erratic,Internal + external,True
+cmf_available_damaged_insured_vehicles,0.004376509923360672,erratic,Internal + external,True
+conaset_available_expected3y_serious_injuries,0.002546451174501134,erratic,Internal + external,True
+conaset_available_expected5y_weekend_collision_share,0.0017951152891437917,erratic,Internal + external,True
+Inflation_Rate_MoM,0.0016900312877012864,erratic,Internal + external,False
+anac_available_last_market_units,0.0016153443458679342,erratic,Internal + external,True
+conaset_available_expected3y_injuries_per_collision,0.0015829590532311455,erratic,Internal + external,True
+conaset_available_expected5y_total_injuries,0.0015190729617390328,erratic,Internal + external,True
+conaset_available_expected5y_serious_injuries,0.0014217401237416219,erratic,Internal + external,True
+Total_Vehicle_Sales,0.0013440003029901114,erratic,Internal + external,False
+Retail_Sales_MoM,0.001318507555273469,erratic,Internal + external,False
+conaset_available_expected5y_injuries_per_collision,0.0011741533053526451,erratic,Internal + external,True
+mop_available_expected3y_light_share,0.0011622536521262374,erratic,Internal + external,True
+STOCK_START_MONTH,0.0011277028647872847,erratic,Internal + external,False
+conaset_available_expected3y_total_injuries,0.0010478328422879241,erratic,Internal + external,True
+conaset_available_expected3y_collisions,0.0007423968263390523,erratic,Internal + external,True
+Building_Permits,0.0007121267862595249,erratic,Internal + external,False
+conaset_available_expected5y_collisions,0.0006239785979026261,erratic,Internal + external,True
+conaset_available_last_injuries_per_collision,0.0005234040068130589,erratic,Internal + external,True
+conaset_available_expected5y_night_fatality_share,0.00044434548004198334,erratic,Internal + external,True
+conaset_available_expected3y_night_collision_share,0.0004303786456750345,erratic,Internal + external,True
+mop_available_last_yoy,0.0004233283750385696,erratic,Internal + external,True
+conaset_available_expected3y_night_fatality_share,0.0004089669795467239,erratic,Internal + external,True
+cmf_available_claim_rate,0.00038965268623265977,erratic,Internal + external,True
+mop_available_expected3y_yoy,0.0003340878122498075,erratic,Internal + external,True
+Producer_Prices_Change,0.00033038755042715917,erratic,Internal + external,False
+conaset_available_last_fatalities_per_collision,0.00031224397482948956,erratic,Internal + external,True
+conaset_available_expected3y_weekend_collision_share,0.0002867400956636011,erratic,Internal + external,True
+Unemployment_Rate,0.0002790136035749602,erratic,Internal + external,False
+conaset_available_expected5y_night_collision_share,0.00025885466849913066,erratic,Internal + external,True
+Leading_Economic_Index,0.00023096529008657796,erratic,Internal + external,False
+mop_available_last_heavy_passages,0.00019298724160103718,erratic,Internal + external,True
+Inflation_Rate,0.00015800937847586027,erratic,Internal + external,False
+Core_Inflation_Rate,0.00015347439932855315,erratic,Internal + external,False
+Imports,8.656931741213412e-05,erratic,Internal + external,False
+NEW_ENTRY_STOCK,0.9631442905382964,lumpy,Internal only,False
+Imports,0.015584731848966844,lumpy,Internal only,False
+Building_Permits,0.012122158859538797,lumpy,Internal only,False
+Leading_Economic_Index,0.006986268583468152,lumpy,Internal only,False
+Retail_Sales_MoM,0.0006541994906320486,lumpy,Internal only,False
+Total_Vehicle_Sales,0.0006031697141384497,lumpy,Internal only,False
+Inflation_Rate_MoM,0.0003533447092512455,lumpy,Internal only,False
+Unemployment_Rate,0.0003433888921073377,lumpy,Internal only,False
+Producer_Prices_Change,0.00020844736360067206,lumpy,Internal only,False
+NEW_ENTRY_STOCK,0.9518666770777898,lumpy,Internal + external,False
+conaset_available_expected3y_serious_injuries,0.008041279779313314,lumpy,Internal + external,True
+Building_Permits,0.006413581210694868,lumpy,Internal + external,False
+conaset_available_expected3y_night_collision_share,0.006186073369139472,lumpy,Internal + external,True
+conaset_available_expected5y_serious_injuries,0.005069760828469636,lumpy,Internal + external,True
+Leading_Economic_Index,0.0045635204272098115,lumpy,Internal + external,False
+conaset_available_expected5y_night_collision_share,0.0038136915477948426,lumpy,Internal + external,True
+Imports,0.003424414557006567,lumpy,Internal + external,False
+conaset_available_expected5y_total_injuries,0.003285171039697583,lumpy,Internal + external,True
+conaset_available_expected5y_fatalities,0.0022240447674382285,lumpy,Internal + external,True
+conaset_available_last_injuries_per_collision,0.0015950631416220512,lumpy,Internal + external,True
+conaset_available_expected3y_injuries_per_collision,0.0005539106035972439,lumpy,Internal + external,True
+conaset_available_expected5y_injuries_per_collision,0.0004062881142209613,lumpy,Internal + external,True
+conaset_available_last_fatalities_per_collision,0.00027162526827128236,lumpy,Internal + external,True
+conaset_available_expected5y_peak_collision_share,0.0002316722213651802,lumpy,Internal + external,True
+conaset_available_expected5y_weekend_collision_share,0.0001881712399506919,lumpy,Internal + external,True
+conaset_available_expected5y_night_fatality_share,0.00018512872857537522,lumpy,Internal + external,True
+conaset_available_expected3y_night_fatality_share,0.00018127758361397687,lumpy,Internal + external,True
+Retail_Sales_MoM,0.00016410859607515426,lumpy,Internal + external,False
+conaset_available_expected3y_peak_collision_share,0.00014801522594670938,lumpy,Internal + external,True
+Inflation_Rate_MoM,0.0001416783858850666,lumpy,Internal + external,False
+mop_available_last_heavy_passages,0.00012882459623372777,lumpy,Internal + external,True
+Total_Vehicle_Sales,0.00011954154196502804,lumpy,Internal + external,False
+anac_available_last_market_units,0.00011134003927173818,lumpy,Internal + external,True
+conaset_available_expected5y_collisions,0.00010206611413993319,lumpy,Internal + external,True
+conaset_available_expected3y_weekend_collision_share,0.00010170941281871546,lumpy,Internal + external,True
+cmf_available_repair_delay_days,9.598266978126776e-05,lumpy,Internal + external,True
+Unemployment_Rate,6.572589099033408e-05,lumpy,Internal + external,False
+cmf_available_claim_rate,6.327368884913428e-05,lumpy,Internal + external,True
+cmf_available_damaged_insured_vehicles,5.9211320498467215e-05,lumpy,Internal + external,True
+conaset_available_expected3y_collisions,5.4071832999566614e-05,lumpy,Internal + external,True
+mop_available_expected3y_yoy,4.483791971667781e-05,lumpy,Internal + external,True
+Producer_Prices_Change,4.144129065614439e-05,lumpy,Internal + external,False
+conaset_available_expected3y_total_injuries,3.328376249716318e-05,lumpy,Internal + external,True
+mop_available_expected3y_light_share,1.3724902202790476e-05,lumpy,Internal + external,True
+mop_available_last_yoy,9.811303701505555e-06,lumpy,Internal + external,True

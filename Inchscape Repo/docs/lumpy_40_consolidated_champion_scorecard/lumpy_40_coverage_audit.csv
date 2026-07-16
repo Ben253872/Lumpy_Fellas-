@@ -1,0 +1,8 @@
+segment,source_notebook,skus,rows,positive_skus,actual_total
+recurring,21,360,2160,358,5500.0
+occasional,27,116,696,103,677.0
+rare,29,56,336,33,162.0
+cold_start,33,40,240,40,775.0
+new,36,39,234,39,1174.0
+developing,38,26,156,24,635.0
+dormant,13,53,318,45,188.0

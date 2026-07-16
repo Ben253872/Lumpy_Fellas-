@@ -1,0 +1,5 @@
+check,observed,expected,passed
+actionable_skus,637,637,True
+dormant_skus,53,53,True
+all_skus,690,690,True
+all_rows,4140,4140,True

@@ -1,0 +1,8 @@
+segment,source_notebook,source_file,decision
+recurring,21,results/lumpy_21_official_abc_scorecard/lumpy_21_official_abc_forecasts.csv,six-block recurring A/B/C champion
+occasional,27,results/lumpy_27_occasional_temporal_memory/lumpy_27_temporal_memory_forecasts.csv,temporal-memory champion
+rare,29,results/lumpy_29_rare_group_occurrence/lumpy_29_official_rare_forecasts.csv,group-occurrence champion
+cold_start,33,results/lumpy_33_cold_start_launch_hurdle/lumpy_33_official_cold_start_forecasts.csv,genuine-launch champion
+new,36,results/lumpy_36_new_sku_level_routing/lumpy_36_official_new_sku_forecasts.csv,calibrated short-history blend
+developing,38,results/lumpy_38_developing_high_volume_routing/lumpy_38_official_developing_forecasts.csv,routed hurdle-analogue champion
+dormant,13,results/lumpy_13_segmented_strategy/lumpy_13_final_all_690_holdout_forecasts_with_ranges.csv,governance baseline; manual review exclusion

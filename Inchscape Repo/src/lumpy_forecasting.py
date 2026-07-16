@@ -102,6 +102,31 @@ CATEGORICAL_FEATURE_COLUMNS = (
     "SUBFAMILY_DESCRIPTION",
 )
 
+STATIC_SKU_DESCRIPTOR_COLUMNS = {
+    "demand_type",
+    "COUNTRY_BRAND_CHANNEL",
+    "Country",
+    "Brand",
+    "Channel",
+    "FAMILY_DESCRIPTION",
+    "SUBFAMILY_DESCRIPTION",
+    "MATERIAL_DESCRIPTION",
+    "CURRENCY",
+    "REGION",
+}
+
+ZERO_FILL_FLOW_COLUMNS = {
+    "REVENUE",
+    "COST",
+    "TOTAL_PROFIT",
+    "NEW_ENTRY_STOCK",
+}
+
+OBSERVED_ONLY_STATE_COLUMNS = {
+    "STOCK_END_MONTH",
+    "STOCK_START_MONTH",
+}
+
 
 @dataclass(frozen=True)
 class LumpyConfig:
@@ -198,11 +223,27 @@ def complete_monthly_grid(sales: pd.DataFrame) -> pd.DataFrame:
         sku_data = sku_data.sort_values(MONTH_COLUMN)
         months = pd.date_range(sku_data[MONTH_COLUMN].min(), max_month, freq="MS")
         base = pd.DataFrame({SKU_COLUMN: sku, MONTH_COLUMN: months})
-        merged = base.merge(sku_data, on=[SKU_COLUMN, MONTH_COLUMN], how="left")
+        merged = base.merge(
+            sku_data.assign(_source_row_observed=True),
+            on=[SKU_COLUMN, MONTH_COLUMN],
+            how="left",
+        )
+        inserted_month = merged["_source_row_observed"].isna()
         merged[TARGET_COLUMN] = pd.to_numeric(merged[TARGET_COLUMN], errors="coerce").fillna(0.0)
         for column in descriptor_columns:
-            if column in merged.columns:
+            if column not in merged.columns:
+                continue
+            if column in STATIC_SKU_DESCRIPTOR_COLUMNS:
                 merged[column] = merged[column].ffill().bfill()
+            elif column in ZERO_FILL_FLOW_COLUMNS:
+                merged.loc[inserted_month & merged[column].isna(), column] = 0.0
+            elif column in OBSERVED_ONLY_STATE_COLUMNS:
+                # A missing stock snapshot is unknown, not zero and not the next observed value.
+                continue
+            else:
+                # Time-varying values may carry forward from the past, but never backward from the future.
+                merged[column] = merged[column].ffill()
+        merged = merged.drop(columns="_source_row_observed")
         completed.append(merged)
     return pd.concat(completed, ignore_index=True)
 

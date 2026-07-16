@@ -1,0 +1,8 @@
+segment,source_notebook,skus,rows,positive_skus,actual_total
+recurring,recurring_scorecard,360,2160,358,5500.0
+occasional,occasional_memory,116,696,103,677.0
+rare,rare_group_occurrence,56,336,33,162.0
+cold_start,cold_start,40,240,40,775.0
+new,new_sku_calibration,39,234,39,1174.0
+developing,developing_routing,26,156,24,635.0
+dormant,chronology_strategy,53,318,45,188.0

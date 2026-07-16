@@ -1,0 +1,7 @@
+segment,accepted,incumbent_under_50,challenger_under_50,incumbent_under_70,challenger_under_70,incumbent_under_100,challenger_under_100
+cold_start,False,1,1,10,10,21,21
+developing,False,3,3,12,11,16,16
+new,True,2,6,16,25,31,31
+occasional,False,2,2,4,4,22,22
+rare,False,0,0,4,4,11,11
+recurring,False,51,39,151,140,271,276
