@@ -1,0 +1,9 @@
+{
+  "datasets_run": 8,
+  "models_per_dataset": 4,
+  "evaluation_months": 6,
+  "model_artifacts_saved": 32,
+  "metrics_table": "results\\tables\\advanced_metrics_all_datasets.csv",
+  "forecasts_table": "results\\tables\\advanced_forecasts_all_datasets.csv",
+  "figure": "results\\figures\\advanced_model_wmape_all_datasets.png"
+}

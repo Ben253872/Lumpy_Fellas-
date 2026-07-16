@@ -1,0 +1,46 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Install Python Requirements",
+			"type": "shell",
+			"command": "c:/Users/14bcr/OneDrive/Documents/GitHub/Lumpy_Fellas-/.venv/Scripts/python.exe",
+			"args": [
+				"-m",
+				"pip",
+				"install",
+				"-r",
+				"requirements.txt"
+			],
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"label": "Start SKU Forecast App",
+			"type": "shell",
+			"command": "c:/Users/14bcr/OneDrive/Documents/GitHub/Lumpy_Fellas-/.venv/Scripts/python.exe",
+			"args": [
+				"-m",
+				"uvicorn",
+				"app.backend.server:app",
+				"--reload"
+			],
+			"isBackground": true,
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"label": "Run SKU Forecast App",
+			"dependsOn": [
+				"Install Python Requirements",
+				"Start SKU Forecast App"
+			],
+			"dependsOrder": "sequence",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": []
+		}
+	]
+}

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SKU Forecast Explorer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <div class="bg-shape bg-shape-one"></div>
+  <div class="bg-shape bg-shape-two"></div>
+
+  <main class="container">
+    <header class="hero">
+      <p class="eyebrow">Inchcape Forecast Console</p>
+      <h1>SKU Model Selector and Forecast Viewer</h1>
+      <p class="sub">Search one SKU ID to retrieve demand classification, assigned advanced model, WMAPE, and prescribed forecast for both dataset variants.</p>
+    </header>
+
+    <section class="search-panel">
+      <label for="sku-input">SKU ID</label>
+      <div class="search-row">
+        <input id="sku-input" type="text" placeholder="e.g., 0911912012000" autocomplete="off" />
+        <button id="search-btn" type="button">Search</button>
+      </div>
+      <p id="status" class="status"></p>
+    </section>
+
+    <section id="results" class="results"></section>
+  </main>
+
+  <template id="variant-card-template">
+    <article class="card">
+      <div class="card-head">
+        <h2 class="variant"></h2>
+        <span class="chip demand-type"></span>
+      </div>
+      <div class="metrics">
+        <div>
+          <p class="metric-label">Assigned model</p>
+          <p class="metric-value assigned-model"></p>
+        </div>
+        <div>
+          <p class="metric-label">WMAPE</p>
+          <p class="metric-value wmape"></p>
+        </div>
+      </div>
+      <div class="prescribed-wrap">
+        <h3>Prescribed forecast</h3>
+        <p class="prescribed"></p>
+      </div>
+      <div class="chart-wrap">
+        <h3>Actual vs test forecast + next 18 months predictions</h3>
+        <canvas class="line-chart" height="190"></canvas>
+        <p class="future-summary"></p>
+        <p class="future-note"></p>
+      </div>
+      <div class="table-wrap">
+        <h3>Future predictions (next 18 months)</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Month</th>
+              <th>Forecast</th>
+            </tr>
+          </thead>
+          <tbody class="future-history"></tbody>
+        </table>
+      </div>
+      <div class="table-wrap">
+        <h3>Forecast history (assigned model)</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Month</th>
+              <th>Actual</th>
+              <th>Forecast</th>
+            </tr>
+          </thead>
+          <tbody class="history"></tbody>
+        </table>
+      </div>
+    </article>
+  </template>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

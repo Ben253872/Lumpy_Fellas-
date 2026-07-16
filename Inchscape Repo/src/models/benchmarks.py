@@ -11,13 +11,26 @@ import pandas as pd
 ForecastModel = Callable[[pd.DataFrame, list[pd.Timestamp]], pd.DataFrame]
 
 
-def wmape(months: pd.Series, actual: pd.Series, forecast: pd.Series) -> float:
-    """Mean three-month rolling WMAPE, expressed as a percentage."""
+def wmape(months: pd.Series, actual: pd.Series, forecast: pd.Series, sku_id: pd.Series | None = None) -> float:
+    """Per-SKU WMAPE averaged across SKUs, with three-month rolling mean per SKU."""
     scores = pd.DataFrame({"month": pd.to_datetime(months), "actual": actual, "forecast": forecast})
+    if sku_id is not None:
+        scores["sku_id"] = sku_id
     scores["absolute_error"] = (scores["actual"] - scores["forecast"]).abs()
-    monthly = scores.groupby("month").agg(actual=("actual", "sum"), error=("absolute_error", "sum")).sort_index()
-    monthly["wmape"] = np.where(monthly["actual"] > 0, monthly["error"] / monthly["actual"], np.nan)
-    return float(monthly["wmape"].rolling(3, min_periods=1).mean().mean() * 100)
+    
+    if sku_id is not None:
+        # Calculate per-SKU, per-month aggregates
+        monthly = scores.groupby(["sku_id", "month"]).agg(actual=("actual", "sum"), error=("absolute_error", "sum")).sort_index()
+        # Calculate WMAPE per SKU-month
+        monthly["wmape"] = np.where(monthly["actual"] > 0, monthly["error"] / monthly["actual"], np.nan)
+        # Apply 3-month rolling mean per SKU, then average across all SKUs
+        rolling_wmape = monthly.groupby(level="sku_id")["wmape"].apply(lambda x: x.rolling(3, min_periods=1).mean())
+        return float(rolling_wmape.mean() * 100)
+    else:
+        # Fallback: original aggregated behavior for backwards compatibility
+        monthly = scores.groupby("month").agg(actual=("actual", "sum"), error=("absolute_error", "sum")).sort_index()
+        monthly["wmape"] = np.where(monthly["actual"] > 0, monthly["error"] / monthly["actual"], np.nan)
+        return float(monthly["wmape"].rolling(3, min_periods=1).mean().mean() * 100)
 
 
 def rolling_origin_validation(data: pd.DataFrame, model: ForecastModel, horizon: int = 1, initial_train_months: int = 36) -> pd.DataFrame:

@@ -33,7 +33,34 @@ The modelling code from the original notebooks is now organised rather than remo
 - `src/models/benchmarks.py`: naive, seasonal naive, 3- and 6-month moving averages, Croston, SBA, and TSB.
 - `src/models/advanced.py`: XGBoost, LightGBM, Random Forest, and the two-stage LightGBM hurdle model for lumpy demand.
 
-Run `python src/run_benchmarks.py` to reproduce baseline rolling-origin validation. It writes `benchmark_metrics.csv` and `benchmark_forecasts.csv` to `results/tables/`. The collision subset contains 28 months, so this runner uses an 18-month initial training window; the original notebook's 36-month window is still available in the function but cannot create a test fold with this data. The advanced models are optional; install `xgboost` and `lightgbm` before using them.
+Run `python src/run_benchmarks.py` to reproduce baseline rolling-origin validation. It writes `benchmark_metrics.csv` and `benchmark_forecasts.csv` to `results/tables/`. The collision subset contains 28 months, so this runner uses an 18-month initial training window; the original notebook's 36-month window is still available in the function but cannot create a test fold with this data.
+
+Run `python src/run_advanced_models.py` to execute XGBoost, LightGBM, Random Forest, and the LightGBM hurdle model across the 8 processed datasets (4 demand types x 2 variants) using a final-month holdout evaluation window. It writes:
+
+- `results/tables/advanced_metrics_all_datasets.csv`
+- `results/tables/advanced_forecasts_all_datasets.csv`
+- `results/figures/advanced_model_wmape_all_datasets.png`
+- persisted trained artifacts in `results/models/advanced/*.joblib`
+
+## Local SKU search app
+
+This repo now includes a local backend and frontend for SKU-level model lookup.
+
+What it does:
+
+- Search by `sku_id`.
+- Detect the SKU demand type in each variant (`all_sku_history`, `collision_flag_only`).
+- Pick the assigned advanced model as the lowest-WMAPE model for that variant and demand type, based on `results/tables/advanced_metrics_all_datasets.csv`.
+- Show the model WMAPE and prescribed forecast history for that SKU from `results/tables/advanced_forecasts_all_datasets.csv`.
+
+Run locally:
+
+```powershell
+pip install -r requirements.txt
+uvicorn app.backend.server:app --reload
+```
+
+Then open `http://127.0.0.1:8000`.
 
 ## Demand-type definitions
 

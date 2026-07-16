@@ -38,11 +38,45 @@ def _encoded_features(data: pd.DataFrame) -> tuple[pd.DataFrame, list[str]]:
     return data, features
 
 
+def _fix_test_features_leakage(engineered: pd.DataFrame, train_end_month: pd.Timestamp) -> pd.DataFrame:
+    """
+    Fix data leakage by recalculating test rows' rolling features using only training data.
+    
+    When features are engineered on combined train+test data, rolling features for test rows
+    can inadvertently use values from other test rows. This function ensures that test rows'
+    rolling features only use training-period values, preventing leakage in backtesting.
+    """
+    engineered = engineered.copy()
+    train_data = engineered[engineered["month"] < train_end_month]
+    test_mask = engineered["month"] >= train_end_month
+    
+    # For each window size, recalculate test rows' rolling features from training data only
+    for window in [3, 6, 12, 24]:
+        col = f"rolling_mean_{window}"
+        if col in engineered.columns:
+            for idx in engineered[test_mask].index:
+                sku = engineered.loc[idx, "sku_id"]
+                sku_train = train_data[train_data["sku_id"] == sku]
+                if len(sku_train) >= window:
+                    # Use the last `window` values from training data
+                    engineered.loc[idx, col] = sku_train["demand"].tail(window).mean()
+                else:
+                    # If not enough training data, use what we have
+                    engineered.loc[idx, col] = sku_train["demand"].mean() if len(sku_train) > 0 else np.nan
+    
+    return engineered
+
+
 def tree_forecast(train: pd.DataFrame, predict: pd.DataFrame, model_type: str, external: pd.DataFrame | None = None) -> pd.DataFrame:
     """Forecast with the original XGBoost, LightGBM, or Random Forest experiment."""
     combined, features = _encoded_features(engineer_time_features(pd.concat([train, predict], ignore_index=True), external))
     train_months = pd.to_datetime(train["month"])
     predict_months = pd.to_datetime(predict["month"])
+    train_end_month = train_months.max()
+    
+    # Fix data leakage: recalculate test rows' rolling features using only training data
+    combined = _fix_test_features_leakage(combined, train_end_month)
+    
     train_rows = combined.loc[combined["month"].isin(train_months)]
     predict_rows = combined.loc[combined["month"].isin(predict_months)]
     if model_type == "xgboost":
@@ -64,6 +98,11 @@ def lumpy_hurdle_forecast(train: pd.DataFrame, predict: pd.DataFrame, threshold:
     """Two-stage LightGBM occurrence/size model from the original lumpy-demand section."""
     import lightgbm as lgb
     combined, features = _encoded_features(engineer_time_features(pd.concat([train, predict], ignore_index=True), external))
+    train_end_month = pd.to_datetime(train["month"]).max()
+    
+    # Fix data leakage: recalculate test rows' rolling features using only training data
+    combined = _fix_test_features_leakage(combined, train_end_month)
+    
     train_rows = combined.loc[combined["month"].isin(pd.to_datetime(train["month"]))]
     predict_rows = combined.loc[combined["month"].isin(pd.to_datetime(predict["month"]))]
     x_train, x_test, target = train_rows[features].fillna(0), predict_rows[features].fillna(0), train_rows["demand"]
