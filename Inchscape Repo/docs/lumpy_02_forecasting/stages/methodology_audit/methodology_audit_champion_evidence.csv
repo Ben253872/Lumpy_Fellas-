@@ -1,0 +1,8 @@
+segment,source_notebook,evidence_path,evidence_exists,selected_before_final,cutoff_safe_population,official_contract_compatible,external_features_used,passed
+recurring,recurring_scorecard,docs/lumpy_02_forecasting/stages/recurring_scorecard/recurring_scorecard_configuration_registry.csv,True,True,True,True,False,True
+occasional,occasional_memory,docs/lumpy_02_forecasting/stages/occasional_memory/occasional_memory_locked_memory_rules.json,True,True,True,True,False,True
+rare,rare_group_occurrence,docs/lumpy_02_forecasting/stages/rare_group_occurrence/rare_group_occurrence_locked_strategies.json,True,True,True,True,False,True
+cold_start,cold_start,docs/lumpy_02_forecasting/stages/cold_start/cold_start_locked_strategy.csv,True,True,True,True,False,True
+new,selective_calibration,docs/lumpy_02_forecasting/stages/selective_calibration/selective_calibration_locked_strategy.csv,True,True,True,True,False,True
+developing,developing_routing,docs/lumpy_02_forecasting/stages/developing_routing/developing_routing_locked_strategy.csv,True,True,True,True,False,True
+dormant,chronology_strategy,docs/lumpy_02_forecasting/stages/chronology_strategy/chronology_strategy_strategy_assignment_all_690.csv,True,True,True,True,False,True

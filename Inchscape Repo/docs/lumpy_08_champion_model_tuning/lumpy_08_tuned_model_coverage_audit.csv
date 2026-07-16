@@ -1,0 +1,21 @@
+model_key,model,sku_rows,matching_actual_skus,actual_total_model,actual_total_06,same_coverage_as_06,median_rolling_wmape,under_100_skus
+hurdle_rf_thr35,Hurdle Random Forest threshold 0.35,690,690,85628.0,85628.0,True,159.63141110829542,16
+hurdle_xgb_thr30,Hurdle XGBoost threshold 0.30,690,690,85628.0,85628.0,True,127.12417928375181,64
+xgb_tweedie_depth2_reg10,XGBoost Tweedie depth2 reg10,690,690,85628.0,85628.0,True,123.58277349845054,66
+extra_trees_log1p_leaf10_sqrt,Extra Trees log1p leaf10 sqrt,689,48,76517.0,85628.0,False,122.63723964604452,97
+rf_log1p_leaf8_sqrt,Random Forest log1p leaf8 sqrt,690,7,67645.0,85628.0,False,117.9476744907778,80
+extra_trees_log1p_leaf5_half,Extra Trees log1p leaf5 half features,690,4,29464.0,85628.0,False,117.0567172713298,99
+hist_poisson_lr02_nodes15_reg30,Hist Poisson lr02 nodes15 reg30,690,3,29328.0,85628.0,False,129.46967282688638,62
+hurdle_xgb_thr10,Hurdle XGBoost threshold 0.10,690,3,20535.0,85628.0,False,148.7530322157512,55
+hurdle_xgb_thr20,Hurdle XGBoost threshold 0.20,690,3,20535.0,85628.0,False,146.58479901254805,57
+extra_trees_log1p_leaf2_sqrt,Extra Trees log1p leaf2 sqrt,689,0,58860.0,85628.0,False,122.00199704926345,70
+extra_trees_log1p_leaf5_sqrt,Extra Trees log1p leaf5 sqrt,689,0,58860.0,85628.0,False,122.14609306754146,83
+rf_log1p_leaf4_sqrt,Random Forest log1p leaf4 sqrt,689,0,47064.0,85628.0,False,119.19429590463572,74
+hist_poisson_lr05_nodes31_reg05,Hist Poisson lr05 nodes31 reg05,689,0,40964.0,85628.0,False,132.0507958559956,68
+hist_poisson_lr03_nodes15_reg20,Hist Poisson lr03 nodes15 reg20,689,0,38184.0,85628.0,False,125.35703960488846,62
+hurdle_rf_thr25,Hurdle Random Forest threshold 0.25,672,0,20152.0,85628.0,False,168.56637126871811,26
+hurdle_rf_thr15,Hurdle Random Forest threshold 0.15,641,0,11424.0,85628.0,False,160.9645601348154,55
+rf_log1p_leaf2_sqrt,Random Forest log1p leaf2 sqrt,641,0,11424.0,85628.0,False,117.30427612968363,129
+xgb_tweedie_depth2_reg20_cap15,XGBoost Tweedie depth2 reg20 cap15,641,0,11424.0,85628.0,False,137.48369899919174,84
+xgb_tweedie_depth3_reg5,XGBoost Tweedie depth3 reg5,641,0,11424.0,85628.0,False,137.48369899919174,84
+xgb_tweedie_depth4_reg5,XGBoost Tweedie depth4 reg5,641,0,11424.0,85628.0,False,137.48369899919174,84

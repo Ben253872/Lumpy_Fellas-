@@ -1,0 +1,2 @@
+contract_checks,contract_passed,champion_sources,champion_sources_passed,population_guardrails,population_guardrails_passed,overall_passed
+7,7,7,7,5,5,True

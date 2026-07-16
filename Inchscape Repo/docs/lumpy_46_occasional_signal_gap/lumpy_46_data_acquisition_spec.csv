@@ -1,0 +1,7 @@
+priority,signal,minimum_fields,history_needed,validation
+1,supersession_chain,"old_sku, new_sku, effective_date",24+ months,no future effective dates at forecast cutoff
+2,vehicle_fitment_and_parc,"sku, vehicle model, model year, fitment start/end, vehicles in operation",monthly or annual snapshots,snapshot available before forecast cutoff
+3,quote_order_pipeline,"sku, quote/open-order date, quantity, status",12+ months,exclude status changes recorded after cutoff
+4,backorder_and_lost_sales,"sku, month, requested qty, fulfilled qty, backorder qty",18+ months,reconcile requested = fulfilled + unfulfilled
+5,supplier_lead_time,"sku/supplier, order date, receipt date, ordered/received qty",24+ months,calculate realized lead time from cutoff-safe events
+6,lifecycle_dates,"sku, launch date, discontinue date, lifecycle status",current master plus change history,retain historical status snapshots

@@ -1,0 +1,691 @@
+sku_id,candidate_source,candidate_model,mean_rolling_3m_wmape_percent,recommended_model,recommended_mean_rolling_3m_wmape_percent,delta_champion_minus_06
+01550M0612A,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Recent Mean 6m,220.0,-120.0
+021620616A000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,TSB,109.05279482586448,-9.052794825864481
+083100012A000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,TSB,112.79530792667116,-12.795307926671157
+083161010A000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Recent Mean 6m,100.0,0.0
+083313124A000,06_intermittent_tournament,SBA Croston,105.50993883040388,SBA Croston,105.50993883040388,0.0
+0911605023000,06_intermittent_tournament,SBA Croston,106.79012345679013,SBA Croston,106.79012345679013,0.0
+0911912006XC0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Hurdle Random Forest,117.07405948219984,-17.074059482199843
+0911912007000,08_tuned_capped_full_coverage,Hurdle XGBoost threshold 0.30,104.57054771998202,TSB,125.12686005406016,-20.556312334078143
+09136M05078000,07_clean_regression,Direct Extra Trees log1p,120.34717215874268,Aggregate Allocation,124.12701222845288,-3.779840069710204
+0914016023000,06_intermittent_tournament,SBA Croston,100.4040948275862,SBA Croston,100.4040948275862,0.0
+0914806007000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.49610696271908,TSB,110.17874374385477,-9.682636781135685
+09148M06022000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,TSB,115.4961198019276,-15.496119801927605
+0915912024000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Recent Mean 6m,100.0,0.0
+0915912051000,06_intermittent_tournament,Aggregate Allocation,100.0,Aggregate Allocation,100.0,0.0
+0915912079000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Aggregate Allocation,150.6044925625158,-50.60449256251579
+0915912L02000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Hurdle Random Forest,111.71387901517964,-11.713879015179643
+0915918022000,06_intermittent_tournament,SBA Croston,122.2686991950388,SBA Croston,122.2686991950388,0.0
+0915918024000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Recent Mean 6m,113.40579710144928,-13.40579710144928
+0915924009000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,SBA Croston Tuned,113.1510253736531,-13.151025373653098
+0916435003000,08_tuned_capped_full_coverage,Hurdle XGBoost threshold 0.30,100.0,SBA Croston,107.45206859977256,-7.452068599772559
+0924130010000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Recent Mean 6m,100.96371882086169,-0.9637188208616863
+0928017002000,07_clean_regression,Direct Extra Trees log1p,98.50205986885511,SBA Croston,105.9313875614176,-7.429327692562481
+0928022020000,08_tuned_capped_full_coverage,Hurdle XGBoost threshold 0.30,101.69366974701582,SBA Croston,110.4695997995604,-8.775930052544581
+0928056004000,07_clean_regression,Direct Extra Trees log1p,134.57087942741356,SBA Croston,161.36003447425952,-26.789155046845963
+0928314005000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,TSB,116.53162313228395,-16.531623132283954
+0928326016000,06_intermittent_tournament,SBA Croston,110.77725695102968,SBA Croston,110.77725695102968,0.0
+0928335036000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.29763322336838,Recent Mean 6m,100.67632850241546,-0.3786952790470792
+0928340021000,06_intermittent_tournament,SBA Croston,97.62065866977248,SBA Croston,97.62065866977248,0.0
+0928340027000,06_intermittent_tournament,SBA Croston,94.81371497465952,SBA Croston,94.81371497465952,0.0
+0928345012000,06_intermittent_tournament,SBA Croston,93.9853749482804,SBA Croston,93.9853749482804,0.0
+0928906003000,06_intermittent_tournament,SBA Croston,91.8336497467921,SBA Croston,91.8336497467921,0.0
+0928948004000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,104.39529805348528,TSB,108.52680569645196,-4.131507642966682
+0930508011000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Recent Mean 6m,100.0,0.0
+0931912047000,08_tuned_capped_full_coverage,Hurdle XGBoost threshold 0.30,103.25910623412504,Hurdle Random Forest,110.47207562493324,-7.2129693908081975
+0932010024000,07_clean_regression,Direct Extra Trees log1p,116.97584162359696,Recent Mean 6m,129.41683919944788,-12.440997575850915
+0938019004000,06_intermittent_tournament,Seasonal SBA Croston,122.04080328296492,Seasonal SBA Croston,122.04080328296492,0.0
+0938168001000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Recent Mean 6m,104.71544715447156,-4.715447154471562
+0940307333000,06_intermittent_tournament,SBA Croston,127.04781395639108,SBA Croston,127.04781395639108,0.0
+09403M07311000,06_intermittent_tournament,SBA Croston,93.6345312186126,SBA Croston,93.6345312186126,0.0
+09409063095ES,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Recent Mean 6m,113.28333333333332,-13.283333333333317
+09409063145PK,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,106.7394859600588,TSB,162.27264141978446,-55.53315545972566
+0940906322000,06_intermittent_tournament,Aggregate Allocation,100.0,Aggregate Allocation,100.0,0.0
+09409073255PK,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Recent Mean 6m,107.12962962962963,-7.129629629629633
+0940907332000,06_intermittent_tournament,SBA Croston,350.62074127654734,SBA Croston,350.62074127654734,0.0
+0940908322000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Aggregate Allocation,179.14737868105124,-79.14737868105124
+0940908327000,06_intermittent_tournament,SBA Croston,95.56909305595627,SBA Croston,95.56909305595627,0.0
+0940908352000,08_tuned_capped_full_coverage,XGBoost Tweedie depth2 reg10,96.5738952690188,Aggregate Allocation,100.0,-3.4261047309811943
+0940909309000,08_tuned_capped_full_coverage,Hurdle XGBoost threshold 0.30,100.38892914549602,TSB,135.80999980377433,-35.42107065827831
+0940910313000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Recent Mean 6m,117.33333333333331,-17.333333333333314
+0940910318000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,TSB,142.35940579904215,-42.35940579904215
+0940915304000,08_tuned_capped_full_coverage,Hurdle XGBoost threshold 0.30,105.59322191994116,SBA Croston,111.94734806200675,-6.354126142065596
+09409M06L05000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.13020073708265,Recent Mean 6m,123.21428571428572,-23.084084977203077
+09409M07308P4Z,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,TSB,107.51278181664536,-7.512781816645358
+09409M07308R8J,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,SBA Croston,122.60044642857144,-22.600446428571445
+09409M07L025PK,07_clean_regression,Direct Extra Trees log1p,144.27522327115517,SBA Croston,327.2157594212734,-182.94053615011822
+09409M08308R8J,08_tuned_capped_full_coverage,XGBoost Tweedie depth2 reg10,97.15901421221317,SBA Croston Tuned,121.9917162748228,-24.83270206260964
+09409M15L01000,06_intermittent_tournament,SBA Croston,114.97290275590898,SBA Croston,114.97290275590898,0.0
+0944829004000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,SBA Croston,100.0,0.0
+0947112236000,06_intermittent_tournament,SBA Croston,104.69393392843922,SBA Croston,104.69393392843922,0.0
+09471M12182000,06_intermittent_tournament,TSB,121.80537930492947,TSB,121.80537930492947,0.0
+1161054G30000,08_tuned_capped_full_coverage,Hurdle XGBoost threshold 0.30,104.52028263241648,SBA Croston,113.87252059060457,-9.352237958188084
+1161060R00000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,SBA Croston,100.4047876888002,-0.404787688800198
+1161061M01000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,TSB,114.064341575738,-14.064341575737998
+1161073K00000,06_intermittent_tournament,SBA Croston,132.93465584921313,SBA Croston,132.93465584921313,0.0
+11610M65L00000,06_intermittent_tournament,SBA Croston,104.44284675084516,SBA Croston,104.44284675084516,0.0
+11610M67P10000,06_intermittent_tournament,SBA Croston,87.9144297652408,SBA Croston,87.9144297652408,0.0
+11610M76M00000,06_intermittent_tournament,SBA Croston,108.8134192604322,SBA Croston,108.8134192604322,0.0
+11610M79F30000,06_intermittent_tournament,SBA Croston,146.53175299394098,SBA Croston,146.53175299394098,0.0
+11610M79G50000,06_intermittent_tournament,SBA Croston,120.01803273629226,SBA Croston,120.01803273629226,0.0
+11620M65L10000,06_intermittent_tournament,SBA Croston,137.73621196695427,SBA Croston,137.73621196695427,0.0
+11620M67P00000,07_clean_regression,Direct Extra Trees log1p,130.24318884904883,SBA Croston,133.60361064635396,-3.360421797305122
+11620M68K00000,06_intermittent_tournament,SBA Croston,96.90507607248897,SBA Croston,96.90507607248897,0.0
+11620M76M00000,06_intermittent_tournament,SBA Croston,106.97627243829618,SBA Croston,106.97627243829618,0.0
+11620M79F40000,06_intermittent_tournament,SBA Croston,107.1644529495021,SBA Croston,107.1644529495021,0.0
+11710M65L00000,06_intermittent_tournament,SBA Croston,95.23220709969296,SBA Croston,95.23220709969296,0.0
+11710M68K00000,06_intermittent_tournament,SBA Croston,100.34556164031667,SBA Croston,100.34556164031667,0.0
+11710M68K10000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,115.19454860849238,TSB,121.0153581085094,-5.82080950001702
+11710M76M00000,06_intermittent_tournament,SBA Croston,112.88557841785412,SBA Croston,112.88557841785412,0.0
+11710M79F70000,06_intermittent_tournament,SBA Croston,113.6148828228906,SBA Croston,113.6148828228906,0.0
+11710M79F80000,06_intermittent_tournament,SBA Croston,112.56931687780757,SBA Croston,112.56931687780757,0.0
+1172080JA0000,08_tuned_capped_full_coverage,Hurdle XGBoost threshold 0.30,115.96970491505952,TSB,116.61365976220044,-0.6439548471409182
+1194152R00000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,SBA Croston,100.0,0.0
+13870M71L00000,06_intermittent_tournament,Hurdle Random Forest,100.0,Hurdle Random Forest,100.0,0.0
+1428180JA0000,06_intermittent_tournament,SBA Croston,102.76778015328377,SBA Croston,102.76778015328377,0.0
+1435772J00000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Hurdle Random Forest,114.50233652124037,-14.502336521240366
+1591063A0V000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Recent Mean 6m,101.85185185185183,-1.8518518518518334
+15910M79GB1000,07_clean_regression,Direct Extra Trees log1p,122.42898982127647,SBA Croston,128.28645863246155,-5.857468811185072
+15910M79GC0000,06_intermittent_tournament,SBA Croston,144.63447189633342,SBA Croston,144.63447189633342,0.0
+1711279P01000,06_intermittent_tournament,SBA Croston,119.42473327498072,SBA Croston,119.42473327498072,0.0
+1770054P30000,06_intermittent_tournament,SBA Croston Tuned,94.47201932293493,SBA Croston Tuned,94.47201932293493,0.0
+1770079P21000,06_intermittent_tournament,SBA Croston,99.62675009107028,SBA Croston,99.62675009107028,0.0
+1770080J00000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,SBA Croston,100.0,0.0
+1770081P00000,06_intermittent_tournament,SBA Croston,114.17845988967692,SBA Croston,114.17845988967692,0.0
+17700M50U00000,06_intermittent_tournament,Aggregate Allocation,101.15317057226464,Aggregate Allocation,101.15317057226464,0.0
+17700M60M00000,06_intermittent_tournament,SBA Croston,90.61974753113562,SBA Croston,90.61974753113562,0.0
+17700M67L00000,06_intermittent_tournament,SBA Croston,97.69714316727428,SBA Croston,97.69714316727428,0.0
+17700M67P00000,06_intermittent_tournament,SBA Croston,94.4135533172886,SBA Croston,94.4135533172886,0.0
+17700M79F02000,06_intermittent_tournament,SBA Croston,114.370036208823,SBA Croston,114.370036208823,0.0
+1776071L00000,06_intermittent_tournament,SBA Croston,118.78681156732964,SBA Croston,118.78681156732964,0.0
+17760M67P00000,06_intermittent_tournament,Seasonal SBA Croston,83.06157266730968,Seasonal SBA Croston,83.06157266730968,0.0
+1781254G00000,06_intermittent_tournament,SBA Croston,94.93936110626824,SBA Croston,94.93936110626824,0.0
+17861M68P00000,07_clean_regression,Direct Extra Trees log1p,94.82611568889232,SBA Croston,94.97993571311832,-0.1538200242260075
+1787880G00000,08_tuned_capped_full_coverage,Hurdle XGBoost threshold 0.30,105.45321949535912,Recent Mean 6m,131.59722222222226,-26.144002726863135
+17878M74L00000,06_intermittent_tournament,SBA Croston,86.0367604528325,SBA Croston,86.0367604528325,0.0
+17920M76M00000,06_intermittent_tournament,SBA Croston,91.69569043118273,SBA Croston,91.69569043118273,0.0
+1793160A10000,08_tuned_capped_full_coverage,Hurdle XGBoost threshold 0.30,99.6278698988901,TSB,110.83884946913932,-11.210979570249222
+1793161M10000,06_intermittent_tournament,SBA Croston,121.05036018100564,SBA Croston,121.05036018100564,0.0
+1793163J01000,06_intermittent_tournament,SBA Croston,108.03488864150684,SBA Croston,108.03488864150684,0.0
+1793165D00000,06_intermittent_tournament,SBA Croston,138.53403084837936,SBA Croston,138.53403084837936,0.0
+1793168P00000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,TSB,108.8159239224767,-8.8159239224767
+17931M71P00000,06_intermittent_tournament,SBA Croston,89.25852198203832,SBA Croston,89.25852198203832,0.0
+1793276G00000,06_intermittent_tournament,SBA Croston,105.91451034055856,SBA Croston,105.91451034055856,0.0
+2371081A40000,06_intermittent_tournament,Hurdle Random Forest,100.0,Hurdle Random Forest,100.0,0.0
+27431M79F00000,06_intermittent_tournament,SBA Croston,95.07766689898178,SBA Croston,95.07766689898178,0.0
+2811380J015PK,07_clean_regression,Direct Extra Trees log1p,98.1123634327877,TSB,98.76676912604704,-0.654405693259335
+28113M62S015PK,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,SBA Croston,102.1954826581066,-2.1954826581065987
+2818060B00000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Recent Mean 6m,100.68627450980392,-0.6862745098039227
+2818084A20000,06_intermittent_tournament,SBA Croston,121.96390917834589,SBA Croston,121.96390917834589,0.0
+2824178K00000,06_intermittent_tournament,SBA Croston,172.02635747335077,SBA Croston,172.02635747335077,0.0
+28300M55R42000,06_intermittent_tournament,SBA Croston,120.3104332070256,SBA Croston,120.3104332070256,0.0
+2961081A00000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Hurdle Random Forest,100.54560824666127,-0.5456082466612742
+33690M60M00000,06_intermittent_tournament,SBA Croston,90.1644029589774,SBA Croston,90.1644029589774,0.0
+3495561M00000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,92.6735601335098,SBA Croston,100.0,-7.326439866490205
+3512052R21000,06_intermittent_tournament,SBA Croston,104.42304400200068,SBA Croston,104.42304400200068,0.0
+3512052S10000,07_clean_regression,Direct Random Forest,70.53696265435858,Recent Mean 6m,71.13167898278193,-0.5947163284233596
+3512062R60000,06_intermittent_tournament,SBA Croston,116.90064875127804,SBA Croston,116.90064875127804,0.0
+3512065J12000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Recent Mean 6m,114.3162393162393,-14.316239316239304
+3512080G21000,06_intermittent_tournament,SBA Croston,102.24121779013876,SBA Croston,102.24121779013876,0.0
+3512150A30000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,104.30475059790882,Recent Mean 6m,104.47971781305114,-0.17496721514231695
+35121M66L10000,06_intermittent_tournament,SBA Croston,99.24022441039536,SBA Croston,99.24022441039536,0.0
+35121M73T10000,08_tuned_capped_full_coverage,XGBoost Tweedie depth2 reg10,96.73834703657428,Aggregate Allocation,100.0,-3.2616529634257176
+3515365J00000,06_intermittent_tournament,SBA Croston,126.36718730935198,SBA Croston,126.36718730935198,0.0
+3515379P00000,06_intermittent_tournament,SBA Croston,123.54048558195144,SBA Croston,123.54048558195144,0.0
+35153M59K20000,06_intermittent_tournament,SBA Croston,112.02641343849244,SBA Croston,112.02641343849244,0.0
+35153M75L00000,06_intermittent_tournament,SBA Croston,106.6537907674153,SBA Croston,106.6537907674153,0.0
+3526779P00000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,101.96535919392043,Recent Mean 6m,104.16666666666669,-2.201307472746251
+3532052R20000,06_intermittent_tournament,SBA Croston,112.17223923936342,SBA Croston,112.17223923936342,0.0
+3532065D41000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Recent Mean 6m,107.85714285714286,-7.857142857142861
+3532077R10000,06_intermittent_tournament,SBA Croston,99.9772518214873,SBA Croston,99.9772518214873,0.0
+3532080G21000,06_intermittent_tournament,SBA Croston,114.39909064146056,SBA Croston,114.39909064146056,0.0
+35321M60M10000,07_clean_regression,Direct Extra Trees log1p,85.04433850999568,SBA Croston,86.36347573897731,-1.3191372289816314
+35321M66L10000,06_intermittent_tournament,SBA Croston,119.31908019608493,SBA Croston,119.31908019608493,0.0
+3550065P02000,06_intermittent_tournament,SBA Croston,108.2988079310563,SBA Croston,108.2988079310563,0.0
+35501M75T00000,06_intermittent_tournament,Aggregate Allocation,100.0,Aggregate Allocation,100.0,0.0
+35502M75T00000,06_intermittent_tournament,Aggregate Allocation,100.0,Aggregate Allocation,100.0,0.0
+3552686R20000,07_clean_regression,Hurdle XGBoost Tweedie,79.31684547924264,TSB,83.39930989957396,-4.08246442033132
+35601M74TA0000,07_clean_regression,Direct XGBoost Tweedie,80.1534857137934,Boosted SBA Hybrid,93.27427057457184,-13.120784860778443
+35602M73T00000,06_intermittent_tournament,Aggregate Allocation,100.0,Aggregate Allocation,100.0,0.0
+35603M79G30000,06_intermittent_tournament,SBA Croston,121.1685860788054,SBA Croston,121.1685860788054,0.0
+3560461J10000,06_intermittent_tournament,SBA Croston,115.15015635484266,SBA Croston,115.15015635484266,0.0
+35604M84400000,06_intermittent_tournament,SBA Croston,139.67703027081362,SBA Croston,139.67703027081362,0.0
+35612M60B50000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,TSB,103.1704694611199,-3.170469461119893
+3565050J10000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Hurdle Random Forest,102.6179508370776,-2.6179508370776006
+35650M53T00000,06_intermittent_tournament,TSB,93.28947802197804,TSB,93.28947802197804,0.0
+35650M60M00000,06_intermittent_tournament,SBA Croston,117.79756972803594,SBA Croston,117.79756972803594,0.0
+35651M79G40000,06_intermittent_tournament,SBA Croston Tuned,129.26931070880323,SBA Croston Tuned,129.26931070880323,0.0
+35651M79M00000,08_tuned_capped_full_coverage,XGBoost Tweedie depth2 reg10,98.97870455688113,SBA Croston,99.61187392376482,-0.633169366883692
+35670M76T00000,06_intermittent_tournament,TSB,93.08478299350573,TSB,93.08478299350573,0.0
+35671M79G30000,06_intermittent_tournament,SBA Croston,112.4411969066358,SBA Croston,112.4411969066358,0.0
+35671M79G40000,06_intermittent_tournament,SBA Croston,107.98770982214585,SBA Croston,107.98770982214585,0.0
+3570186R00000,07_clean_regression,Direct Random Forest log1p,73.41328136052428,TSB,86.06824636484093,-12.65496500431665
+35701M76T00000,06_intermittent_tournament,Aggregate Allocation,99.4809351728494,Aggregate Allocation,99.4809351728494,0.0
+3570273R10000,08_tuned_capped_full_coverage,Hurdle XGBoost threshold 0.30,105.07679110713616,TSB,111.9766143997516,-6.899823292615437
+35702M76T00000,06_intermittent_tournament,TSB,97.32129283468458,TSB,97.32129283468458,0.0
+35750M53T01000,06_intermittent_tournament,TSB,98.77541644863074,TSB,98.77541644863074,0.0
+35750M68P00000,06_intermittent_tournament,Recent Mean 6m,118.24212271973468,Recent Mean 6m,118.24212271973468,0.0
+35750M68P11000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Recent Mean 6m,102.33333333333331,-2.3333333333333144
+35750M68P20000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Recent Mean 6m,109.52380952380952,-9.523809523809518
+35750M73T00000,07_clean_regression,Hurdle XGBoost Tweedie,89.21789254826243,TSB,94.49843014128729,-5.28053759302486
+3591075F31000,06_intermittent_tournament,SBA Croston,105.53175497148594,SBA Croston,105.53175497148594,0.0
+3591075F61000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,TSB,104.360446638157,-4.360446638157001
+35910M74L01000,06_intermittent_tournament,SBA Croston,81.50850854105656,SBA Croston,81.50850854105656,0.0
+3611050A30000,07_clean_regression,Direct Extra Trees log1p,146.3667450091056,Recent Mean 6m,149.65728715728713,-3.2905421481815154
+3613050A30000,07_clean_regression,Direct Extra Trees log1p,124.7393045082228,TSB,158.21827408270437,-33.47896957448157
+36230M70CA1000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,102.80814129495845,Recent Mean 6m,107.12851405622492,-4.320372761266469
+36250M74T55000,07_clean_regression,Direct Hist Gradient Squared,80.19030632722693,Aggregate Allocation,100.0,-19.809693672773065
+3627479P01000,06_intermittent_tournament,SBA Croston Tuned,88.34958026367312,SBA Croston Tuned,88.34958026367312,0.0
+3641054G01000,06_intermittent_tournament,SBA Croston,115.50650384556978,SBA Croston,115.50650384556978,0.0
+3641063J02000,06_intermittent_tournament,SBA Croston,104.51304144980148,SBA Croston,104.51304144980148,0.0
+3641075F01000,06_intermittent_tournament,SBA Croston,116.10344126591592,SBA Croston,116.10344126591592,0.0
+36410M60B30000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Hurdle Random Forest,100.0,0.0
+36410M67K10000,07_clean_regression,Direct Extra Trees log1p,86.90496189331866,SBA Croston,87.09162214232212,-0.18666024900346656
+3641275F00000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Hurdle Random Forest,100.0,0.0
+36430M76M00000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,TSB,101.899075376941,-1.8990753769409991
+3658054P00000,06_intermittent_tournament,SBA Croston,109.06573578552104,SBA Croston,109.06573578552104,0.0
+3658354P01000,07_clean_regression,Direct XGBoost Tweedie,76.49827424432179,TSB,81.11355667158898,-4.615282427267189
+37019M79MK0000,06_intermittent_tournament,SBA Croston,110.75839917056172,SBA Croston,110.75839917056172,0.0
+37145M55B21000,06_intermittent_tournament,SBA Croston,98.44337633510104,SBA Croston,98.44337633510104,0.0
+37145M56R20000,06_intermittent_tournament,SBA Croston,120.73547704514708,SBA Croston,120.73547704514708,0.0
+37145M66L00000,06_intermittent_tournament,SBA Croston,104.06243046686544,SBA Croston,104.06243046686544,0.0
+37736M58R00000,06_intermittent_tournament,SBA Croston,101.4964795022116,SBA Croston,101.4964795022116,0.0
+37736M79M00000,08_tuned_capped_full_coverage,Hurdle XGBoost threshold 0.30,103.74578414076662,SBA Croston,121.2685458988764,-17.52276175810978
+3773773R00Z2S,06_intermittent_tournament,SBA Croston,109.43444908748826,SBA Croston,109.43444908748826,0.0
+38315M68K00000,06_intermittent_tournament,Recent Mean 6m,113.0892255892256,Recent Mean 6m,113.0892255892256,0.0
+38330M68K01000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,97.1858926386012,Recent Mean 6m,112.42937853107344,-15.243485892472236
+3834062R30000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,TSB,106.78474536697034,-6.784745366970341
+38340M51K42000,07_clean_regression,Hurdle Random Forest Regression,87.29632052191957,TSB,88.44392676998376,-1.1476062480641929
+3834651K42000,06_intermittent_tournament,SBA Croston,114.88135533904392,SBA Croston,114.88135533904392,0.0
+3845061J12000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,TSB,108.49153283194062,-8.491532831940617
+3845062R00000,06_intermittent_tournament,SBA Croston,114.0488013399045,SBA Croston,114.0488013399045,0.0
+3845065J10000,07_clean_regression,Direct XGBoost Tweedie,113.4732631099263,SBA Croston,113.84777095916652,-0.3745078492402314
+3845071L10000,07_clean_regression,Direct Extra Trees log1p,82.71856835365502,SBA Croston Tuned,86.45002157679993,-3.7314532231449107
+38450M79M00000,06_intermittent_tournament,SBA Croston,101.48344860872491,SBA Croston,101.48344860872491,0.0
+38450M80T10000,07_clean_regression,Direct Hist Gradient Squared,79.42451614403255,Aggregate Allocation,100.0,-20.575483855967448
+38452M56R30000,06_intermittent_tournament,SBA Croston,103.45830996889136,SBA Croston,103.45830996889136,0.0
+38452M65L00000,07_clean_regression,Direct Extra Trees log1p,84.0774164033912,SBA Croston,88.10125077922854,-4.023834375837339
+38452M68K00000,06_intermittent_tournament,Recent Mean 6m,122.26017943409248,Recent Mean 6m,122.26017943409248,0.0
+38480M68P01000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,97.05289300892812,TSB,123.72608589842706,-26.673192889498935
+38500M55T01000,06_intermittent_tournament,Boosted SBA Hybrid,93.2088076955146,Boosted SBA Hybrid,93.2088076955146,0.0
+3882151K02000,06_intermittent_tournament,SBA Croston,113.32714276880613,SBA Croston,113.32714276880613,0.0
+3882165J00000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,108.14623130910368,Recent Mean 6m,110.52009456264776,-2.373863253544073
+38821M67P00000,06_intermittent_tournament,SBA Croston,99.02839862901313,SBA Croston,99.02839862901313,0.0
+3910268L01000,08_tuned_capped_full_coverage,Hurdle XGBoost threshold 0.30,113.1374521954888,SBA Croston,115.21027465787736,-2.072822462388558
+39102M80T00000,06_intermittent_tournament,Aggregate Allocation,100.0,Aggregate Allocation,100.0,0.0
+3925061J00000,06_intermittent_tournament,SBA Croston,108.06887690317448,SBA Croston,108.06887690317448,0.0
+39321M56R00000,06_intermittent_tournament,SBA Croston,116.81583747001456,SBA Croston,116.81583747001456,0.0
+39321M67P00000,06_intermittent_tournament,SBA Croston,102.7711016967134,SBA Croston,102.7711016967134,0.0
+39322M56R00000,06_intermittent_tournament,SBA Croston,133.73509183031575,SBA Croston,133.73509183031575,0.0
+39322M67P00000,06_intermittent_tournament,SBA Croston,102.0406887063891,SBA Croston,102.0406887063891,0.0
+39322M67P10000,06_intermittent_tournament,SBA Croston,108.82787682515394,SBA Croston,108.82787682515394,0.0
+3F11579S10ZWG,08_tuned_capped_full_coverage,Hurdle XGBoost threshold 0.30,99.31586188478688,Seasonal SBA Croston,107.145287028038,-7.829425143251115
+3F11779S00000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Recent Mean 6m,102.1505376344086,-2.150537634408593
+4161552R00000,06_intermittent_tournament,Aggregate Allocation,100.0,Aggregate Allocation,100.0,0.0
+4171080J00000,06_intermittent_tournament,SBA Croston,117.49938326957928,SBA Croston,117.49938326957928,0.0
+41710M68K00000,06_intermittent_tournament,SBA Croston,133.17299240481717,SBA Croston,133.17299240481717,0.0
+41710M76M00000,06_intermittent_tournament,SBA Croston,120.74100354165876,SBA Croston,120.74100354165876,0.0
+41710M82000000,06_intermittent_tournament,SBA Croston,113.99118472001396,SBA Croston,113.99118472001396,0.0
+4311052R71000,06_intermittent_tournament,Recent Mean 6m,106.89655172413794,Recent Mean 6m,106.89655172413794,0.0
+4311078K00000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Recent Mean 6m,103.84615384615384,-3.8461538461538396
+43110M75J80000-OP,06_intermittent_tournament,SBA Croston,134.39794367386204,SBA Croston,134.39794367386204,0.0
+432006682227S,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Recent Mean 6m,100.0,0.0
+4321052R5027N,06_intermittent_tournament,SBA Croston,103.88811621429026,SBA Croston,103.88811621429026,0.0
+4321052S0039M,07_clean_regression,Direct Hist Gradient Squared,94.4363822507113,SBA Croston,96.18991292245806,-1.7535306717467591
+4321053R100CE,06_intermittent_tournament,SBA Croston,95.37001582040004,SBA Croston,95.37001582040004,0.0
+4321057M100BK,06_intermittent_tournament,Hurdle Random Forest,95.26826862216969,Hurdle Random Forest,95.26826862216969,0.0
+4321061J01ZBP,07_clean_regression,Direct Extra Trees log1p,114.51431414640948,TSB,115.26716964407254,-0.752855497663063
+4321064J01ZBP,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.14249689687036,TSB,114.88482263070344,-14.742325733833084
+4321068LA0ZA8,06_intermittent_tournament,SBA Croston,87.24794616940827,SBA Croston,87.24794616940827,0.0
+4321071L91QC8,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,TSB,105.94570923606308,-5.945709236063081
+4321078K6027N,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,104.97781606551922,Recent Mean 6m,106.94444444444444,-1.966628378925222
+4321079K510BK,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,114.1587967626814,SBA Croston,121.40960508539466,-7.2508083227132545
+4321080S6027N,06_intermittent_tournament,SBA Croston,101.72176308539946,SBA Croston,101.72176308539946,0.0
+43210M55R6027N,06_intermittent_tournament,SBA Croston,100.96618006838716,SBA Croston,100.96618006838716,0.0
+43210M55RH1QC8,06_intermittent_tournament,SBA Croston,96.93575661353955,SBA Croston,96.93575661353955,0.0
+43210M62S0009L,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Hurdle Random Forest,100.5490332587381,-0.5490332587381062
+43210M62S620CB,06_intermittent_tournament,Aggregate Allocation,92.61040074201505,Aggregate Allocation,92.61040074201505,0.0
+43210M68K1109L,06_intermittent_tournament,SBA Croston,108.74797212945272,SBA Croston,108.74797212945272,0.0
+43210M74T50QC8,06_intermittent_tournament,SBA Croston,100.0,SBA Croston,100.0,0.0
+43210M76M5127N,06_intermittent_tournament,SBA Croston,112.19066238100596,SBA Croston,112.19066238100596,0.0
+43210M76T50QC8,06_intermittent_tournament,TSB,93.05365456979368,TSB,93.05365456979368,0.0
+43210M79G5339M,06_intermittent_tournament,SBA Croston,90.93668525738664,SBA Croston,90.93668525738664,0.0
+43210M83P0027N,06_intermittent_tournament,SBA Croston,126.09386870960871,SBA Croston,126.09386870960871,0.0
+4325065DA1C48,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,106.5038694906642,TSB,111.07248950940884,-4.568620018744639
+4325079P00ZH1,06_intermittent_tournament,SBA Croston,111.75771055738409,SBA Croston,111.75771055738409,0.0
+43250M53M0027N,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,SBA Croston,100.0,0.0
+43250M53T0027N,06_intermittent_tournament,Aggregate Allocation,100.0,Aggregate Allocation,100.0,0.0
+43250M68K1027N,06_intermittent_tournament,SBA Croston,106.00756874718802,SBA Croston,106.00756874718802,0.0
+43250M68K2027N,06_intermittent_tournament,SBA Croston,101.01522057065598,SBA Croston,101.01522057065598,0.0
+43250M74L0027N,06_intermittent_tournament,SBA Croston,91.22772655361436,SBA Croston,91.22772655361436,0.0
+43250M74L1027N,06_intermittent_tournament,SBA Croston,118.16004768395088,SBA Croston,118.16004768395088,0.0
+43250M79G6027N,06_intermittent_tournament,SBA Croston,82.08995945824005,SBA Croston,82.08995945824005,0.0
+43250M79M0027N,06_intermittent_tournament,SBA Croston,103.7407927134148,SBA Croston,103.7407927134148,0.0
+4325251K20DB7,08_tuned_capped_full_coverage,Hurdle XGBoost threshold 0.30,128.73785332726035,SBA Croston,139.73195581530064,-10.994102488040284
+4325261J0027S,08_tuned_capped_full_coverage,Hurdle XGBoost threshold 0.30,103.75568451440196,Recent Mean 6m,120.4861111111111,-16.730426596709137
+4325283S00CZ2,06_intermittent_tournament,Recent Mean 6m,115.34869976359336,Recent Mean 6m,115.34869976359336,0.0
+43402M74L21000,06_intermittent_tournament,SBA Croston,110.13878739243891,SBA Croston,110.13878739243891,0.0
+4342386G01000,07_clean_regression,Direct Extra Trees log1p,109.6078630334949,SBA Croston,121.69045672081069,-12.082593687315793
+4345965J00000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Recent Mean 6m,109.35374149659866,-9.353741496598659
+44119M53M00000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Hurdle Random Forest,100.0,0.0
+48150M53M10C48,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Hurdle Random Forest,101.06612704437164,-1.0661270443716404
+48150M68P00C48,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,TSB,103.48997633576184,-3.4899763357618383
+48150M69R00C48,06_intermittent_tournament,SBA Croston,98.48577667323302,SBA Croston,98.48577667323302,0.0
+48150M79M11C48,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,TSB,105.0126867837868,-5.012686783786805
+4982162A51000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,TSB,106.32763059835982,-6.327630598359818
+5730073R02000,07_clean_regression,Direct Random Forest log1p,87.90469817169125,SBA Croston,92.5888743280206,-4.684176156329343
+5730079P02000,06_intermittent_tournament,SBA Croston,97.69387699298576,SBA Croston,97.69387699298576,0.0
+57300M66L00000,06_intermittent_tournament,SBA Croston,102.24727059618505,SBA Croston,102.24727059618505,0.0
+57300M68K10000,06_intermittent_tournament,SBA Croston,105.72840162740106,SBA Croston,105.72840162740106,0.0
+57300M74T00000,07_clean_regression,Direct Extra Trees log1p,82.54326671667057,Hurdle Random Forest,84.91020468744225,-2.366937970771673
+57300M75T00000,07_clean_regression,Direct Random Forest log1p,99.05362549343582,Aggregate Allocation,100.0,-0.9463745065641831
+5741079P00000,06_intermittent_tournament,SBA Croston,113.06264563402644,SBA Croston,113.06264563402644,0.0
+57410M67P00000,06_intermittent_tournament,SBA Croston,90.09712840696778,SBA Croston,90.09712840696778,0.0
+5742071L01000,06_intermittent_tournament,SBA Croston,100.77486934496876,SBA Croston,100.77486934496876,0.0
+57611M68K10000,06_intermittent_tournament,SBA Croston,93.6338944202878,SBA Croston,93.6338944202878,0.0
+57711M66L00000,06_intermittent_tournament,SBA Croston,101.33117943118673,SBA Croston,101.33117943118673,0.0
+57711M79G10000,06_intermittent_tournament,TSB,115.60511221290366,TSB,115.60511221290366,0.0
+5811077K00000,06_intermittent_tournament,SBA Croston,117.46154328827542,SBA Croston,117.46154328827542,0.0
+58110M74L00000,06_intermittent_tournament,SBA Croston,101.41986736145248,SBA Croston,101.41986736145248,0.0
+5812165J00000,06_intermittent_tournament,SBA Croston,131.67260638096204,SBA Croston,131.67260638096204,0.0
+5823054P00000,06_intermittent_tournament,SBA Croston,117.10955115652388,SBA Croston,117.10955115652388,0.0
+5823065J00000,06_intermittent_tournament,SBA Croston,100.36259519987524,SBA Croston,100.36259519987524,0.0
+58230M79G01000,06_intermittent_tournament,SBA Croston,100.29152362334992,SBA Croston,100.29152362334992,0.0
+58240M53M00000,06_intermittent_tournament,SBA Croston,99.17360399771955,SBA Croston,99.17360399771955,0.0
+58240M67P00000,06_intermittent_tournament,SBA Croston,95.64112296963368,SBA Croston,95.64112296963368,0.0
+58251M53M00000,06_intermittent_tournament,SBA Croston,98.47535356535488,SBA Croston,98.47535356535488,0.0
+5827080J20000,06_intermittent_tournament,SBA Croston,112.29625308924628,SBA Croston,112.29625308924628,0.0
+61513M56R01000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,TSB,111.56642543298284,-11.56642543298284
+64111M56R01P21,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Recent Mean 6m,101.25,-1.25
+65500M75L00000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,122.5857025037485,Recent Mean 6m,123.2843137254902,-0.6986112217417002
+65500M79M00000,06_intermittent_tournament,TSB,127.5546517019369,TSB,127.5546517019369,0.0
+6570079P11000,06_intermittent_tournament,SBA Croston,102.93072892658066,SBA Croston,102.93072892658066,0.0
+65700M72P00000,06_intermittent_tournament,SBA Croston,88.88556188873326,SBA Croston,88.88556188873326,0.0
+6800153R00000,07_clean_regression,Direct Extra Trees log1p,84.18373845097565,SBA Croston,86.00316439660799,-1.8194259456323323
+6800164J01000,06_intermittent_tournament,SBA Croston,101.47792311253508,SBA Croston,101.47792311253508,0.0
+68001M53M50000,06_intermittent_tournament,SBA Croston,133.5288781684791,SBA Croston,133.5288781684791,0.0
+68001M74L21000,06_intermittent_tournament,SBA Croston,100.45976595446407,SBA Croston,100.45976595446407,0.0
+68001M75T00000,06_intermittent_tournament,Aggregate Allocation,100.0,Aggregate Allocation,100.0,0.0
+6800261M01000,08_tuned_capped_full_coverage,XGBoost Tweedie depth2 reg10,90.705521488679,SBA Croston,92.437060092805,-1.7315386041260012
+6800271L00000,06_intermittent_tournament,SBA Croston,107.91871229859863,SBA Croston,107.91871229859863,0.0
+6800280820000,06_intermittent_tournament,SBA Croston,129.55139280008234,SBA Croston,129.55139280008234,0.0
+68002M53M00000,06_intermittent_tournament,SBA Croston,96.68045978363725,SBA Croston,96.68045978363725,0.0
+68002M74L31000,06_intermittent_tournament,SBA Croston,81.37167460752025,SBA Croston,81.37167460752025,0.0
+68002M75T00000,07_clean_regression,Direct Hist Gradient Squared,87.50521852437406,Aggregate Allocation,100.0,-12.494781475625942
+68002M79G01000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Recent Mean 6m,100.60975609756098,-0.6097560975609753
+68003M74L31000,06_intermittent_tournament,SBA Croston,103.07574794846306,SBA Croston,103.07574794846306,0.0
+6910077R14000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Hurdle Random Forest,100.0,0.0
+69100M66L01000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Recent Mean 6m,107.8125,-7.8125
+69100M66L21000,06_intermittent_tournament,SBA Croston,100.186127971688,SBA Croston,100.186127971688,0.0
+6932068LA0000,06_intermittent_tournament,SBA Croston,109.90383333210544,SBA Croston,109.90383333210544,0.0
+69330M74L00000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Recent Mean 6m,109.81012658227849,-9.810126582278485
+69410M74L00000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,TSB,110.87266489759156,-10.872664897591562
+6942063J00000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,SBA Croston Tuned,126.48686569550811,-26.486865695508115
+69430M74L00000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,TSB,108.57080032552147,-8.570800325521475
+71074M79M00C48,06_intermittent_tournament,Hurdle Random Forest,95.9775794294918,Hurdle Random Forest,95.9775794294918,0.0
+71091M843005PK,06_intermittent_tournament,SBA Croston,131.87462442126665,SBA Croston,131.87462442126665,0.0
+7112073R00000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,TSB,107.5623049918898,-7.562304991889803
+7148176J00000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Hurdle Random Forest,100.0,0.0
+7170059810T2G,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Hurdle Random Forest,100.0,0.0
+7171152S005PK,06_intermittent_tournament,SBA Croston Tuned,73.92945562016214,SBA Croston Tuned,73.92945562016214,0.0
+7171154L30799,06_intermittent_tournament,SBA Croston,105.37630856134248,SBA Croston,105.37630856134248,0.0
+7171161J00799,06_intermittent_tournament,SBA Croston,102.78475644033378,SBA Croston,102.78475644033378,0.0
+7171163T20799,06_intermittent_tournament,SBA Croston,101.1574074074074,SBA Croston,101.1574074074074,0.0
+7171171L00799,06_intermittent_tournament,SBA Croston,103.33987493998194,SBA Croston,103.33987493998194,0.0
+7171177K70799,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Recent Mean 6m,103.64427860696516,-3.644278606965159
+7171177KD0799,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,TSB,108.2833421526776,-8.283342152677605
+7171181A405PK,06_intermittent_tournament,Hurdle Random Forest,100.0,Hurdle Random Forest,100.0,0.0
+71711M53M005PK,06_intermittent_tournament,SBA Croston,91.63332442496748,SBA Croston,91.63332442496748,0.0
+71711M53M00799,06_intermittent_tournament,SBA Croston,100.93019045652024,SBA Croston,100.93019045652024,0.0
+71711M73T015PK,07_clean_regression,Hurdle XGBoost Tweedie,93.96931210386852,Aggregate Allocation,100.0,-6.030687896131482
+71711M76M00799,06_intermittent_tournament,SBA Croston,109.25526759654998,SBA Croston,109.25526759654998,0.0
+71711M79G105PK,06_intermittent_tournament,SBA Croston,99.15081220365086,SBA Croston,99.15081220365086,0.0
+7171284A10W07,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,111.71123052409544,SBA Croston Tuned,118.34709330584232,-6.63586278174688
+7171284A20W07,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Hurdle Random Forest,100.0,0.0
+71712M60MA05PK,06_intermittent_tournament,SBA Croston,90.00303745982949,SBA Croston,90.00303745982949,0.0
+71712M69T005PK,07_clean_regression,Direct Hist Gradient Squared,92.63592821827358,Aggregate Allocation,100.0,-7.364071781726423
+71712M74T005PK,06_intermittent_tournament,SBA Croston,101.16768841394828,SBA Croston,101.16768841394828,0.0
+7171584A00ZM2,06_intermittent_tournament,SBA Croston,112.08388548332938,SBA Croston,112.08388548332938,0.0
+7171754GA0000,06_intermittent_tournament,SBA Croston,112.17243336307516,SBA Croston,112.17243336307516,0.0
+71721M76M005PK,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Hurdle Random Forest,100.0,0.0
+71722M76T005PK,06_intermittent_tournament,TSB,95.92948252399772,TSB,95.92948252399772,0.0
+71731M60M00000,06_intermittent_tournament,SBA Croston,92.24223600259768,SBA Croston,92.24223600259768,0.0
+7173263T00000,06_intermittent_tournament,Aggregate Allocation,101.92837375312646,Aggregate Allocation,101.92837375312646,0.0
+7173277M10000,06_intermittent_tournament,SBA Croston,90.30296723277635,SBA Croston,90.30296723277635,0.0
+71732M75T00000,08_tuned_capped_full_coverage,XGBoost Tweedie depth2 reg10,95.3324754496955,Aggregate Allocation,100.0,-4.667524550304506
+71732M76T01000,07_clean_regression,Direct XGBoost Tweedie,98.16701747740244,Aggregate Allocation,99.06295465290503,-0.8959371755025956
+7173368L00000,06_intermittent_tournament,SBA Croston,109.03771128463926,SBA Croston,109.03771128463926,0.0
+71734M58R00000,06_intermittent_tournament,SBA Croston,113.39731154511006,SBA Croston,113.39731154511006,0.0
+71736M74T00000,07_clean_regression,Direct Random Forest log1p,54.66225446013987,Hurdle Random Forest,84.08118261845023,-29.418928158310358
+7174050U10CUG,08_tuned_capped_full_coverage,Hurdle XGBoost threshold 0.30,99.82441481019268,SBA Croston,100.0,-0.17558518980732174
+7174063T00EJ1,06_intermittent_tournament,SBA Croston,100.84064021783576,SBA Croston,100.84064021783576,0.0
+71740M50S00C48,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,107.21932131011664,SBA Croston,114.78174062880284,-7.562419318686196
+71740M68P20C48,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Recent Mean 6m,100.0,0.0
+71740M74T00C48,06_intermittent_tournament,TSB,91.71141830268672,TSB,91.71141830268672,0.0
+71740M74T20KDJ,06_intermittent_tournament,TSB,91.87154346590908,TSB,91.87154346590908,0.0
+7174173K005PK,06_intermittent_tournament,SBA Croston,102.33660268029602,SBA Croston,102.33660268029602,0.0
+71741M66L005PK,06_intermittent_tournament,SBA Croston,109.5199855980926,SBA Croston,109.5199855980926,0.0
+71741M79G10000,06_intermittent_tournament,SBA Croston,114.58523324306162,SBA Croston,114.58523324306162,0.0
+7174265J010PG,06_intermittent_tournament,SBA Croston,114.432659218806,SBA Croston,114.432659218806,0.0
+71742M53M100CB,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Hurdle Random Forest,100.20556646742976,-0.2055664674297617
+71742M79G000PG,06_intermittent_tournament,SBA Croston,114.28276598450108,SBA Croston,114.28276598450108,0.0
+71743M53M100CB,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Recent Mean 6m,102.19969969969968,-2.1996996996996785
+71744M53M00000,06_intermittent_tournament,SBA Croston,126.4229140919945,SBA Croston,126.4229140919945,0.0
+71750M55T30C48,06_intermittent_tournament,Recent Mean 6m,82.0194202742904,Recent Mean 6m,82.0194202742904,0.0
+7175160B00000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,SBA Croston,100.0,0.0
+7175163J105PK,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,90.12328595340314,Recent Mean 6m,119.29012345679013,-29.166837503386986
+7175173K105PK,06_intermittent_tournament,SBA Croston,96.47125694166992,SBA Croston,96.47125694166992,0.0
+71751M50S005PK,06_intermittent_tournament,SBA Croston,112.59605771884168,SBA Croston,112.59605771884168,0.0
+71751M67P005PK,06_intermittent_tournament,SBA Croston,120.52009069272704,SBA Croston,120.52009069272704,0.0
+71751M68K005PK,06_intermittent_tournament,SBA Croston,102.71844521848494,SBA Croston,102.71844521848494,0.0
+71751M75T105PK,06_intermittent_tournament,Aggregate Allocation,100.0,Aggregate Allocation,100.0,0.0
+71751M76MB0ZNZ,06_intermittent_tournament,SBA Croston,105.63038094032018,SBA Croston,105.63038094032018,0.0
+71751M76T005PK,07_clean_regression,Direct Random Forest log1p,88.26395804099867,Aggregate Allocation,99.87677461751716,-11.612816576518483
+71751M79G10000,06_intermittent_tournament,SBA Croston,103.34446855940476,SBA Croston,103.34446855940476,0.0
+7175260B00000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,SBA Croston,100.0,0.0
+7175360B00000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,SBA Croston,100.0,0.0
+7176060P205PK,06_intermittent_tournament,SBA Croston,99.81305611681805,SBA Croston,99.81305611681805,0.0
+7176160MB05PK,06_intermittent_tournament,SBA Croston,104.7260723467705,SBA Croston,104.7260723467705,0.0
+7176171L105PK,06_intermittent_tournament,SBA Croston,100.747018566893,SBA Croston,100.747018566893,0.0
+7176173K105PK,06_intermittent_tournament,SBA Croston,98.7083750847035,SBA Croston,98.7083750847035,0.0
+71761M55T105PK,07_clean_regression,Direct XGBoost Tweedie,83.50909990532094,TSB,86.63433546413296,-3.1252355588120224
+71761M68K005PK,06_intermittent_tournament,SBA Croston,103.58549345189589,SBA Croston,103.58549345189589,0.0
+71761M75L005PK,06_intermittent_tournament,Recent Mean 6m,125.17921146953408,Recent Mean 6m,125.17921146953408,0.0
+71761M75L105PK,06_intermittent_tournament,SBA Croston,103.42069398385108,SBA Croston,103.42069398385108,0.0
+71761M75T105PK,07_clean_regression,Direct Extra Trees log1p,84.77368786955812,Aggregate Allocation,100.0,-15.226312130441883
+71761M76MB0ZNZ,07_clean_regression,Direct Extra Trees log1p,121.30835856109516,SBA Croston,121.48945361681464,-0.18109505571948148
+7177161M005PK,06_intermittent_tournament,SBA Croston,116.44523037050492,SBA Croston,116.44523037050492,0.0
+71772M74T00000,07_clean_regression,Hurdle XGBoost Tweedie,95.89997291141164,Aggregate Allocation,100.0,-4.100027088588362
+71781M66L00000,06_intermittent_tournament,SBA Croston,100.66042248371964,SBA Croston,100.66042248371964,0.0
+7178254P00000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,107.43184427165164,TSB,112.01434008924886,-4.58249581759722
+7178277KA05PK,06_intermittent_tournament,SBA Croston,121.6668282315848,SBA Croston,121.6668282315848,0.0
+7179086R10C48,06_intermittent_tournament,SBA Croston,97.27072872455231,SBA Croston,97.27072872455231,0.0
+7179154P00000,06_intermittent_tournament,SBA Croston,126.9904229227628,SBA Croston,126.9904229227628,0.0
+7181165DD1799,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,SBA Croston,106.95224327826368,-6.95224327826368
+7181172L10799,06_intermittent_tournament,Recent Mean 6m,105.14835858585856,Recent Mean 6m,105.14835858585856,0.0
+7181177MJ0799,06_intermittent_tournament,SBA Croston,126.50124283837742,SBA Croston,126.50124283837742,0.0
+7181180J20799,06_intermittent_tournament,SBA Croston,102.62578706950018,SBA Croston,102.62578706950018,0.0
+71811M68P20799,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Recent Mean 6m,100.0,0.0
+71811M68P30799,06_intermittent_tournament,Aggregate Allocation,105.76899284017122,Aggregate Allocation,105.76899284017122,0.0
+71811M79G005PK,06_intermittent_tournament,SBA Croston,99.31970908093317,SBA Croston,99.31970908093317,0.0
+71812M66L00000,06_intermittent_tournament,SBA Croston,100.71529937586809,SBA Croston,100.71529937586809,0.0
+71813M66L00000,06_intermittent_tournament,SBA Croston,105.08964103808889,SBA Croston,105.08964103808889,0.0
+7182163J00000,06_intermittent_tournament,SBA Croston,105.04347636408416,SBA Croston,105.04347636408416,0.0
+71821M60M00000,07_clean_regression,Direct Extra Trees log1p,107.56071371114146,SBA Croston,107.65197876916288,-0.09126505802142049
+7182263J00000,06_intermittent_tournament,SBA Croston,106.62686762885636,SBA Croston,106.62686762885636,0.0
+71831M74T00000,06_intermittent_tournament,Aggregate Allocation,100.0,Aggregate Allocation,100.0,0.0
+71831M76T00000,06_intermittent_tournament,TSB,90.67587096455752,TSB,90.67587096455752,0.0
+7183263J00000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Recent Mean 6m,114.58333333333331,-14.583333333333314
+7185160G00000,06_intermittent_tournament,SBA Croston,100.9272907910525,SBA Croston,100.9272907910525,0.0
+7185261J01000,06_intermittent_tournament,SBA Croston,100.29201902095728,SBA Croston,100.29201902095728,0.0
+7187161M005PK,06_intermittent_tournament,SBA Croston,110.58920123915392,SBA Croston,110.58920123915392,0.0
+7211062R00ES5,06_intermittent_tournament,SBA Croston,112.97059208143888,SBA Croston,112.97059208143888,0.0
+7211157M005PK,06_intermittent_tournament,SBA Croston,103.06872015619209,SBA Croston,103.06872015619209,0.0
+72111M8440009E,06_intermittent_tournament,SBA Croston,122.33604456917044,SBA Croston,122.33604456917044,0.0
+72111M8450009E,06_intermittent_tournament,SBA Croston,137.46337216803798,SBA Croston,137.46337216803798,0.0
+7211254GB0Z2S,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Recent Mean 6m,100.43859649122808,-0.43859649122808264
+7211281A005PK,08_tuned_capped_full_coverage,Hurdle XGBoost threshold 0.30,121.81681550173828,SBA Croston,134.08402011130838,-12.2672046095701
+72211M60M005PK,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,TSB,144.99419764360138,-44.99419764360138
+72221M56R005PK,06_intermittent_tournament,SBA Croston,95.17107074007292,SBA Croston,95.17107074007292,0.0
+72311M68P01000,06_intermittent_tournament,SBA Croston,86.93652284767506,SBA Croston,86.93652284767506,0.0
+7231282K00000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Recent Mean 6m,108.1081081081081,-8.108108108108098
+72312M79M00000,06_intermittent_tournament,Hurdle Random Forest,99.7623262219754,Hurdle Random Forest,99.7623262219754,0.0
+72320M80T00000,07_clean_regression,Direct Hist Gradient Squared,90.32997557184127,Aggregate Allocation,100.0,-9.670024428158726
+72321M76T00000,06_intermittent_tournament,TSB,97.1885543550082,TSB,97.1885543550082,0.0
+72321M79G00000,06_intermittent_tournament,SBA Croston,113.13503302051204,SBA Croston,113.13503302051204,0.0
+7232353R00000,06_intermittent_tournament,SBA Croston,101.80311381160118,SBA Croston,101.80311381160118,0.0
+72330M74L005PK,06_intermittent_tournament,SBA Croston,116.16307275244084,SBA Croston,116.16307275244084,0.0
+72333M76M005PK,06_intermittent_tournament,SBA Croston,105.46282634234154,SBA Croston,105.46282634234154,0.0
+72361M79M00000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,SBA Croston,100.40312421264802,-0.40312421264802367
+72372M74L105PK,06_intermittent_tournament,SBA Croston,97.28298006557776,SBA Croston,97.28298006557776,0.0
+72381M80T10000,07_clean_regression,Direct Hist Gradient Squared,83.08450547417033,Aggregate Allocation,100.0,-16.915494525829672
+7239071L00000,06_intermittent_tournament,SBA Croston,117.79455252581953,SBA Croston,117.79455252581953,0.0
+72390M76T00000,06_intermittent_tournament,SBA Croston,99.47968588357,SBA Croston,99.47968588357,0.0
+7243179M00000,06_intermittent_tournament,SBA Croston,92.1644789175989,SBA Croston,92.1644789175989,0.0
+72432M74T00000,07_clean_regression,Direct XGBoost Tweedie,82.50058229620969,TSB,88.50820647916666,-6.007624182956974
+7246073R00000,06_intermittent_tournament,SBA Croston,111.09887151255695,SBA Croston,111.09887151255695,0.0
+7246079P00000,06_intermittent_tournament,SBA Croston,99.76452371704468,SBA Croston,99.76452371704468,0.0
+72460M60M00000,06_intermittent_tournament,SBA Croston,101.11222409766737,SBA Croston,101.11222409766737,0.0
+72520M68P02000,06_intermittent_tournament,SBA Croston,108.69804778632478,SBA Croston,108.69804778632478,0.0
+7252261M00000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,111.94366402393456,Recent Mean 6m,117.75067750677506,-5.807013482840503
+72821M76MA0000,06_intermittent_tournament,SBA Croston,99.45079043515923,SBA Croston,99.45079043515923,0.0
+7283165D10000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Recent Mean 6m,100.0,0.0
+7283181A01000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,SBA Croston,100.54009928295643,-0.5400992829564331
+7287078A33000,07_clean_regression,Direct Extra Trees log1p,126.59889086400491,TSB,128.51817504711198,-1.9192841831070666
+73111M62S515PK,06_intermittent_tournament,SBA Croston,108.81310731515202,SBA Croston,108.81310731515202,0.0
+73310M68P61C8J,06_intermittent_tournament,SBA Croston,97.52671468904036,SBA Croston,97.52671468904036,0.0
+73310M68P61GJL,06_intermittent_tournament,SBA Croston,124.20634584209344,SBA Croston,124.20634584209344,0.0
+73410M74L105PK,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,TSB,111.54034301529796,-11.540343015297964
+73412M53M10U3J,06_intermittent_tournament,SBA Croston,137.51546073944235,SBA Croston,137.51546073944235,0.0
+7343061J00R8H,06_intermittent_tournament,SBA Croston,115.76455081105154,SBA Croston,115.76455081105154,0.0
+7361052R005PK,06_intermittent_tournament,SBA Croston,100.0,SBA Croston,100.0,0.0
+7361075H015PK,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Recent Mean 6m,100.0478927203065,-0.04789272030650693
+73610M68P00C48,06_intermittent_tournament,SBA Croston,100.462048191657,SBA Croston,100.462048191657,0.0
+73630M76M01GJL,06_intermittent_tournament,TSB,117.87708711260012,TSB,117.87708711260012,0.0
+73820M55R60PSG,06_intermittent_tournament,SBA Croston,126.8784071610812,SBA Croston,126.8784071610812,0.0
+7382273R505PK,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,TSB,106.7227516336989,-6.7227516336989055
+7382276J00ZCP,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,SBA Croston,100.4965382817983,-0.4965382817982942
+73841M68P60C8J,06_intermittent_tournament,SBA Croston,98.52320951617492,SBA Croston,98.52320951617492,0.0
+73841M68P60GJL,06_intermittent_tournament,SBA Croston,108.0813529863865,SBA Croston,108.0813529863865,0.0
+73910M68P01000,06_intermittent_tournament,SBA Croston,95.72069791374126,SBA Croston,95.72069791374126,0.0
+74120M74LA0000,06_intermittent_tournament,SBA Croston,104.2712635205713,SBA Croston,104.2712635205713,0.0
+74120M79G00000,06_intermittent_tournament,SBA Croston,125.9531538633032,SBA Croston,125.9531538633032,0.0
+74461M74L00V6N,06_intermittent_tournament,SBA Croston,94.99904228631074,SBA Croston,94.99904228631074,0.0
+74461M76M00000,07_clean_regression,Direct Extra Trees log1p,82.76145342013703,SBA Croston,89.04835869924027,-6.286905279103237
+75110M76T60R3F,07_clean_regression,Direct XGBoost Tweedie,82.2102117580552,Boosted SBA Hybrid,91.71958347738,-9.509371719324804
+75139M70F005PK,06_intermittent_tournament,SBA Croston,100.0,SBA Croston,100.0,0.0
+75430M76M00000,06_intermittent_tournament,SBA Croston,97.65448675042704,SBA Croston,97.65448675042704,0.0
+75463M75J00000,06_intermittent_tournament,SBA Croston,112.9651102448683,SBA Croston,112.9651102448683,0.0
+75463M79G00000,06_intermittent_tournament,SBA Croston,127.48745654078546,SBA Croston,127.48745654078546,0.0
+7552171L00000,06_intermittent_tournament,SBA Croston,98.3130518920495,SBA Croston,98.3130518920495,0.0
+7594165J00000,06_intermittent_tournament,SBA Croston,105.69149874311744,SBA Croston,105.69149874311744,0.0
+7615181A01P4Z,06_intermittent_tournament,SBA Croston,107.18679994864402,SBA Croston,107.18679994864402,0.0
+7615181A01T01,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Hurdle Random Forest,100.0,0.0
+76237M70F005PK,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Recent Mean 6m,140.0,-40.0
+76295M53M10P4Z,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,120.01957236982918,SBA Croston Tuned,126.9171196503898,-6.897547280560616
+7666179P005PK,06_intermittent_tournament,SBA Croston,98.03089940408417,SBA Croston,98.03089940408417,0.0
+76661M75L005PK,06_intermittent_tournament,SBA Croston,102.36785631044631,SBA Croston,102.36785631044631,0.0
+7672157L005PK,06_intermittent_tournament,SBA Croston,109.04368412897,SBA Croston,109.04368412897,0.0
+77141M55T000CB,06_intermittent_tournament,SBA Croston,92.31254237055366,SBA Croston,92.31254237055366,0.0
+77146M50S000CB,06_intermittent_tournament,SBA Croston,113.47049998498645,SBA Croston,113.47049998498645,0.0
+77171M68L00000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,115.56260620550523,TSB,120.73040473438638,-5.16779852888115
+77181M68K005PK,06_intermittent_tournament,SBA Croston,107.02889504315516,SBA Croston,107.02889504315516,0.0
+77181M76M005PK,06_intermittent_tournament,SBA Croston,108.32538470614654,SBA Croston,108.32538470614654,0.0
+77210M76T015PK,06_intermittent_tournament,TSB,96.43347328814036,TSB,96.43347328814036,0.0
+77220M74T005PK,07_clean_regression,Direct XGBoost Tweedie,80.4302000067081,TSB,93.08056333177316,-12.650363325065058
+77221M55T00799,06_intermittent_tournament,TSB,88.94438238605537,TSB,88.94438238605537,0.0
+77230M75L000PG,06_intermittent_tournament,SBA Croston,94.65966139551692,SBA Croston,94.65966139551692,0.0
+7724054P105PK,06_intermittent_tournament,SBA Croston,130.97208636528865,SBA Croston,130.97208636528865,0.0
+7724061M005PK,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Hurdle Random Forest,111.72976094994732,-11.72976094994732
+77250M74T005PK,06_intermittent_tournament,TSB,97.56660525695426,TSB,97.56660525695426,0.0
+77250M79M100PG,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,TSB,115.23729791480883,-15.237297914808835
+77510M73T005PK,08_tuned_capped_full_coverage,XGBoost Tweedie depth2 reg10,83.23273923111279,Recent Mean 6m,98.84880315762668,-15.616063926513888
+7752061M005PK,06_intermittent_tournament,SBA Croston,103.36874628750944,SBA Croston,103.36874628750944,0.0
+77540M74T005PK,06_intermittent_tournament,TSB,89.18660934484903,TSB,89.18660934484903,0.0
+7755078K000PG,07_clean_regression,Direct Extra Trees log1p,68.83152841565648,SBA Croston Tuned,77.16681444121743,-8.335286025560947
+7755365D00000,06_intermittent_tournament,Hurdle Random Forest,100.0,Hurdle Random Forest,100.0,0.0
+7756178R005PK,06_intermittent_tournament,Hurdle Random Forest,99.91166254998473,Hurdle Random Forest,99.91166254998473,0.0
+7758064J10Z2S,06_intermittent_tournament,SBA Croston,94.50386674917688,SBA Croston,94.50386674917688,0.0
+7781163J200PG,07_clean_regression,Direct Extra Trees log1p,81.9441830875181,Seasonal SBA Croston,83.15418172254284,-1.2099986350247462
+77811M58J100PG,06_intermittent_tournament,SBA Croston,100.7232677188592,SBA Croston,100.7232677188592,0.0
+7783179J000PG,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.14951675615808,TSB,105.97042984374646,-5.82091308758838
+77831M79M000PG,06_intermittent_tournament,TSB,111.24073251386515,TSB,111.24073251386515,0.0
+77831M80E50000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,105.4201414796494,TSB,110.15309494861478,-4.732953468965377
+77831M80EC00PG,06_intermittent_tournament,SBA Croston,102.12291982306176,SBA Croston,102.12291982306176,0.0
+7783278R000PG,08_tuned_capped_full_coverage,Hurdle XGBoost threshold 0.30,96.0223019298984,SBA Croston,105.97257612677684,-9.95027419687844
+77832M67P000PG,06_intermittent_tournament,SBA Croston,117.1208983504166,SBA Croston,117.1208983504166,0.0
+7784161M00A93,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,105.64222631750864,SBA Croston Tuned,115.5885057539171,-9.94627943640846
+7813257L01000,06_intermittent_tournament,SBA Croston,120.31576696394362,SBA Croston,120.31576696394362,0.0
+7821565J105PK,06_intermittent_tournament,SBA Croston,115.79100000850524,SBA Croston,115.79100000850524,0.0
+7821965J105PK,07_clean_regression,Direct Extra Trees log1p,130.8046384896631,TSB,157.71933617702967,-26.914697687366584
+7822565J105PK,06_intermittent_tournament,SBA Croston Tuned,134.05873718192032,SBA Croston Tuned,134.05873718192032,0.0
+7877361M00000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,TSB,108.622793042593,-8.622793042593003
+8143061A00000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,TSB,139.82222184402005,-39.82222184402005
+8181065J02000,06_intermittent_tournament,SBA Croston,92.12189283906324,SBA Croston,92.12189283906324,0.0
+8181086R00000,06_intermittent_tournament,SBA Croston,87.7961394139729,SBA Croston,87.7961394139729,0.0
+81810M55T01000,07_clean_regression,Direct XGBoost Tweedie,82.88403162782335,Recent Mean 6m,88.1105911563658,-5.226559528542452
+8183065J02000,08_tuned_capped_full_coverage,Hurdle XGBoost threshold 0.30,96.69035078370092,TSB,127.94310657325816,-31.25275578955724
+8185080G00000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Seasonal SBA Croston,110.07899434522898,-10.078994345228978
+81850M67P00000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,TSB,104.10582089768104,-4.105820897681042
+81850M74L00000,06_intermittent_tournament,SBA Croston,100.89773900634816,SBA Croston,100.89773900634816,0.0
+81850M79G10000,06_intermittent_tournament,Recent Mean 6m,125.39983164983164,Recent Mean 6m,125.39983164983164,0.0
+81850M79G20000,06_intermittent_tournament,SBA Croston,139.20425161208263,SBA Croston,139.20425161208263,0.0
+81860M67P00000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Hurdle Random Forest,104.03636082638634,-4.036360826386343
+81860M79G10000,06_intermittent_tournament,SBA Croston Tuned,124.49628842844729,SBA Croston Tuned,124.49628842844729,0.0
+8211065J01000,06_intermittent_tournament,SBA Croston,97.20127784372208,SBA Croston,97.20127784372208,0.0
+82110M55T10000,07_clean_regression,Hurdle XGBoost Tweedie,74.06779249715176,Recent Mean 6m,78.22721702317291,-4.159424526021155
+82150M820005ES,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Recent Mean 6m,104.46428571428572,-4.464285714285722
+82160M67P10000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Recent Mean 6m,115.31531531531532,-15.315315315315317
+8220061870000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,SBA Croston,100.0,0.0
+82200M84880000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,TSB,109.97483180063958,-9.974831800639578
+8228061810000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,97.77207866075685,Recent Mean 6m,115.75520833333334,-17.983129672576496
+8228076872000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,101.20556010626144,TSB,113.99469120737363,-12.78913110111219
+82280M79811000,06_intermittent_tournament,SBA Croston,97.88666039777588,SBA Croston,97.88666039777588,0.0
+82302M68P15000,06_intermittent_tournament,SBA Croston,104.82652672265016,SBA Croston,104.82652672265016,0.0
+82504M84500000,06_intermittent_tournament,TSB,132.33553962299538,TSB,132.33553962299538,0.0
+82510M53M00000,06_intermittent_tournament,SBA Croston,115.80033846786507,SBA Croston,115.80033846786507,0.0
+82510M60M51000,06_intermittent_tournament,SBA Croston,115.92572399927498,SBA Croston,115.92572399927498,0.0
+82510M75T20000,07_clean_regression,Direct Extra Trees log1p,65.89229864619921,Aggregate Allocation,100.0,-34.10770135380079
+82570M53810000,06_intermittent_tournament,SBA Croston,93.36359559326226,SBA Croston,93.36359559326226,0.0
+82570M53M00000,06_intermittent_tournament,SBA Croston,103.65659008950765,SBA Croston,103.65659008950765,0.0
+82651M74K00000,06_intermittent_tournament,Aggregate Allocation,96.3380267485004,Aggregate Allocation,96.3380267485004,0.0
+8276161A00000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,101.63804817808251,Recent Mean 6m,128.84990253411306,-27.211854356030543
+82811M75J00000,06_intermittent_tournament,SBA Croston,104.97353455305203,SBA Croston,104.97353455305203,0.0
+8281257LA0ZNL,08_tuned_capped_full_coverage,Hurdle XGBoost threshold 0.30,100.32252846260334,TSB,110.58977073129992,-10.267242268696577
+82814M75J00000,06_intermittent_tournament,SBA Croston,112.84009187974716,SBA Croston,112.84009187974716,0.0
+82840M68P005PK,06_intermittent_tournament,Hurdle Random Forest,100.0,Hurdle Random Forest,100.0,0.0
+8285081A125PK,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Hurdle Random Forest,100.10057492708404,-0.1005749270840397
+8285081A225PK,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,101.7406509638366,TSB,122.454913801672,-20.714262837835406
+8296060G00T01,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Hurdle Random Forest,100.0,0.0
+82960M60G005ES,07_clean_regression,Direct Extra Trees log1p,119.94149500084067,SBA Croston,120.02055801320884,-0.0790630123681666
+82960M60G00P4Z,06_intermittent_tournament,SBA Croston,105.9596312545258,SBA Croston,105.9596312545258,0.0
+82960M60G00V6N,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Hurdle Random Forest,100.0,0.0
+8298265D00P4Z,07_clean_regression,Direct Extra Trees log1p,148.09435657908966,TSB,196.0677410014077,-47.97338442231805
+82982M65D00000,07_clean_regression,Direct Extra Trees log1p,107.68750703745538,SBA Croston,115.05650942589736,-7.369002388441984
+82982M65D005PK,07_clean_regression,Direct Extra Trees log1p,98.5647505943998,SBA Croston,99.0004733482239,-0.4357227538241091
+83101M53M10GCY,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,TSB,116.09753457249091,-16.097534572490915
+8313063JC0C48,06_intermittent_tournament,SBA Croston,100.0,SBA Croston,100.0,0.0
+83401M55R01000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,104.19705554904836,Recent Mean 6m,121.8599033816425,-17.66284783259414
+83402M79G50000,06_intermittent_tournament,SBA Croston,94.28228554906153,SBA Croston,94.28228554906153,0.0
+8344060A00000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,TSB,110.86393798310726,-10.863937983107263
+8366152R01000,06_intermittent_tournament,SBA Croston,109.47821434767576,SBA Croston,109.47821434767576,0.0
+83661M68P01000,06_intermittent_tournament,SBA Croston,101.17547001609906,SBA Croston,101.17547001609906,0.0
+83665M68P01000,06_intermittent_tournament,SBA Croston,104.5213026641168,SBA Croston,104.5213026641168,0.0
+83714M62B00000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Hurdle Random Forest,126.53447467927008,-26.534474679270076
+83740M62S005PK,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,TSB,110.026059043612,-10.026059043611994
+83755M74L005PK,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,104.75283926805862,Recent Mean 6m,107.33543417366948,-2.5825949056108612
+83770M55T005PK,08_tuned_capped_full_coverage,XGBoost Tweedie depth2 reg10,94.51499120912727,Aggregate Allocation,100.0,-5.485008790872726
+8381065A00000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Hurdle Random Forest,100.0,0.0
+8381152R02000,06_intermittent_tournament,SBA Croston,109.8534350505404,SBA Croston,109.8534350505404,0.0
+8381165J00000,06_intermittent_tournament,SBA Croston,107.1977244369246,SBA Croston,107.1977244369246,0.0
+8381173R00000,08_tuned_capped_full_coverage,Hurdle XGBoost threshold 0.30,99.2578387615497,SBA Croston,105.96158165909414,-6.70374289754443
+8381180J00000,07_clean_regression,Direct Extra Trees log1p,87.75804981751632,SBA Croston Tuned,87.96814443056068,-0.21009461304436172
+83811M68P00000,06_intermittent_tournament,SBA Croston,100.36295460340052,SBA Croston,100.36295460340052,0.0
+83811M74L01000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,109.04511550042172,TSB,113.63971635458172,-4.5946008541600065
+83811M79G11000,06_intermittent_tournament,SBA Croston,100.16459079903602,SBA Croston,100.16459079903602,0.0
+8382065A00000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Hurdle Random Forest,100.0,0.0
+8382165J00000,06_intermittent_tournament,SBA Croston,103.42824461904554,SBA Croston,103.42824461904554,0.0
+83821M74L01000,06_intermittent_tournament,Seasonal SBA Croston,83.73607819809092,Seasonal SBA Croston,83.73607819809092,0.0
+83821M79G11000,06_intermittent_tournament,SBA Croston,103.13585686122072,SBA Croston,103.13585686122072,0.0
+8383165J00000,06_intermittent_tournament,SBA Croston,115.32371309123978,SBA Croston,115.32371309123978,0.0
+83831M79G00000,06_intermittent_tournament,SBA Croston,107.31199226052372,SBA Croston,107.31199226052372,0.0
+8384165J00000,06_intermittent_tournament,SBA Croston,105.24778530599085,SBA Croston,105.24778530599085,0.0
+83841M75T00000,06_intermittent_tournament,Aggregate Allocation,100.0,Aggregate Allocation,100.0,0.0
+83841M79G01000,06_intermittent_tournament,SBA Croston,109.27070810822164,SBA Croston,109.27070810822164,0.0
+8392165J010CB,06_intermittent_tournament,SBA Croston,98.93520137543752,SBA Croston,98.93520137543752,0.0
+83922M68P000CB,06_intermittent_tournament,Seasonal SBA Croston,131.28505909813194,Seasonal SBA Croston,131.28505909813194,0.0
+8392364J010CB,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,TSB,118.0849103850242,-18.0849103850242
+8392471L200CE,06_intermittent_tournament,SBA Croston,114.80835641189036,SBA Croston,114.80835641189036,0.0
+83924M74T000CB,06_intermittent_tournament,TSB,93.75776954177898,TSB,93.75776954177898,0.0
+83924M76T100CB,06_intermittent_tournament,Recent Mean 6m,99.66485507246377,Recent Mean 6m,99.66485507246377,0.0
+83932M75T000CB,07_clean_regression,Direct Hist Gradient Squared,80.09365133260927,Aggregate Allocation,100.0,-19.90634866739073
+83934M75T000CB,07_clean_regression,Direct Hist Gradient Squared,70.55707636066535,Aggregate Allocation,100.0,-29.44292363933465
+8394068L50000,06_intermittent_tournament,SBA Croston,94.13809944469332,SBA Croston,94.13809944469332,0.0
+83940M55T010PG,06_intermittent_tournament,Boosted SBA Hybrid,79.86783927359514,Boosted SBA Hybrid,79.86783927359514,0.0
+83940M74L00000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,TSB,108.21205727489706,-8.212057274897063
+83940M74T01ZHJ,06_intermittent_tournament,Aggregate Allocation,100.0,Aggregate Allocation,100.0,0.0
+83943M68P00000,06_intermittent_tournament,SBA Croston,149.37600521901942,SBA Croston,149.37600521901942,0.0
+83970M55T00000,06_intermittent_tournament,Aggregate Allocation,101.17680832446337,Aggregate Allocation,101.17680832446337,0.0
+8450162R02000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,TSB,115.19987837998254,-15.199878379982536
+8450171L02000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,TSB,112.27707962518694,-12.277079625186943
+84501M56R00000,06_intermittent_tournament,SBA Croston,94.69465650085225,SBA Croston,94.69465650085225,0.0
+8450373R00000,06_intermittent_tournament,SBA Croston,117.91710769587984,SBA Croston,117.91710769587984,0.0
+84503M62S00000,06_intermittent_tournament,SBA Croston,93.9625695391566,SBA Croston,93.9625695391566,0.0
+84503M80T20000,08_tuned_capped_full_coverage,Hurdle XGBoost threshold 0.30,89.72582802706087,Aggregate Allocation,100.0,-10.27417197293913
+84504M68P00000,06_intermittent_tournament,SBA Croston,101.55606393475628,SBA Croston,101.55606393475628,0.0
+8451061M02000,06_intermittent_tournament,SBA Croston,91.78298055549276,SBA Croston,91.78298055549276,0.0
+84510M76T21000,06_intermittent_tournament,Aggregate Allocation,98.5195402784002,Aggregate Allocation,98.5195402784002,0.0
+84510M76T31000,06_intermittent_tournament,Recent Mean 6m,98.7584068936528,Recent Mean 6m,98.7584068936528,0.0
+84510M80T11000,07_clean_regression,Direct Random Forest log1p,63.77485357440322,Hurdle Random Forest,68.5921800511448,-4.817326476741577
+84511M53M00000,06_intermittent_tournament,SBA Croston,100.60842105143163,SBA Croston,100.60842105143163,0.0
+84511M68K00000,06_intermittent_tournament,Seasonal SBA Croston,115.98524341622526,Seasonal SBA Croston,115.98524341622526,0.0
+8454154P01000,06_intermittent_tournament,SBA Croston,114.08538404745586,SBA Croston,114.08538404745586,0.0
+84541M56R00000,06_intermittent_tournament,SBA Croston,99.58530849209652,SBA Croston,99.58530849209652,0.0
+84556M80T00000,07_clean_regression,Direct Hist Gradient Squared,93.58488594516302,Aggregate Allocation,100.0,-6.415114054836977
+84570M62S10000,06_intermittent_tournament,SBA Croston,94.0359142903877,SBA Croston,94.0359142903877,0.0
+84570M67P10000,06_intermittent_tournament,SBA Croston,107.92519723469206,SBA Croston,107.92519723469206,0.0
+84570M75T00000,06_intermittent_tournament,Aggregate Allocation,100.0,Aggregate Allocation,100.0,0.0
+8458065J02000,06_intermittent_tournament,SBA Croston,85.8731383020737,SBA Croston,85.8731383020737,0.0
+8458080J01000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,SBA Croston,114.14167401568864,-14.141674015688636
+84611M76M00000,06_intermittent_tournament,SBA Croston,100.20286294532048,SBA Croston,100.20286294532048,0.0
+84641M77G00000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Recent Mean 6m,106.79012345679013,-6.790123456790127
+8470161LVBZJ3,06_intermittent_tournament,SBA Croston,102.22704845927258,SBA Croston,102.22704845927258,0.0
+8470178R005PK,06_intermittent_tournament,SBA Croston,100.0,SBA Croston,100.0,0.0
+8470181A015PK,06_intermittent_tournament,SBA Croston,115.40325463415856,SBA Croston,115.40325463415856,0.0
+84701M53M005PK,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,103.06921080462573,SBA Croston,119.3532109205587,-16.28400011593297
+84701M53T3026U,07_clean_regression,Hurdle XGBoost Tweedie,98.21588880250782,Aggregate Allocation,100.0,-1.7841111974921802
+84701M55TG0ZHJ,06_intermittent_tournament,Recent Mean 6m,93.89443277310924,Recent Mean 6m,93.89443277310924,0.0
+84701M56R50ZHJ,06_intermittent_tournament,SBA Croston,96.50015847069386,SBA Croston,96.50015847069386,0.0
+84701M67P30000,06_intermittent_tournament,TSB,116.77393522343758,TSB,116.77393522343758,0.0
+84701M68K1026U,06_intermittent_tournament,SBA Croston,108.7764073446857,SBA Croston,108.7764073446857,0.0
+84701M79G30000,06_intermittent_tournament,SBA Croston,96.07662695160283,SBA Croston,96.07662695160283,0.0
+84701M80TA05PK,06_intermittent_tournament,Aggregate Allocation,100.87065321309365,Aggregate Allocation,100.87065321309365,0.0
+84701M80TJ0WB3,06_intermittent_tournament,Aggregate Allocation,100.0,Aggregate Allocation,100.0,0.0
+84701M84330000,06_intermittent_tournament,SBA Croston,101.97394923587332,SBA Croston,101.97394923587332,0.0
+8470277A005PK,06_intermittent_tournament,Recent Mean 6m,122.85714285714286,Recent Mean 6m,122.85714285714286,0.0
+8470281A215PK,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,SBA Croston,100.09445100354192,-0.09445100354191993
+84702M53T005PK,07_clean_regression,Direct XGBoost Tweedie,94.04846561584122,Recent Mean 6m,95.21929824561404,-1.1708326297728178
+84702M67P30000,06_intermittent_tournament,SBA Croston,116.42295980093591,SBA Croston,116.42295980093591,0.0
+84702M67P4026U,06_intermittent_tournament,SBA Croston,92.35195706373813,SBA Croston,92.35195706373813,0.0
+84702M68K1026U,06_intermittent_tournament,SBA Croston,103.20393393994136,SBA Croston,103.20393393994136,0.0
+84702M74L215PK,06_intermittent_tournament,SBA Croston,99.3199423088572,SBA Croston,99.3199423088572,0.0
+84702M80TA05PK,06_intermittent_tournament,Aggregate Allocation,100.25332101693066,Aggregate Allocation,100.25332101693066,0.0
+84702M80TJ0WB3,06_intermittent_tournament,Boosted SBA Hybrid,97.4592418964035,Boosted SBA Hybrid,97.4592418964035,0.0
+84702M84320000,06_intermittent_tournament,SBA Croston,115.4889724149043,SBA Croston,115.4889724149043,0.0
+8470381A14V12,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Hurdle Random Forest,100.0661113932697,-0.06611139326969351
+8471573K00RX0OTS,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,SBA Croston,105.3742322926188,-5.3742322926187995
+84728M80T005PK,06_intermittent_tournament,Aggregate Allocation,100.0,Aggregate Allocation,100.0,0.0
+8473077MB1000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,TSB,108.66158621055452,-8.661586210554518
+84730M55T00000,06_intermittent_tournament,SBA Croston,98.65748183407324,SBA Croston,98.65748183407324,0.0
+84730M56R00000,06_intermittent_tournament,SBA Croston,99.09517312037786,SBA Croston,99.09517312037786,0.0
+84730M67P00000,06_intermittent_tournament,SBA Croston,104.53548871331964,SBA Croston,104.53548871331964,0.0
+84730M74L20000,06_intermittent_tournament,SBA Croston,101.83012562220088,SBA Croston,101.83012562220088,0.0
+84730M74T00000,06_intermittent_tournament,Aggregate Allocation,101.17848328229692,Aggregate Allocation,101.17848328229692,0.0
+84730M76T00000,06_intermittent_tournament,Aggregate Allocation,103.82291855232796,Aggregate Allocation,103.82291855232796,0.0
+84740M74L20000,06_intermittent_tournament,SBA Croston,107.67807336863775,SBA Croston,107.67807336863775,0.0
+84740M74T00000,06_intermittent_tournament,SBA Croston,101.4132553606238,SBA Croston,101.4132553606238,0.0
+84740M76T00000,06_intermittent_tournament,Aggregate Allocation,108.21167747152076,Aggregate Allocation,108.21167747152076,0.0
+8480254P446GS,06_intermittent_tournament,TSB,115.82677057979272,TSB,115.82677057979272,0.0
+8485165D006GS,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Hurdle Random Forest,100.0,0.0
+8485177K006GS,07_clean_regression,Direct Extra Trees log1p,105.9399780066547,SBA Croston,106.03023140233596,-0.09025339568125901
+84901M56R63HLK,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,118.22325332905764,Recent Mean 6m,124.81481481481482,-6.5915614857571825
+84901M62S51BHE,07_clean_regression,Direct Hist Gradient Squared,83.89607953552151,SBA Croston,84.51018587999775,-0.6141063444762409
+84902M62S43BHE,07_clean_regression,Direct Extra Trees log1p,91.09479590515208,SBA Croston,91.36698765386306,-0.2721917487109806
+85355M68PA1000,06_intermittent_tournament,SBA Croston,125.28078167190624,SBA Croston,125.28078167190624,0.0
+8687761JA0000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Recent Mean 6m,100.0,0.0
+87205M79G51000,07_clean_regression,Direct Extra Trees log1p,133.53764742240497,SBA Croston Tuned,166.86285589046634,-33.32520846806136
+8721174G10P4Z,08_tuned_capped_full_coverage,Hurdle XGBoost threshold 0.30,84.66286311299388,Recent Mean 6m,91.46666666666664,-6.803803553672765
+8721176G11T01,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,105.84014927589836,Recent Mean 6m,110.04901960784314,-4.20887033194478
+87211M76G00T01,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Recent Mean 6m,109.7560975609756,-9.756097560975604
+87286M81P00000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,102.30866996039686,SBA Croston,105.97125889981224,-3.662588939415386
+87491M68P105PK,06_intermittent_tournament,SBA Croston,102.13743405533974,SBA Croston,102.13743405533974,0.0
+87991M68P105PK,06_intermittent_tournament,SBA Croston,97.2990633023338,SBA Croston,97.2990633023338,0.0
+88912M76M00000,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,Hurdle Random Forest,100.0,0.0
+88921M68P01000,06_intermittent_tournament,SBA Croston,90.38944575056462,SBA Croston,90.38944575056462,0.0
+8926050J00000,06_intermittent_tournament,SBA Croston,98.49626634958508,SBA Croston,98.49626634958508,0.0
+89267M60M00000,07_clean_regression,Direct XGBoost Tweedie,97.17765804930396,Aggregate Allocation,100.0,-2.8223419506960425
+89969M52R00000,06_intermittent_tournament,SBA Croston,87.28891081638217,SBA Croston,87.28891081638217,0.0
+89969M63J00000,07_clean_regression,Direct Random Forest log1p,86.91496251633133,TSB,90.82457305360828,-3.909610537276947
+9531071L01000,06_intermittent_tournament,SBA Croston,95.08359956096731,SBA Croston,95.08359956096731,0.0
+95310M68K00000,06_intermittent_tournament,SBA Croston,101.54146728932638,SBA Croston,101.54146728932638,0.0
+95310M75T00000,06_intermittent_tournament,Hurdle Random Forest,83.6007564978447,Hurdle Random Forest,83.6007564978447,0.0

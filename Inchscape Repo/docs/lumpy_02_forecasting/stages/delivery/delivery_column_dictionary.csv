@@ -1,0 +1,14 @@
+column,definition
+sku_id,Sensitive stock-code identifier.
+segment,Champion routing segment.
+champion_source,Stage or method supplying the selected forecast.
+forecast_block_1 ... forecast_block_6,Selected forecast for each three-month block.
+actual_block_1 ... actual_block_6,Observed backtest demand; evaluation only.
+forecast_18m,Sum of six selected forecast blocks.
+actual_18m,Observed 18-month demand; evaluation only.
+wmape,Individual pooled WMAPE across six blocks.
+evaluation_mase,Diagnostic block-level MASE using changes inside the evaluation horizon.
+bias_pct,Evaluation forecast bias percentage.
+reliability_tier,Post-evaluation operational reliability category.
+dormant_manual_review,Dormant lifecycle exclusion from actionable forecasting.
+positive_sku,Actual demand exceeded zero in the official horizon.

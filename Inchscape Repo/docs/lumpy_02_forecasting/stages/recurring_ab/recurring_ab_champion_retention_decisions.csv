@@ -1,0 +1,3 @@
+cohort,decision,incumbent_under_70,challenger_under_70,incumbent_under_50,challenger_under_50,incumbent_median_wmape,challenger_median_wmape
+recurring_a,accept_14_challenger,107,111,34,36,69.96387615799904,68.570867744652
+recurring_b,retain_13_incumbent,40,31,14,10,78.25474802185508,79.57237662233379

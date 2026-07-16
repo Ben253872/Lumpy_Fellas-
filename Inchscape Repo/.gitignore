@@ -10,9 +10,57 @@ __pycache__/
 !docs/*.xlsx
 !notebooks/*.ipynb
 
+# Archived model-search notebooks are local reference only
+notebooks/archive_lumpy_experiments_06_50/
+
 # Ignore only the raw source file
 data/raw/chile_suzuki_historical_sales.csv
 
 # Ignore lumpy outputs
 lumpy_outputs/
+results/lumpy_02_forecasting/
 results/lumpy_05_future_forecasting/
+results/lumpy_06_sku_model_tournament/
+results/lumpy_07_full_regression_tournament/
+results/lumpy_08_champion_model_tuning/
+results/lumpy_09_croston_xgboost_hybrid/
+results/lumpy_10_internal_hybrid_tuning/
+results/lumpy_11_block_forecasting/
+results/lumpy_12_sku_routing_cold_start/
+results/lumpy_13_segmented_strategy/
+results/lumpy_14_established_recurring_tournament/
+results/lumpy_15_ab_full_optimization/
+results/lumpy_16_layered_ensemble/
+results/lumpy_17_online_experts/
+results/lumpy_18_c_transfer_tournament/
+results/lumpy_19_c_horizon_aligned/
+results/lumpy_20_c_sku_router/
+results/lumpy_21_official_abc_scorecard/
+results/lumpy_22_established_occasional/
+results/lumpy_23_occasional_allocation/
+results/lumpy_24_occasional_total_demand/
+results/lumpy_25_occasional_event_budget/
+results/lumpy_26_occasional_sku_router/
+results/lumpy_27_occasional_temporal_memory/
+results/lumpy_28_established_rare/
+results/lumpy_29_rare_group_occurrence/
+results/lumpy_30_rare_quantity_calibration/
+results/lumpy_31_rare_renewal_hazard/
+results/lumpy_32_cold_start_analogue_calibration/
+results/lumpy_33_cold_start_launch_hurdle/
+results/lumpy_34_cold_start_quantity_calibration/
+results/lumpy_35_new_sku_short_history_blend/
+results/lumpy_36_new_sku_level_routing/
+results/lumpy_37_developing_sku_tournament/
+results/lumpy_38_developing_high_volume_routing/
+results/lumpy_39_dormant_reactivation/
+results/lumpy_40_consolidated_champion_scorecard/
+results/lumpy_42_historical_quantile_calibration/
+results/lumpy_43_sku_delivery_output/
+results/lumpy_44_operational_policy/
+
+# Keep feature-experiment documentation, but never publish SKU-level audit outputs
+docs/lumpy_47_feature_quality_eligibility/*.csv
+docs/lumpy_48_feature_importance_stability/*.csv
+docs/lumpy_49_feature_group_ablation/*.csv
+docs/lumpy_50_feature_challenger_holdout/*.csv

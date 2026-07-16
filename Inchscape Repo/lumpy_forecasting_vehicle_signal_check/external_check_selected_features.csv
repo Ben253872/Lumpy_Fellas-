@@ -1,0 +1,9 @@
+demand_type,model,feature_count_before,feature_count_after_positive_filter
+smooth,Internal only,32,11
+smooth,Internal + external,100,39
+intermittent,Internal only,32,11
+intermittent,Internal + external,100,35
+erratic,Internal only,32,12
+erratic,Internal + external,100,36
+lumpy,Internal only,32,9
+lumpy,Internal + external,100,36

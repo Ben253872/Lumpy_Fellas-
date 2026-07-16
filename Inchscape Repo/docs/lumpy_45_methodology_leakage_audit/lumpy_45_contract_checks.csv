@@ -1,0 +1,8 @@
+check,passed,detail
+sku_coverage,True,observed=690 expected=690
+row_coverage,True,observed=4140 expected=4140
+six_blocks_per_sku,True,nonconforming=0
+no_route_overlap,True,duplicate_rows=0
+official_block_dates,True,"observed=['2024-11-01', '2025-02-01', '2025-05-01', '2025-08-01', '2025-11-01', '2026-02-01']"
+target_reconciliation,True,observed=9111.0 expected=9111.0
+nonnegative_forecasts,True,negative_rows=0

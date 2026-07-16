@@ -1,0 +1,3 @@
+left,right,left_weight,all_skus,positive_skus,under_50,under_70,under_100,median_wmape,p75_wmape,median_mase,portfolio_wmape,actual_total,forecast_total,bias_pct,cohort
+hurdle_d2_none_log__w24__soft__p0.75__t0.00__s0.75__none__b0.00,direct_d2_fast_p135__w48__direct__p1.00__t0.00__s0.75__none__b0.00,0.5,215,215,98,148,190,53.64518590983627,77.97387771516699,0.40635057630482063,59.767402679006,1725.0,1329.8567266378595,-22.90685642679075,recurring_a
+hurdle_d2_full_log__w18__soft__p0.75__t0.00__s0.75__none__b0.00,hurdle_d2_sqrt_tweedie__w48__soft__p1.25__t0.00__s0.75__none__b0.00,0.5,110,104,42,55,66,68.42833121249586,123.08372005212621,0.3110530237064498,78.87549101068733,274.0,284.8269471071993,3.951440550072743,recurring_b

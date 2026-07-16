@@ -1,0 +1,8 @@
+segment,source_notebook,evidence_path,evidence_exists,selected_before_final,cutoff_safe_population,official_contract_compatible,external_features_used,passed
+recurring,21,docs/lumpy_21_official_abc_scorecard/lumpy_21_configuration_registry.csv,True,True,True,True,False,True
+occasional,27,docs/lumpy_27_occasional_temporal_memory/lumpy_27_locked_memory_rules.json,True,True,True,True,False,True
+rare,29,docs/lumpy_29_rare_group_occurrence/lumpy_29_locked_strategies.json,True,True,True,True,False,True
+cold_start,33,docs/lumpy_33_cold_start_launch_hurdle/lumpy_33_locked_strategy.csv,True,True,True,True,False,True
+new,42,docs/lumpy_42_historical_quantile_calibration/lumpy_42_locked_strategy.csv,True,True,True,True,False,True
+developing,38,docs/lumpy_38_developing_high_volume_routing/lumpy_38_locked_strategy.csv,True,True,True,True,False,True
+dormant,13,docs/lumpy_13_segmented_strategy/lumpy_13_strategy_assignment_all_690.csv,True,True,True,True,False,True

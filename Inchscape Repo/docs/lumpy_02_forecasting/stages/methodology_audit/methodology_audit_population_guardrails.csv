@@ -1,0 +1,6 @@
+guardrail,passed,detail
+classification_frozen_at_cutoff,True,Lifecycle and frequency assignments cover all 690 SKUs.
+positive_sku_not_selector,True,Official positive demand is not present in the routing assignment table.
+dormant_retained_for_governance,True,Dormant SKUs are retained but operationally flagged.
+actionable_excludes_dormant,True,Actionable result excludes dormant manual-review population.
+official_actuals_not_model_features,True,"Target, WMAPE, MASE and reliability are evaluation outputs; documented by SKU delivery tables."

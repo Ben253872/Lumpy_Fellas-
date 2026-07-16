@@ -1,0 +1,6 @@
+model_key,model,sku_count,valid_positive_skus,under_50_skus,under_70_skus,under_100_skus,median_block_wmape,portfolio_block_wmape,actual_total,forecast_total
+cold_empirical_bayes5,Cold start empirical bayes5,40,40,4,8,12,117.82805039262007,137.11087660881776,775.0,1124.3171231544347
+cold_subfamily_mean,Cold start subfamily mean,40,40,3,8,14,118.33585837865715,121.72456236836862,775.0,1008.1885972175726
+cold_peer_knn5,Cold start peer knn5,40,40,2,8,14,117.55461532321547,147.95277741192837,775.0,1186.8478678896681
+cold_peer_knn15,Cold start peer knn15,40,40,2,7,13,118.01400556604543,131.72815046187077,775.0,1052.2882094230063
+cold_empirical_bayes15,Cold start empirical bayes15,40,40,2,7,12,117.82805039262007,127.4772415813078,775.0,1036.8533451511046
