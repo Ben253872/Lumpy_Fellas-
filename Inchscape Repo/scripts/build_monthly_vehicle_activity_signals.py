@@ -14,7 +14,6 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
-from pypdf import PdfReader
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -113,6 +112,28 @@ def build_mop_observed() -> pd.DataFrame:
     return observed
 
 
+def load_or_build_mop() -> pd.DataFrame:
+    """Use the stored MOP extraction unless the source files have changed."""
+    observed_path = CACHE / "monthly_mop_traffic_observed_2021_2026.csv"
+    source_files = list(MOP_DIR.glob("*.xls"))
+    cache_is_current = (
+        observed_path.exists()
+        and source_files
+        and observed_path.stat().st_mtime >= max(path.stat().st_mtime for path in source_files)
+    )
+    if cache_is_current:
+        print("Using cached MOP traffic extraction")
+        return pd.read_csv(observed_path, parse_dates=["date"])
+
+    try:
+        return build_mop_observed()
+    except ImportError as exc:
+        if observed_path.exists() and "xlrd" in str(exc).lower():
+            print("Using cached MOP traffic extraction because xlrd is not installed")
+            return pd.read_csv(observed_path, parse_dates=["date"])
+        raise
+
+
 def find_market_total(pages: list[str], year: int) -> float:
     for text in pages:
         if "RESULTADOS EN" not in ascii_text(text) or "LIVIANOS Y MEDIANOS" not in ascii_text(text):
@@ -137,6 +158,17 @@ def find_market_total(pages: list[str], year: int) -> float:
 
 
 def parse_anac_report(path: Path) -> tuple[dict[str, object], list[dict[str, object]]]:
+    try:
+        from pypdf import PdfReader
+    except ModuleNotFoundError:
+        try:
+            from PyPDF2 import PdfReader
+        except ModuleNotFoundError as exc:
+            raise ModuleNotFoundError(
+                "Reading new ANAC PDF files needs pypdf or PyPDF2. "
+                "The stored ANAC extraction can be used without either package."
+            ) from exc
+
     date = filename_month(path)
     pdf = PdfReader(str(path))
     # ANAC's narrative/market summary is at the front and model rankings are
@@ -338,7 +370,7 @@ def update_metadata(feature_columns: list[str]) -> None:
             "forecasting_usefulness": "high",
             "usefulness_reason": "True monthly counts plus weekend, night and peak-hour shares replace repeated annual context.",
             "known_limitations": "Three official workbooks are combined and refreshed annually; use the publication-aware bridge.",
-            "join_keys": "country, year, month", "target_model_use": "publication-safe monthly regressor", "status": "active",
+            "join_keys": "country, year, month", "target_model_use": "publication-safe monthly regressor", "status": "materialised",
         },
         {
             "source_id": "cl_anac_suzuki_monthly_model_sales",
@@ -462,7 +494,7 @@ def update_metadata(feature_columns: list[str]) -> None:
 
 def main() -> None:
     CACHE.mkdir(parents=True, exist_ok=True)
-    mop = build_mop_observed()
+    mop = load_or_build_mop()
     anac, model_mix = load_or_build_anac()
     dates = pd.date_range("2021-01-01", "2026-12-01", freq="MS")
     mop_safe = publication_safe_monthly(mop, "mop", 2, dates)

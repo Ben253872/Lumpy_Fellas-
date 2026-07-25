@@ -3,6 +3,7 @@ __pycache__/
 *.py[cod]
 .ipynb_checkpoints/
 .venv/
+.cache/
 
 
 
@@ -10,8 +11,15 @@ __pycache__/
 !docs/*.xlsx
 !notebooks/*.ipynb
 
-# Archived model-search notebooks are local reference only
-notebooks/archive_lumpy_experiments_06_50/
+# Local archives and generated Lumpy/external review files
+notebooks/archive/
+docs/archive/
+scripts/archive/
+results/archive/
+results/archieve/
+lumpy_forecasting_vehicle_signal_check/
+src/archive/
+scripts/build_lumpy_forecasting_submission.py
 
 # Ignore only the raw source file
 data/raw/chile_suzuki_historical_sales.csv

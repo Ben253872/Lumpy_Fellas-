@@ -1,4 +1,4 @@
-"""Lean lumpy-demand forecasting workflow.
+﻿"""Lean lumpy-demand forecasting workflow.
 
 The default model path keeps cheap controls and intermittent-demand references,
 then adds shape-aware SBA challengers for the lumpy collision use case. Legacy
@@ -132,7 +132,8 @@ OBSERVED_ONLY_STATE_COLUMNS = {
 class LumpyConfig:
     variant: str = "all_sku_history"
     train_months: int = 48
-    gap_months: int = 3
+    # One intervening month gives a two-month-ahead forecast: January origin -> March actual.
+    gap_months: int = 1
     test_months: int = 18
     step_months: int = 3
     min_train_months: int = 18
@@ -234,7 +235,9 @@ def complete_monthly_grid(sales: pd.DataFrame) -> pd.DataFrame:
             if column not in merged.columns:
                 continue
             if column in STATIC_SKU_DESCRIPTOR_COLUMNS:
-                merged[column] = merged[column].ffill().bfill()
+                # Infer numeric or boolean object columns before filling so pandas does not silently downcast.
+                descriptor = merged[column].infer_objects(copy=False)
+                merged[column] = descriptor.ffill().bfill()
             elif column in ZERO_FILL_FLOW_COLUMNS:
                 merged.loc[inserted_month & merged[column].isna(), column] = 0.0
             elif column in OBSERVED_ONLY_STATE_COLUMNS:
@@ -362,7 +365,7 @@ def make_backtest_splits(data: pd.DataFrame, config: LumpyConfig | None = None) 
                 "test_end": test_end,
                 "train_months": observed_train_months,
                 "test_months": config.test_months,
-                "window_label": f"{config.test_months}_month_test_lag_{config.gap_months}m",
+                "window_label": f"{config.test_months}_month_test_lead_{config.gap_months + 1}m",
             }
         )
         fold_id += 1
@@ -393,8 +396,8 @@ def make_backtest_splits_for_lags(
             )
             frame = make_backtest_splits(data, split_config)
             if not frame.empty:
-                frame["is_required_18m_3m_benchmark"] = (
-                    frame["test_months"].eq(18) & frame["gap_months"].eq(3)
+                frame["is_required_18m_2m_benchmark"] = (
+                    frame["test_months"].eq(18) & frame["gap_months"].eq(1)
                 )
                 frames.append(frame)
     if not frames:
@@ -1730,29 +1733,29 @@ def run_lag_comparison_agent(metric_suite_model_summary: pd.DataFrame) -> pd.Dat
         if ranked.empty:
             continue
         best = ranked.iloc[0]
-        requested = ranked.loc[ranked["gap_months"].eq(3)]
+        requested = ranked.loc[ranked["gap_months"].eq(1)]
         requested_best = requested.iloc[0] if not requested.empty else None
         requested_score = requested_best[score_column] if requested_best is not None else np.nan
         delta = best[score_column] - requested_score if pd.notna(requested_score) else np.nan
-        if best["gap_months"] == 3:
-            recommendation = "Keep the required 3-month lag as the lead benchmark for this window."
+        if best["gap_months"] == 1:
+            recommendation = "Keep the required two-month-ahead design for this window."
         elif pd.notna(delta) and delta < -5:
-            recommendation = "A longer lead-time lag is materially better in this diagnostic view; review operational fit before promoting it."
+            recommendation = "An alternative forecast lead is materially better in this diagnostic view; review operational fit before promoting it."
         else:
-            recommendation = "Alternative lag is close to the 3-month benchmark; keep 3-month as required and use this as sensitivity context."
+            recommendation = "Alternative lead is close to the two-month-ahead benchmark; retain the required design."
         rows.append(
             {
-                "agent": "Lag Comparison Agent",
+                "agent": "Forecast Lead Check",
                 "test_months": test_months,
                 "score_column": score_column,
-                "required_lag_months": 3,
+                "required_forecast_lead_months": 2,
                 "required_lag_best_model": requested_best["model"] if requested_best is not None else pd.NA,
                 "required_lag_score_percent": requested_score,
-                "best_lag_months": best["gap_months"],
+                "best_forecast_lead_months": int(best["gap_months"]) + 1,
                 "best_window_label": best["window_label"],
                 "best_model": best["model"],
                 "best_score_percent": best[score_column],
-                "delta_vs_required_lag_percent": delta,
+                "delta_vs_required_lead_percent": delta,
                 "recommendation": recommendation,
             }
         )
@@ -2013,3 +2016,4 @@ def write_lumpy_outputs(
     if feature_inventory is not None:
         feature_inventory.to_csv(outputs["feature_inventory"], index=False)
     return outputs
+
