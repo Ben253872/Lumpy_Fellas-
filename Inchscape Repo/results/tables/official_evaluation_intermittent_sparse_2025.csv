@@ -1,0 +1,5 @@
+model,wmape_percent,sku_count,evaluation_rows,total_actual_demand
+lightgbm,91.0,1430,1430,100.0
+lumpy_hurdle,9.0,1430,1430,100.0
+random_forest,0.0,1430,1430,100.0
+xgboost,61.0,1430,1430,100.0

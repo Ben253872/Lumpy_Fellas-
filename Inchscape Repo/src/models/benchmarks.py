@@ -12,25 +12,48 @@ ForecastModel = Callable[[pd.DataFrame, list[pd.Timestamp]], pd.DataFrame]
 
 
 def wmape(months: pd.Series, actual: pd.Series, forecast: pd.Series, sku_id: pd.Series | None = None) -> float:
-    """Per-SKU WMAPE averaged across SKUs, with three-month rolling mean per SKU."""
-    scores = pd.DataFrame({"month": pd.to_datetime(months), "actual": actual, "forecast": forecast})
-    if sku_id is not None:
-        scores["sku_id"] = sku_id
+    """Pooled WMAPE: sum(|actual - forecast|) / sum(actual) across all SKU-months.
+    
+    Zero-actual rows contribute 0 to the denominator but any forecast error still
+    adds to the numerator, correctly penalising over-forecasting on zero-demand periods.
+    """
+    actual_arr = np.asarray(actual, dtype=float)
+    forecast_arr = np.asarray(forecast, dtype=float)
+    denom = np.abs(actual_arr).sum()
+    if denom == 0:
+        return np.nan
+    return float(np.abs(actual_arr - forecast_arr).sum() / denom * 100)
+
+
+def wmape_per_sku(months: pd.Series, actual: pd.Series, forecast: pd.Series, sku_id: pd.Series) -> tuple[dict, float]:
+    """Pooled WMAPE per SKU: sum(|error|) / sum(actual) for each SKU individually.
+    
+    Individual SKU WMAPEs are NaN when a SKU had zero actual demand in the evaluation period.
+    The overall metric is the pooled WMAPE across all SKU-months (not the mean of SKU WMAPEs).
+    
+    Returns:
+        Tuple of (dict mapping sku_id to sku_wmape_percent, pooled_wmape_across_all_skus)
+    """
+    scores = pd.DataFrame({"actual": np.asarray(actual, dtype=float),
+                           "forecast": np.asarray(forecast, dtype=float),
+                           "sku_id": sku_id})
     scores["absolute_error"] = (scores["actual"] - scores["forecast"]).abs()
     
-    if sku_id is not None:
-        # Calculate per-SKU, per-month aggregates
-        monthly = scores.groupby(["sku_id", "month"]).agg(actual=("actual", "sum"), error=("absolute_error", "sum")).sort_index()
-        # Calculate WMAPE per SKU-month
-        monthly["wmape"] = np.where(monthly["actual"] > 0, monthly["error"] / monthly["actual"], np.nan)
-        # Apply 3-month rolling mean per SKU, then average across all SKUs
-        rolling_wmape = monthly.groupby(level="sku_id")["wmape"].apply(lambda x: x.rolling(3, min_periods=1).mean())
-        return float(rolling_wmape.mean() * 100)
-    else:
-        # Fallback: original aggregated behavior for backwards compatibility
-        monthly = scores.groupby("month").agg(actual=("actual", "sum"), error=("absolute_error", "sum")).sort_index()
-        monthly["wmape"] = np.where(monthly["actual"] > 0, monthly["error"] / monthly["actual"], np.nan)
-        return float(monthly["wmape"].rolling(3, min_periods=1).mean().mean() * 100)
+    # Per-SKU pooled WMAPE: sum(|error|) / sum(actual) per SKU
+    sku_agg = scores.groupby("sku_id").agg(actual_sum=("actual", "sum"), error_sum=("absolute_error", "sum"))
+    sku_wmapes = {}
+    for sku, row in sku_agg.iterrows():
+        if row["actual_sum"] > 0:
+            sku_wmapes[sku] = float(row["error_sum"] / row["actual_sum"] * 100)
+        else:
+            sku_wmapes[sku] = np.nan  # SKU had no actual demand in this period
+    
+    # Overall metric: pooled across all SKU-months
+    total_actual = scores["actual"].sum()
+    total_error = scores["absolute_error"].sum()
+    pooled_wmape = float(total_error / total_actual * 100) if total_actual > 0 else np.nan
+    
+    return sku_wmapes, pooled_wmape
 
 
 def rolling_origin_validation(data: pd.DataFrame, model: ForecastModel, horizon: int = 1, initial_train_months: int = 36) -> pd.DataFrame:

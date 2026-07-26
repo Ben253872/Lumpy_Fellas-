@@ -14,4 +14,4 @@
 
 ## Processed sales outputs
 
-`src/prepare_data.py` creates the processed files from the raw extract. Each keeps the standardized identifiers (`sku_id`, `month`, `demand`), the demand-type label, the row-level collision indicator, and all remaining raw feature columns to support feature-driven modelling.
+Processed files are stored under `data/processed/`. They keep standardized identifiers (`sku_id`, `month`, `demand`), demand-type labels, the row-level collision indicator, and retained feature columns for feature-driven modelling.

@@ -1,0 +1,2 @@
+model,external_mode,mean_wmape,std_wmape,min_wmape,max_wmape,final_rolling_3m,num_months
+amazon/chronos-2,erratic_features,53.700707332463004,18.3742854047645,32.952168913906696,93.87986096415665,71.09596483537268,19

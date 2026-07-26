@@ -1,0 +1,3 @@
+sku_id,variant,demand_type,model,wmape_percent
+0911912012000,all_sku_history,Erratic,chronos_2_ridge,43.31
+0911912012000,collision_flag_only,Erratic,lightgbm,51.27

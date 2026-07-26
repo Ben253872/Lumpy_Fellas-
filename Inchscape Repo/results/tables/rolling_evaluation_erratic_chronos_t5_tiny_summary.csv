@@ -1,0 +1,2 @@
+model,mean_wmape,std_wmape,min_wmape,max_wmape,final_rolling_3m,num_months
+chronos_t5_tiny,71.76170463579065,5.655807126994368,61.00761683920759,81.9534240672307,70.91531167952546,19

@@ -17,8 +17,19 @@ function formatNumber(value) {
 
 function resizeCanvas(canvas) {
   const ratio = window.devicePixelRatio || 1;
-  const cssWidth = canvas.clientWidth || 320;
-  const cssHeight = canvas.clientHeight || 190;
+  let cssWidth = canvas.clientWidth;
+  let cssHeight = canvas.clientHeight;
+  
+  // If the canvas hasn't been rendered yet, get the container width
+  if (cssWidth <= 0) {
+    cssWidth = canvas.parentElement?.clientWidth || 320;
+  }
+  if (cssHeight <= 0) {
+    cssHeight = 190; // fallback to HTML height attribute
+  }
+  
+  console.log('resizeCanvas:', { cssWidth, cssHeight, ratio });
+  
   canvas.width = Math.floor(cssWidth * ratio);
   canvas.height = Math.floor(cssHeight * ratio);
   const ctx = canvas.getContext("2d");
@@ -26,12 +37,18 @@ function resizeCanvas(canvas) {
   return { ctx, width: cssWidth, height: cssHeight };
 }
 
-function drawSeries(ctx, points, xPositions, yScale, color, dashed = false) {
+function drawSeries(ctx, points, xPositions, yScale, color, dashed = false, connectFromPoint = null) {
   ctx.beginPath();
   ctx.strokeStyle = color;
   ctx.lineWidth = 2;
   ctx.setLineDash(dashed ? [5, 5] : []);
-  let started = false;
+  
+  // If we should connect from a previous point, start there
+  if (connectFromPoint != null) {
+    ctx.moveTo(connectFromPoint.x, connectFromPoint.y);
+  }
+  
+  let started = connectFromPoint != null;
   points.forEach((value, index) => {
     if (value == null) {
       started = false;
@@ -93,6 +110,8 @@ function drawChart(canvas, result) {
   const future = result.future_predictions ?? [];
   const { ctx, width, height } = resizeCanvas(canvas);
 
+  console.log('drawChart called:', { history: history.length, future: future.length, width, height });
+
   ctx.clearRect(0, 0, width, height);
 
   if (!history.length && !future.length) {
@@ -108,6 +127,8 @@ function drawChart(canvas, result) {
   const testForecast = [...history.map((p) => p.forecast), ...future.map(() => null)];
   const futureForecast = [...history.map(() => null), ...future.map((p) => p.forecast)];
 
+  console.log('Data arrays:', { actual, testForecast, futureForecast, labels });
+
   const allValues = [...actual, ...testForecast, ...futureForecast].filter((v) => v != null);
   const minValue = Math.min(...allValues, 0);
   const maxValue = Math.max(...allValues, 1);
@@ -115,7 +136,7 @@ function drawChart(canvas, result) {
   const yMin = minValue - pad;
   const yMax = maxValue + pad;
 
-  const margin = { left: 36, right: 10, top: 28, bottom: 26 };
+  const margin = { left: 50, right: 10, top: 28, bottom: 26 };
   const chartWidth = Math.max(1, width - margin.left - margin.right);
   const chartHeight = Math.max(1, height - margin.top - margin.bottom);
   const xPositions = labels.map((_, idx) => {
@@ -126,8 +147,9 @@ function drawChart(canvas, result) {
   });
   const yScale = (v) => margin.top + ((yMax - v) / (yMax - yMin || 1)) * chartHeight;
 
-  if (futureStartIndex < labels.length) {
-    const startX = xPositions[Math.max(0, futureStartIndex)];
+  if (futureStartIndex < labels.length && futureStartIndex > 0) {
+    // Draw future window starting from the last test forecast point (present month)
+    const startX = xPositions[futureStartIndex - 1];
     ctx.fillStyle = "rgba(123, 44, 191, 0.08)";
     ctx.fillRect(startX, margin.top, width - margin.right - startX, chartHeight);
     ctx.strokeStyle = "rgba(123, 44, 191, 0.45)";
@@ -154,8 +176,58 @@ function drawChart(canvas, result) {
 
   drawSeries(ctx, actual, xPositions, yScale, "#1f6f8b");
   drawSeries(ctx, testForecast, xPositions, yScale, "#ef6c00");
+  
+  // Connect future forecast line from the last test forecast value with a dotted line
+  const lastTestIdx = futureStartIndex - 1;
+  const firstFutureIdx = futureStartIndex;
+  if (lastTestIdx >= 0 && futureStartIndex < xPositions.length && testForecast[lastTestIdx] != null && futureForecast[firstFutureIdx] != null) {
+    const lastTestX = xPositions[lastTestIdx];
+    const lastTestY = yScale(testForecast[lastTestIdx]);
+    const firstFutureX = xPositions[firstFutureIdx];
+    const firstFutureY = yScale(futureForecast[firstFutureIdx]);
+    
+    // Draw connecting dotted line (purple to match future line style)
+    ctx.strokeStyle = "#7b2cbf";
+    ctx.lineWidth = 2;
+    ctx.setLineDash([5, 5]);
+    ctx.beginPath();
+    ctx.moveTo(lastTestX, lastTestY);
+    ctx.lineTo(firstFutureX, firstFutureY);
+    ctx.stroke();
+    ctx.setLineDash([]);
+  }
+  
   drawSeries(ctx, futureForecast, xPositions, yScale, "#7b2cbf", true);
   drawMarkers(ctx, futureForecast, xPositions, yScale, "#7b2cbf");
+  
+  // Populate HTML Y-axis labels (skip top label to avoid conflict with legend)
+  const labelsContainer = canvas.parentElement?.querySelector(".y-axis-labels");
+  if (labelsContainer) {
+    labelsContainer.innerHTML = "";
+    // Add empty spacer for the top
+    const topSpacer = document.createElement("div");
+    topSpacer.style.flex = "1";
+    labelsContainer.appendChild(topSpacer);
+    // Add labels for i=1 to i=4
+    for (let i = 1; i <= 4; i += 1) {
+      const value = yMax - (i * (yMax - yMin)) / 4;
+      const label = formatNumber(value);
+      const labelEl = document.createElement("div");
+      labelEl.textContent = label;
+      labelEl.style.flex = "1";
+      labelEl.style.display = "flex";
+      labelEl.style.alignItems = "center";
+      labelEl.style.justifyContent = "flex-end";
+      labelEl.style.paddingRight = "8px";
+      labelEl.style.fontSize = "12px";
+      labelEl.style.fontWeight = "bold";
+      labelEl.style.color = "#1e1f2e";
+      labelEl.style.backgroundColor = "rgba(255, 255, 255, 0.9)";
+      labelEl.style.borderRadius = "2px";
+      labelEl.style.marginRight = "-4px";
+      labelsContainer.appendChild(labelEl);
+    }
+  }
   drawLegend(ctx);
 
   ctx.fillStyle = "#6b7280";
@@ -173,6 +245,7 @@ function renderCard(result) {
   node.querySelector(".demand-type").textContent = result.demand_type;
   node.querySelector(".assigned-model").textContent = result.selected_model ?? "No model assigned";
   node.querySelector(".wmape").textContent = result.wmape_percent == null ? "n/a" : `${formatNumber(result.wmape_percent)}%`;
+  node.querySelector(".wmape-rolling").textContent = result.wmape_3month_rolling == null ? "n/a" : `${formatNumber(result.wmape_3month_rolling)}%`;
 
   const prescribedEl = node.querySelector(".prescribed");
   if (result.prescribed_forecast) {
@@ -219,7 +292,7 @@ function renderCard(result) {
     futureSummary.textContent = `Future horizon returned: ${result.future_predictions.length} months (${result.future_predictions[0].month} to ${result.future_predictions[result.future_predictions.length - 1].month}).`;
     futureNote.textContent = result.future_is_flat
       ? "Model output is flat across horizon (steady-state forecast)."
-      : "Model output varies month by month across the 18-month horizon.";
+      : "Model output varies month by month across the 2-month horizon.";
   }
 
   resultsEl.appendChild(node);

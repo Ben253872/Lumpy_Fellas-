@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import sys
 from pathlib import Path
+from typing import Any
 
 import joblib
 import numpy as np
@@ -16,11 +17,11 @@ ROOT = Path(__file__).resolve().parents[2]
 FRONTEND_DIR = ROOT / "app" / "frontend"
 RESULTS_DIR = ROOT / "results"
 PROCESSED_DIR = ROOT / "data" / "processed"
-VARIANTS = ("all_sku_history", "collision_flag_only")
-FUTURE_HORIZON_MONTHS = 18
+VARIANTS = ("all_sku_history",)
+FUTURE_HORIZON_MONTHS = 2
 
 sys.path.insert(0, str(ROOT / "src"))
-from models.advanced import _encoded_features, engineer_time_features  # noqa: E402
+from models.advanced import Chronos2RidgeConfig, Chronos2RidgeForecaster, _encoded_features, engineer_time_features  # noqa: E402
 
 
 class ForecastPoint(BaseModel):
@@ -39,6 +40,7 @@ class VariantResult(BaseModel):
     demand_type: str
     selected_model: str | None
     wmape_percent: float | None
+    wmape_3month_rolling: float | None
     prescribed_forecast: ForecastPoint | None
     forecast_history: list[ForecastPoint]
     future_predictions: list[FutureForecastPoint]
@@ -55,10 +57,34 @@ class ForecastService:
         self.results_dir = results_dir
         self.metrics = self._load_metrics()
         self.forecasts = self._load_forecasts()
+        self.sku_model_assignments = self._load_sku_model_assignments()
         self.best_models = self._build_best_model_lookup()
         self.profiles = self._load_profiles()
         self.dataset_cache: dict[tuple[str, str], pd.DataFrame] = {}
         self.artifact_cache: dict[tuple[str, str, str], dict] = {}
+        self.chronos_cache: dict[tuple[str, str, str], Chronos2RidgeForecaster] = {}
+
+    def _load_sku_model_assignments(self) -> pd.DataFrame:
+        """Load optional per-SKU best-model assignments from results/tables.
+
+        Expected columns: sku_id, variant, model
+        Optional columns: wmape_percent, demand_type
+        """
+        path = self.results_dir / "tables" / "best_model_per_sku.csv"
+        if not path.exists():
+            return pd.DataFrame(columns=["sku_id", "variant", "model", "wmape_percent", "demand_type"])
+        assignments = pd.read_csv(path)
+        required = {"sku_id", "variant", "model"}
+        if not required.issubset(assignments.columns):
+            raise ValueError(f"Invalid assignment table {path}. Required columns: {sorted(required)}")
+        assignments["sku_id"] = assignments["sku_id"].astype(str)
+        assignments["variant"] = assignments["variant"].astype(str)
+        assignments["model"] = assignments["model"].astype(str)
+        if "wmape_percent" not in assignments.columns:
+            assignments["wmape_percent"] = np.nan
+        if "demand_type" not in assignments.columns:
+            assignments["demand_type"] = ""
+        return assignments
 
     def _load_metrics(self) -> pd.DataFrame:
         path = self.results_dir / "tables" / "advanced_metrics_all_datasets.csv"
@@ -116,16 +142,53 @@ class ForecastService:
         self.dataset_cache[key] = data
         return data
 
-    def _artifact_for_assignment(self, variant: str, demand_type: str, model_name: str) -> dict:
+    def _artifact_for_assignment(self, variant: str, demand_type: str, model_name: str) -> dict | None:
         key = (variant, demand_type, model_name)
         if key in self.artifact_cache:
             return self.artifact_cache[key]
         path = self.results_dir / "models" / "advanced" / f"{variant}__{demand_type.lower()}__{model_name}.joblib"
         if not path.exists():
-            raise FileNotFoundError(f"Missing model artifact: {path}")
+            return None
         artifact = joblib.load(path)
         self.artifact_cache[key] = artifact
         return artifact
+
+    def _chronos_for_assignment(self, variant: str, demand_type: str, model_name: str) -> Chronos2RidgeForecaster:
+        key = (variant, demand_type, model_name)
+        if key in self.chronos_cache:
+            return self.chronos_cache[key]
+
+        path = self.results_dir / "models" / "advanced" / f"{variant}__{demand_type.lower()}__{model_name}.joblib"
+        if path.exists():
+            artifact = joblib.load(path)
+            forecaster = Chronos2RidgeForecaster.from_artifact(artifact)
+        else:
+            # Skeleton fallback: uses default Chronos 2 config until a trained artifact is persisted.
+            forecaster = Chronos2RidgeForecaster(config=Chronos2RidgeConfig(model_id="amazon/chronos-2"))
+
+        self.chronos_cache[key] = forecaster
+        return forecaster
+
+    def _calculate_rolling_wmape(self, history: list[ForecastPoint], window_size: int = 3) -> float | None:
+        """Calculate 3-month rolling average WMAPE from forecast history.
+        
+        WMAPE = sum(|actual - forecast|) / sum(|actual|)
+        """
+        if not history or len(history) < window_size:
+            return None
+        
+        rolling_wmapes = []
+        for i in range(len(history) - window_size + 1):
+            window = history[i:i + window_size]
+            numerator = sum(abs(point.actual_demand - point.forecast) for point in window)
+            denominator = sum(abs(point.actual_demand) for point in window)
+            if denominator > 0:
+                wmape = (numerator / denominator) * 100
+                rolling_wmapes.append(wmape)
+        
+        if rolling_wmapes:
+            return sum(rolling_wmapes) / len(rolling_wmapes)
+        return None
 
     @staticmethod
     def _predict_from_artifact(artifact: dict, features_row: pd.DataFrame) -> float:
@@ -152,7 +215,22 @@ class ForecastService:
         if sku_history.empty:
             return []
 
+        if model_name.startswith("chronos"):
+            forecaster = self._chronos_for_assignment(variant, demand_type, model_name)
+            predicted = forecaster.predict_horizon_for_sku(
+                sku_id=sku_id,
+                sku_history=sku_history,
+                horizon_months=horizon_months,
+                correction_features=None,
+            )
+            return [
+                FutureForecastPoint(month=pd.Timestamp(row["month"]).strftime("%Y-%m-%d"), forecast=float(row["demand"]))
+                for _, row in predicted.iterrows()
+            ]
+
         artifact = self._artifact_for_assignment(variant, demand_type, model_name)
+        if artifact is None:
+            return []
         feature_names = artifact["features"]
         running = sku_history.copy()
         future_points: list[FutureForecastPoint] = []
@@ -176,6 +254,31 @@ class ForecastService:
 
         return future_points
 
+    def _sku_model_assignment(self, sku_id: str, variant: str, demand_type: str) -> dict[str, Any] | None:
+        """Return model assignment for a SKU.
+
+        Priority:
+        1) results/tables/best_model_per_sku.csv (when available)
+        2) fallback demand-type assignment from advanced metrics
+        """
+        if not self.sku_model_assignments.empty:
+            rows = self.sku_model_assignments.loc[
+                (self.sku_model_assignments["sku_id"] == sku_id)
+                & (self.sku_model_assignments["variant"] == variant)
+            ]
+            if not rows.empty:
+                typed = rows.loc[rows["demand_type"].astype(str).str.title() == demand_type]
+                top = typed.iloc[0] if not typed.empty else rows.iloc[0]
+                return {
+                    "model": str(top["model"]),
+                    "wmape_percent": float(top["wmape_percent"]) if pd.notna(top["wmape_percent"]) else None,
+                }
+
+        fallback = self.best_models.get((variant, demand_type))
+        if fallback is None:
+            return None
+        return {"model": str(fallback["model"]), "wmape_percent": float(fallback["wmape_percent"])}
+
     def lookup_sku(self, sku_id: str) -> SkuResponse:
         sku = str(sku_id).strip()
         if not sku:
@@ -189,9 +292,9 @@ class ForecastService:
                 continue
 
             demand_type = str(profile.at[sku, "demand_type"])
-            assignment = self.best_models.get((variant, demand_type))
+            assignment = self._sku_model_assignment(sku_id=sku, variant=variant, demand_type=demand_type)
             selected_model = None if assignment is None else str(assignment["model"])
-            wmape_value = None if assignment is None else float(assignment["wmape_percent"])
+            wmape_value = None if assignment is None or assignment["wmape_percent"] is None else float(assignment["wmape_percent"])
 
             history: list[ForecastPoint] = []
             prescribed: ForecastPoint | None = None
@@ -205,6 +308,18 @@ class ForecastService:
                     & (self.forecasts["demand_type"] == demand_type)
                     & (self.forecasts["model"] == selected_model)
                 ].sort_values("month")
+
+                # Fallback: if no forecasts for assigned model, use any available model for this SKU
+                if rows.empty:
+                    rows = self.forecasts.loc[
+                        (self.forecasts["sku_id"] == sku)
+                        & (self.forecasts["variant"] == variant)
+                        & (self.forecasts["demand_type"] == demand_type)
+                    ].sort_values("month")
+                    # Take only the first model's data to avoid duplicates
+                    if not rows.empty:
+                        first_model = rows["model"].iloc[0]
+                        rows = rows[rows["model"] == first_model]
 
                 history = [
                     ForecastPoint(
@@ -226,12 +341,16 @@ class ForecastService:
                     values = [point.forecast for point in future_predictions]
                     future_is_flat = bool(max(values) - min(values) < 1e-9)
 
+            # Calculate 3-month rolling WMAPE
+            rolling_wmape = self._calculate_rolling_wmape(history) if history else None
+
             variant_results.append(
                 VariantResult(
                     variant=variant,
                     demand_type=demand_type,
                     selected_model=selected_model,
                     wmape_percent=wmape_value,
+                    wmape_3month_rolling=rolling_wmape,
                     prescribed_forecast=prescribed,
                     forecast_history=history,
                     future_predictions=future_predictions,

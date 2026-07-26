@@ -1,0 +1,20 @@
+model,eval_month,month_num,wmape,evaluation_rows,unique_skus,tuning
+chronos_t5_tiny,2024-10-01,1,64.1634683417197,380,380,Foundation Model
+chronos_t5_tiny,2024-11-01,2,71.84624908319525,381,381,Foundation Model
+chronos_t5_tiny,2024-12-01,3,75.8866127561356,381,381,Foundation Model
+chronos_t5_tiny,2025-01-01,4,72.28110903465043,381,381,Foundation Model
+chronos_t5_tiny,2025-02-01,5,81.9534240672307,382,382,Foundation Model
+chronos_t5_tiny,2025-03-01,6,70.21997432417379,384,384,Foundation Model
+chronos_t5_tiny,2025-04-01,7,61.00761683920759,391,391,Foundation Model
+chronos_t5_tiny,2025-05-01,8,68.38590737374388,394,394,Foundation Model
+chronos_t5_tiny,2025-06-01,9,79.55473801195438,396,396,Foundation Model
+chronos_t5_tiny,2025-07-01,10,71.74262898153746,396,396,Foundation Model
+chronos_t5_tiny,2025-08-01,11,72.5509821946559,396,396,Foundation Model
+chronos_t5_tiny,2025-09-01,12,77.82371079280375,396,396,Foundation Model
+chronos_t5_tiny,2025-10-01,13,67.68357447975187,396,396,Foundation Model
+chronos_t5_tiny,2025-11-01,14,78.93852039172462,396,396,Foundation Model
+chronos_t5_tiny,2025-12-01,15,63.13275830373001,396,396,Foundation Model
+chronos_t5_tiny,2026-01-01,16,73.55517806523089,396,396,Foundation Model
+chronos_t5_tiny,2026-02-01,17,72.51506909548007,396,396,Foundation Model
+chronos_t5_tiny,2026-03-01,18,67.15202141950853,396,396,Foundation Model
+chronos_t5_tiny,2026-04-01,19,73.07884452358776,396,396,Foundation Model

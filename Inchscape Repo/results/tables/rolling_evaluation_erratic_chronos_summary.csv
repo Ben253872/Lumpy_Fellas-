@@ -1,0 +1,2 @@
+model,mean_wmape,std_wmape,min_wmape,max_wmape,final_rolling_3m,num_months
+amazon/chronos-2,68.99603618694607,5.316438095884427,60.94088795007657,78.38984327016988,69.68284460625799,19
