@@ -1,0 +1,8 @@
+segment,source_notebook,route
+recurring,21,validation-locked recurring A/B/C models
+occasional,27,temporal model memory
+rare,29,group occurrence priors
+cold_start,33,genuine launch-cohort hurdle
+new,42,short-history blend with selective calibration
+developing,38,hurdle/analogue blend with high-volume routing
+dormant,13,governance forecast and lifecycle review

@@ -1,0 +1,2 @@
+all_sku_count,valid_positive_sku_count,under_50_skus,under_70_skus,under_100_skus,under_50_share,under_70_share,median_sku_block_wmape,p75_sku_block_wmape,median_sku_block_mase,portfolio_block_wmape,actual_total,forecast_total,bias_pct
+690,642,55,171,361,0.08566978193146417,0.26635514018691586,90.32900432900433,166.58476640780768,0.48924731182795705,102.52030164372792,9111.0,7200.537497363104,-20.968746599022015

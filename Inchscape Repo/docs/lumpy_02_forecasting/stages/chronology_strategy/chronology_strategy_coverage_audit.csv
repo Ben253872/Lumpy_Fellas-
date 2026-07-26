@@ -1,0 +1,2 @@
+expected_skus,established_skus,cold_start_skus,final_skus,complete_coverage
+690,650,40,690,True

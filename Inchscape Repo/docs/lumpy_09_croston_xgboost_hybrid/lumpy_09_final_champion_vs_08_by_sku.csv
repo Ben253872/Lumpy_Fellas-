@@ -1,0 +1,691 @@
+sku_id,candidate_source,candidate_model,mean_rolling_3m_wmape_percent,fair08_source,fair08_model,fair08_mean_rolling_3m_wmape_percent,delta_09_champion_minus_08
+01550M0612A,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+021620616A000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+083100012A000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+083161010A000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+083313124A000,08_fair_champion,SBA Croston,105.50993883040388,06_intermittent_tournament,SBA Croston,105.50993883040388,0.0
+0911605023000,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,104.11006048873618,06_intermittent_tournament,SBA Croston,106.79012345679013,-2.680062968053946
+0911912006XC0,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+0911912007000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,100.18569981936068,08_tuned_capped_full_coverage,Hurdle XGBoost threshold 0.30,104.57054771998202,-4.384847900621338
+09136M05078000,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,100.76516927541556,07_clean_regression,Direct Extra Trees log1p,120.34717215874268,-19.58200288332712
+0914016023000,08_fair_champion,SBA Croston,100.4040948275862,06_intermittent_tournament,SBA Croston,100.4040948275862,0.0
+0914806007000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.49610696271908,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.49610696271908,0.0
+09148M06022000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+0915912024000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+0915912051000,08_fair_champion,Aggregate Allocation,100.0,06_intermittent_tournament,Aggregate Allocation,100.0,0.0
+0915912079000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+0915912L02000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+0915918022000,09_croston_ml_hybrid,Croston HistGB gated probability size,106.82276699605144,06_intermittent_tournament,SBA Croston,122.2686991950388,-15.445932198987364
+0915918024000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+0915924009000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+0916435003000,08_fair_champion,Hurdle XGBoost threshold 0.30,100.0,08_tuned_capped_full_coverage,Hurdle XGBoost threshold 0.30,100.0,0.0
+0924130010000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+0928017002000,08_fair_champion,Direct Extra Trees log1p,98.50205986885511,07_clean_regression,Direct Extra Trees log1p,98.50205986885511,0.0
+0928022020000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,100.32014284189458,08_tuned_capped_full_coverage,Hurdle XGBoost threshold 0.30,101.69366974701582,-1.3735269051212384
+0928056004000,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,103.70009550689069,07_clean_regression,Direct Extra Trees log1p,134.57087942741356,-30.870783920522868
+0928314005000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+0928326016000,08_fair_champion,SBA Croston,110.77725695102968,06_intermittent_tournament,SBA Croston,110.77725695102968,0.0
+0928335036000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.29763322336838,-0.29763322336837916
+0928340021000,08_fair_champion,SBA Croston,97.62065866977248,06_intermittent_tournament,SBA Croston,97.62065866977248,0.0
+0928340027000,08_fair_champion,SBA Croston,94.81371497465952,06_intermittent_tournament,SBA Croston,94.81371497465952,0.0
+0928345012000,08_fair_champion,SBA Croston,93.9853749482804,06_intermittent_tournament,SBA Croston,93.9853749482804,0.0
+0928906003000,08_fair_champion,SBA Croston,91.8336497467921,06_intermittent_tournament,SBA Croston,91.8336497467921,0.0
+0928948004000,09_croston_ml_hybrid,Croston Random Forest gated probability size,101.30078826787889,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,104.39529805348528,-3.094509785606391
+0930508011000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+0931912047000,09_croston_ml_hybrid,Croston XGBoost depth2 gated size,100.03794483516528,08_tuned_capped_full_coverage,Hurdle XGBoost threshold 0.30,103.25910623412504,-3.221161398959765
+0932010024000,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,102.83085522444352,07_clean_regression,Direct Extra Trees log1p,116.97584162359696,-14.144986399153439
+0938019004000,08_fair_champion,Seasonal SBA Croston,122.04080328296492,06_intermittent_tournament,Seasonal SBA Croston,122.04080328296492,0.0
+0938168001000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+0940307333000,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,111.63917567921598,06_intermittent_tournament,SBA Croston,127.04781395639108,-15.4086382771751
+09403M07311000,08_fair_champion,SBA Croston,93.6345312186126,06_intermittent_tournament,SBA Croston,93.6345312186126,0.0
+09409063095ES,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+09409063145PK,08_fair_champion,Hurdle Random Forest threshold 0.35,106.7394859600588,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,106.7394859600588,0.0
+0940906322000,08_fair_champion,Aggregate Allocation,100.0,06_intermittent_tournament,Aggregate Allocation,100.0,0.0
+09409073255PK,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+0940907332000,09_croston_ml_hybrid,Croston Random Forest gated probability size,108.50797980657546,06_intermittent_tournament,SBA Croston,350.62074127654734,-242.11276146997187
+0940908322000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+0940908327000,08_fair_champion,SBA Croston,95.56909305595627,06_intermittent_tournament,SBA Croston,95.56909305595627,0.0
+0940908352000,08_fair_champion,XGBoost Tweedie depth2 reg10,96.5738952690188,08_tuned_capped_full_coverage,XGBoost Tweedie depth2 reg10,96.5738952690188,0.0
+0940909309000,08_fair_champion,Hurdle XGBoost threshold 0.30,100.38892914549602,08_tuned_capped_full_coverage,Hurdle XGBoost threshold 0.30,100.38892914549602,0.0
+0940910313000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+0940910318000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+0940915304000,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,100.73346543667921,08_tuned_capped_full_coverage,Hurdle XGBoost threshold 0.30,105.59322191994116,-4.859756483261947
+09409M06L05000,09_croston_ml_hybrid,Croston Random Forest gated probability size,100.04967561816086,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.13020073708265,-0.08052511892178416
+09409M07308P4Z,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+09409M07308R8J,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+09409M07L025PK,08_fair_champion,Direct Extra Trees log1p,144.27522327115517,07_clean_regression,Direct Extra Trees log1p,144.27522327115517,0.0
+09409M08308R8J,08_fair_champion,XGBoost Tweedie depth2 reg10,97.15901421221317,08_tuned_capped_full_coverage,XGBoost Tweedie depth2 reg10,97.15901421221317,0.0
+09409M15L01000,08_fair_champion,SBA Croston,114.97290275590898,06_intermittent_tournament,SBA Croston,114.97290275590898,0.0
+0944829004000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+0947112236000,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,101.45666845261104,06_intermittent_tournament,SBA Croston,104.69393392843922,-3.237265475828181
+09471M12182000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,101.55299032793233,06_intermittent_tournament,TSB,121.80537930492947,-20.25238897699714
+1161054G30000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,103.16924117697181,08_tuned_capped_full_coverage,Hurdle XGBoost threshold 0.30,104.52028263241648,-1.3510414554446726
+1161060R00000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+1161061M01000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+1161073K00000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,127.46325201221875,06_intermittent_tournament,SBA Croston,132.93465584921313,-5.471403836994384
+11610M65L00000,08_fair_champion,SBA Croston,104.44284675084516,06_intermittent_tournament,SBA Croston,104.44284675084516,0.0
+11610M67P10000,08_fair_champion,SBA Croston,87.9144297652408,06_intermittent_tournament,SBA Croston,87.9144297652408,0.0
+11610M76M00000,08_fair_champion,SBA Croston,108.8134192604322,06_intermittent_tournament,SBA Croston,108.8134192604322,0.0
+11610M79F30000,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,137.62544452055405,06_intermittent_tournament,SBA Croston,146.53175299394098,-8.906308473386929
+11610M79G50000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,109.82956232094183,06_intermittent_tournament,SBA Croston,120.01803273629226,-10.188470415350423
+11620M65L10000,08_fair_champion,SBA Croston,137.73621196695427,06_intermittent_tournament,SBA Croston,137.73621196695427,0.0
+11620M67P00000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,103.49651830785955,07_clean_regression,Direct Extra Trees log1p,130.24318884904883,-26.74667054118929
+11620M68K00000,08_fair_champion,SBA Croston,96.90507607248897,06_intermittent_tournament,SBA Croston,96.90507607248897,0.0
+11620M76M00000,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,99.49166222854898,06_intermittent_tournament,SBA Croston,106.97627243829618,-7.484610209747203
+11620M79F40000,08_fair_champion,SBA Croston,107.1644529495021,06_intermittent_tournament,SBA Croston,107.1644529495021,0.0
+11710M65L00000,08_fair_champion,SBA Croston,95.23220709969296,06_intermittent_tournament,SBA Croston,95.23220709969296,0.0
+11710M68K00000,08_fair_champion,SBA Croston,100.34556164031667,06_intermittent_tournament,SBA Croston,100.34556164031667,0.0
+11710M68K10000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,104.84290605258643,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,115.19454860849238,-10.351642555905954
+11710M76M00000,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,105.27901926160355,06_intermittent_tournament,SBA Croston,112.88557841785412,-7.606559156250569
+11710M79F70000,08_fair_champion,SBA Croston,113.6148828228906,06_intermittent_tournament,SBA Croston,113.6148828228906,0.0
+11710M79F80000,08_fair_champion,SBA Croston,112.56931687780757,06_intermittent_tournament,SBA Croston,112.56931687780757,0.0
+1172080JA0000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,99.2362181791506,08_tuned_capped_full_coverage,Hurdle XGBoost threshold 0.30,115.96970491505952,-16.733486735908926
+1194152R00000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+13870M71L00000,08_fair_champion,Hurdle Random Forest,100.0,06_intermittent_tournament,Hurdle Random Forest,100.0,0.0
+1428180JA0000,08_fair_champion,SBA Croston,102.76778015328377,06_intermittent_tournament,SBA Croston,102.76778015328377,0.0
+1435772J00000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+1591063A0V000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+15910M79GB1000,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,105.31164973080158,07_clean_regression,Direct Extra Trees log1p,122.42898982127647,-17.117340090474897
+15910M79GC0000,09_croston_ml_hybrid,Croston HistGB gated probability size,101.47275672736394,06_intermittent_tournament,SBA Croston,144.63447189633342,-43.16171516896948
+1711279P01000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,99.57061417897542,06_intermittent_tournament,SBA Croston,119.42473327498072,-19.854119096005306
+1770054P30000,08_fair_champion,SBA Croston Tuned,94.47201932293493,06_intermittent_tournament,SBA Croston Tuned,94.47201932293493,0.0
+1770079P21000,08_fair_champion,SBA Croston,99.62675009107028,06_intermittent_tournament,SBA Croston,99.62675009107028,0.0
+1770080J00000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+1770081P00000,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,107.93142636291316,06_intermittent_tournament,SBA Croston,114.17845988967692,-6.247033526763758
+17700M50U00000,08_fair_champion,Aggregate Allocation,101.15317057226464,06_intermittent_tournament,Aggregate Allocation,101.15317057226464,0.0
+17700M60M00000,08_fair_champion,SBA Croston,90.61974753113562,06_intermittent_tournament,SBA Croston,90.61974753113562,0.0
+17700M67L00000,08_fair_champion,SBA Croston,97.69714316727428,06_intermittent_tournament,SBA Croston,97.69714316727428,0.0
+17700M67P00000,08_fair_champion,SBA Croston,94.4135533172886,06_intermittent_tournament,SBA Croston,94.4135533172886,0.0
+17700M79F02000,08_fair_champion,SBA Croston,114.370036208823,06_intermittent_tournament,SBA Croston,114.370036208823,0.0
+1776071L00000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,117.01225491015465,06_intermittent_tournament,SBA Croston,118.78681156732964,-1.7745566571749833
+17760M67P00000,08_fair_champion,Seasonal SBA Croston,83.06157266730968,06_intermittent_tournament,Seasonal SBA Croston,83.06157266730968,0.0
+1781254G00000,08_fair_champion,SBA Croston,94.93936110626824,06_intermittent_tournament,SBA Croston,94.93936110626824,0.0
+17861M68P00000,09_croston_ml_hybrid,Croston XGBoost depth2 expected value,94.53135375712205,07_clean_regression,Direct Extra Trees log1p,94.82611568889232,-0.29476193177026744
+1787880G00000,09_croston_ml_hybrid,Croston HistGB gated probability size,102.41503032148927,08_tuned_capped_full_coverage,Hurdle XGBoost threshold 0.30,105.45321949535912,-3.0381891738698528
+17878M74L00000,08_fair_champion,SBA Croston,86.0367604528325,06_intermittent_tournament,SBA Croston,86.0367604528325,0.0
+17920M76M00000,08_fair_champion,SBA Croston,91.69569043118273,06_intermittent_tournament,SBA Croston,91.69569043118273,0.0
+1793160A10000,08_fair_champion,Hurdle XGBoost threshold 0.30,99.6278698988901,08_tuned_capped_full_coverage,Hurdle XGBoost threshold 0.30,99.6278698988901,0.0
+1793161M10000,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,102.32906644044841,06_intermittent_tournament,SBA Croston,121.05036018100564,-18.72129374055723
+1793163J01000,08_fair_champion,SBA Croston,108.03488864150684,06_intermittent_tournament,SBA Croston,108.03488864150684,0.0
+1793165D00000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,104.56683231203743,06_intermittent_tournament,SBA Croston,138.53403084837936,-33.967198536341925
+1793168P00000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+17931M71P00000,08_fair_champion,SBA Croston,89.25852198203832,06_intermittent_tournament,SBA Croston,89.25852198203832,0.0
+1793276G00000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,103.49428100842182,06_intermittent_tournament,SBA Croston,105.91451034055856,-2.420229332136742
+2371081A40000,08_fair_champion,Hurdle Random Forest,100.0,06_intermittent_tournament,Hurdle Random Forest,100.0,0.0
+27431M79F00000,08_fair_champion,SBA Croston,95.07766689898178,06_intermittent_tournament,SBA Croston,95.07766689898178,0.0
+2811380J015PK,08_fair_champion,Direct Extra Trees log1p,98.1123634327877,07_clean_regression,Direct Extra Trees log1p,98.1123634327877,0.0
+28113M62S015PK,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+2818060B00000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+2818084A20000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,103.71819019769177,06_intermittent_tournament,SBA Croston,121.96390917834589,-18.245718980654118
+2824178K00000,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,123.98071178170137,06_intermittent_tournament,SBA Croston,172.02635747335077,-48.0456456916494
+28300M55R42000,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,104.67308178130122,06_intermittent_tournament,SBA Croston,120.3104332070256,-15.637351425724376
+2961081A00000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+33690M60M00000,08_fair_champion,SBA Croston,90.1644029589774,06_intermittent_tournament,SBA Croston,90.1644029589774,0.0
+3495561M00000,08_fair_champion,Hurdle Random Forest threshold 0.35,92.6735601335098,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,92.6735601335098,0.0
+3512052R21000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,100.97136516809464,06_intermittent_tournament,SBA Croston,104.42304400200068,-3.451678833906044
+3512052S10000,08_fair_champion,Direct Random Forest,70.53696265435858,07_clean_regression,Direct Random Forest,70.53696265435858,0.0
+3512062R60000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,101.8509271648503,06_intermittent_tournament,SBA Croston,116.90064875127804,-15.049721586427736
+3512065J12000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+3512080G21000,08_fair_champion,SBA Croston,102.24121779013876,06_intermittent_tournament,SBA Croston,102.24121779013876,0.0
+3512150A30000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,101.58855370112829,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,104.30475059790882,-2.716196896780531
+35121M66L10000,08_fair_champion,SBA Croston,99.24022441039536,06_intermittent_tournament,SBA Croston,99.24022441039536,0.0
+35121M73T10000,08_fair_champion,XGBoost Tweedie depth2 reg10,96.73834703657428,08_tuned_capped_full_coverage,XGBoost Tweedie depth2 reg10,96.73834703657428,0.0
+3515365J00000,09_croston_ml_hybrid,Croston Random Forest gated probability size,105.02920972443539,06_intermittent_tournament,SBA Croston,126.36718730935198,-21.337977584916587
+3515379P00000,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,106.34715379119253,06_intermittent_tournament,SBA Croston,123.54048558195144,-17.19333179075892
+35153M59K20000,08_fair_champion,SBA Croston,112.02641343849244,06_intermittent_tournament,SBA Croston,112.02641343849244,0.0
+35153M75L00000,09_croston_ml_hybrid,Croston HistGB gated probability size,97.98106037320044,06_intermittent_tournament,SBA Croston,106.6537907674153,-8.672730394214867
+3526779P00000,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,101.060501486063,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,101.96535919392043,-0.9048577078574311
+3532052R20000,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,100.6727097443217,06_intermittent_tournament,SBA Croston,112.17223923936342,-11.499529495041728
+3532065D41000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+3532077R10000,08_fair_champion,SBA Croston,99.9772518214873,06_intermittent_tournament,SBA Croston,99.9772518214873,0.0
+3532080G21000,09_croston_ml_hybrid,Croston Random Forest gated probability size,98.69068046411472,06_intermittent_tournament,SBA Croston,114.39909064146056,-15.70841017734584
+35321M60M10000,09_croston_ml_hybrid,Croston XGBoost depth2 expected value,83.006258255851,07_clean_regression,Direct Extra Trees log1p,85.04433850999568,-2.0380802541446883
+35321M66L10000,08_fair_champion,SBA Croston,119.31908019608493,06_intermittent_tournament,SBA Croston,119.31908019608493,0.0
+3550065P02000,09_croston_ml_hybrid,Croston HistGB gated probability size,99.94841528973046,06_intermittent_tournament,SBA Croston,108.2988079310563,-8.35039264132584
+35501M75T00000,08_fair_champion,Aggregate Allocation,100.0,06_intermittent_tournament,Aggregate Allocation,100.0,0.0
+35502M75T00000,08_fair_champion,Aggregate Allocation,100.0,06_intermittent_tournament,Aggregate Allocation,100.0,0.0
+3552686R20000,08_fair_champion,Hurdle XGBoost Tweedie,79.31684547924264,07_clean_regression,Hurdle XGBoost Tweedie,79.31684547924264,0.0
+35601M74TA0000,08_fair_champion,Direct XGBoost Tweedie,80.1534857137934,07_clean_regression,Direct XGBoost Tweedie,80.1534857137934,0.0
+35602M73T00000,08_fair_champion,Aggregate Allocation,100.0,06_intermittent_tournament,Aggregate Allocation,100.0,0.0
+35603M79G30000,08_fair_champion,SBA Croston,121.1685860788054,06_intermittent_tournament,SBA Croston,121.1685860788054,0.0
+3560461J10000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,101.90427997394612,06_intermittent_tournament,SBA Croston,115.15015635484266,-13.245876380896547
+35604M84400000,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,107.50151384136298,06_intermittent_tournament,SBA Croston,139.67703027081362,-32.17551642945064
+35612M60B50000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+3565050J10000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+35650M53T00000,08_fair_champion,TSB,93.28947802197804,06_intermittent_tournament,TSB,93.28947802197804,0.0
+35650M60M00000,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,114.9480247209149,06_intermittent_tournament,SBA Croston,117.79756972803594,-2.849545007121037
+35651M79G40000,08_fair_champion,SBA Croston Tuned,129.26931070880323,06_intermittent_tournament,SBA Croston Tuned,129.26931070880323,0.0
+35651M79M00000,08_fair_champion,XGBoost Tweedie depth2 reg10,98.97870455688113,08_tuned_capped_full_coverage,XGBoost Tweedie depth2 reg10,98.97870455688113,0.0
+35670M76T00000,08_fair_champion,TSB,93.08478299350573,06_intermittent_tournament,TSB,93.08478299350573,0.0
+35671M79G30000,08_fair_champion,SBA Croston,112.4411969066358,06_intermittent_tournament,SBA Croston,112.4411969066358,0.0
+35671M79G40000,08_fair_champion,SBA Croston,107.98770982214585,06_intermittent_tournament,SBA Croston,107.98770982214585,0.0
+3570186R00000,09_croston_ml_hybrid,Croston XGBoost depth2 expected value,71.43381795528094,07_clean_regression,Direct Random Forest log1p,73.41328136052428,-1.9794634052433366
+35701M76T00000,08_fair_champion,Aggregate Allocation,99.4809351728494,06_intermittent_tournament,Aggregate Allocation,99.4809351728494,0.0
+3570273R10000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,100.58750428915936,08_tuned_capped_full_coverage,Hurdle XGBoost threshold 0.30,105.07679110713616,-4.489286817976804
+35702M76T00000,08_fair_champion,TSB,97.32129283468458,06_intermittent_tournament,TSB,97.32129283468458,0.0
+35750M53T01000,08_fair_champion,TSB,98.77541644863074,06_intermittent_tournament,TSB,98.77541644863074,0.0
+35750M68P00000,08_fair_champion,Recent Mean 6m,118.24212271973468,06_intermittent_tournament,Recent Mean 6m,118.24212271973468,0.0
+35750M68P11000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+35750M68P20000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+35750M73T00000,08_fair_champion,Hurdle XGBoost Tweedie,89.21789254826243,07_clean_regression,Hurdle XGBoost Tweedie,89.21789254826243,0.0
+3591075F31000,09_croston_ml_hybrid,Croston Random Forest gated probability size,100.31527488131927,06_intermittent_tournament,SBA Croston,105.53175497148594,-5.2164800901666695
+3591075F61000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+35910M74L01000,08_fair_champion,SBA Croston,81.50850854105656,06_intermittent_tournament,SBA Croston,81.50850854105656,0.0
+3611050A30000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,100.1344308966682,07_clean_regression,Direct Extra Trees log1p,146.3667450091056,-46.23231411243741
+3613050A30000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,99.1735528916221,07_clean_regression,Direct Extra Trees log1p,124.7393045082228,-25.565751616600707
+36230M70CA1000,08_fair_champion,Hurdle Random Forest threshold 0.35,102.80814129495845,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,102.80814129495845,0.0
+36250M74T55000,08_fair_champion,Direct Hist Gradient Squared,80.19030632722693,07_clean_regression,Direct Hist Gradient Squared,80.19030632722693,0.0
+3627479P01000,08_fair_champion,SBA Croston Tuned,88.34958026367312,06_intermittent_tournament,SBA Croston Tuned,88.34958026367312,0.0
+3641054G01000,08_fair_champion,SBA Croston,115.50650384556978,06_intermittent_tournament,SBA Croston,115.50650384556978,0.0
+3641063J02000,08_fair_champion,SBA Croston,104.51304144980148,06_intermittent_tournament,SBA Croston,104.51304144980148,0.0
+3641075F01000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,101.76179962114445,06_intermittent_tournament,SBA Croston,116.10344126591592,-14.341641644771471
+36410M60B30000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+36410M67K10000,08_fair_champion,Direct Extra Trees log1p,86.90496189331866,07_clean_regression,Direct Extra Trees log1p,86.90496189331866,0.0
+3641275F00000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+36430M76M00000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+3658054P00000,09_croston_ml_hybrid,Croston HistGB gated probability size,98.5061603681242,06_intermittent_tournament,SBA Croston,109.06573578552104,-10.559575417396843
+3658354P01000,08_fair_champion,Direct XGBoost Tweedie,76.49827424432179,07_clean_regression,Direct XGBoost Tweedie,76.49827424432179,0.0
+37019M79MK0000,09_croston_ml_hybrid,Croston Random Forest gated probability size,98.4803506323396,06_intermittent_tournament,SBA Croston,110.75839917056172,-12.278048538222123
+37145M55B21000,08_fair_champion,SBA Croston,98.44337633510104,06_intermittent_tournament,SBA Croston,98.44337633510104,0.0
+37145M56R20000,08_fair_champion,SBA Croston,120.73547704514708,06_intermittent_tournament,SBA Croston,120.73547704514708,0.0
+37145M66L00000,08_fair_champion,SBA Croston,104.06243046686544,06_intermittent_tournament,SBA Croston,104.06243046686544,0.0
+37736M58R00000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,98.52736618883016,06_intermittent_tournament,SBA Croston,101.4964795022116,-2.969113313381442
+37736M79M00000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,103.49947546914326,08_tuned_capped_full_coverage,Hurdle XGBoost threshold 0.30,103.74578414076662,-0.24630867162335335
+3773773R00Z2S,09_croston_ml_hybrid,Croston HistGB gated probability size,97.2974336967681,06_intermittent_tournament,SBA Croston,109.43444908748826,-12.137015390720165
+38315M68K00000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,102.67734385098673,06_intermittent_tournament,Recent Mean 6m,113.0892255892256,-10.411881738238876
+38330M68K01000,08_fair_champion,Hurdle Random Forest threshold 0.35,97.1858926386012,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,97.1858926386012,0.0
+3834062R30000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+38340M51K42000,08_fair_champion,Hurdle Random Forest Regression,87.29632052191957,07_clean_regression,Hurdle Random Forest Regression,87.29632052191957,0.0
+3834651K42000,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,93.96837304035824,06_intermittent_tournament,SBA Croston,114.88135533904392,-20.912982298685677
+3845061J12000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+3845062R00000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,103.56934038821116,06_intermittent_tournament,SBA Croston,114.0488013399045,-10.47946095169334
+3845065J10000,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,102.95666227044984,07_clean_regression,Direct XGBoost Tweedie,113.4732631099263,-10.516600839476453
+3845071L10000,08_fair_champion,Direct Extra Trees log1p,82.71856835365502,07_clean_regression,Direct Extra Trees log1p,82.71856835365502,0.0
+38450M79M00000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,97.82676776826737,06_intermittent_tournament,SBA Croston,101.48344860872491,-3.6566808404575397
+38450M80T10000,08_fair_champion,Direct Hist Gradient Squared,79.42451614403255,07_clean_regression,Direct Hist Gradient Squared,79.42451614403255,0.0
+38452M56R30000,08_fair_champion,SBA Croston,103.45830996889136,06_intermittent_tournament,SBA Croston,103.45830996889136,0.0
+38452M65L00000,09_croston_ml_hybrid,Croston XGBoost depth2 expected value,77.3455371090344,07_clean_regression,Direct Extra Trees log1p,84.0774164033912,-6.731879294356801
+38452M68K00000,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,103.85984959809676,06_intermittent_tournament,Recent Mean 6m,122.26017943409248,-18.40032983599572
+38480M68P01000,08_fair_champion,Hurdle Random Forest threshold 0.35,97.05289300892812,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,97.05289300892812,0.0
+38500M55T01000,08_fair_champion,Boosted SBA Hybrid,93.2088076955146,06_intermittent_tournament,Boosted SBA Hybrid,93.2088076955146,0.0
+3882151K02000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,94.52913331458107,06_intermittent_tournament,SBA Croston,113.32714276880613,-18.798009454225053
+3882165J00000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,103.11974787965734,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,108.14623130910368,-5.026483429446344
+38821M67P00000,08_fair_champion,SBA Croston,99.02839862901313,06_intermittent_tournament,SBA Croston,99.02839862901313,0.0
+3910268L01000,09_croston_ml_hybrid,Croston HistGB gated probability size,100.2501910264754,08_tuned_capped_full_coverage,Hurdle XGBoost threshold 0.30,113.1374521954888,-12.8872611690134
+39102M80T00000,08_fair_champion,Aggregate Allocation,100.0,06_intermittent_tournament,Aggregate Allocation,100.0,0.0
+3925061J00000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,97.22113936896504,06_intermittent_tournament,SBA Croston,108.06887690317448,-10.847737534209443
+39321M56R00000,08_fair_champion,SBA Croston,116.81583747001456,06_intermittent_tournament,SBA Croston,116.81583747001456,0.0
+39321M67P00000,08_fair_champion,SBA Croston,102.7711016967134,06_intermittent_tournament,SBA Croston,102.7711016967134,0.0
+39322M56R00000,08_fair_champion,SBA Croston,133.73509183031575,06_intermittent_tournament,SBA Croston,133.73509183031575,0.0
+39322M67P00000,08_fair_champion,SBA Croston,102.0406887063891,06_intermittent_tournament,SBA Croston,102.0406887063891,0.0
+39322M67P10000,08_fair_champion,SBA Croston,108.82787682515394,06_intermittent_tournament,SBA Croston,108.82787682515394,0.0
+3F11579S10ZWG,08_fair_champion,Hurdle XGBoost threshold 0.30,99.31586188478688,08_tuned_capped_full_coverage,Hurdle XGBoost threshold 0.30,99.31586188478688,0.0
+3F11779S00000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+4161552R00000,08_fair_champion,Aggregate Allocation,100.0,06_intermittent_tournament,Aggregate Allocation,100.0,0.0
+4171080J00000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,101.13470666917726,06_intermittent_tournament,SBA Croston,117.49938326957928,-16.36467660040202
+41710M68K00000,08_fair_champion,SBA Croston,133.17299240481717,06_intermittent_tournament,SBA Croston,133.17299240481717,0.0
+41710M76M00000,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,116.29884285318268,06_intermittent_tournament,SBA Croston,120.74100354165876,-4.442160688476079
+41710M82000000,08_fair_champion,SBA Croston,113.99118472001396,06_intermittent_tournament,SBA Croston,113.99118472001396,0.0
+4311052R71000,08_fair_champion,Recent Mean 6m,106.89655172413794,06_intermittent_tournament,Recent Mean 6m,106.89655172413794,0.0
+4311078K00000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+43110M75J80000-OP,09_croston_ml_hybrid,Croston HistGB gated probability size,119.23900485203527,06_intermittent_tournament,SBA Croston,134.39794367386204,-15.15893882182678
+432006682227S,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+4321052R5027N,08_fair_champion,SBA Croston,103.88811621429026,06_intermittent_tournament,SBA Croston,103.88811621429026,0.0
+4321052S0039M,08_fair_champion,Direct Hist Gradient Squared,94.4363822507113,07_clean_regression,Direct Hist Gradient Squared,94.4363822507113,0.0
+4321053R100CE,08_fair_champion,SBA Croston,95.37001582040004,06_intermittent_tournament,SBA Croston,95.37001582040004,0.0
+4321057M100BK,08_fair_champion,Hurdle Random Forest,95.26826862216969,06_intermittent_tournament,Hurdle Random Forest,95.26826862216969,0.0
+4321061J01ZBP,09_croston_ml_hybrid,Croston Random Forest gated probability size,101.80237635236553,07_clean_regression,Direct Extra Trees log1p,114.51431414640948,-12.711937794043948
+4321064J01ZBP,08_fair_champion,Hurdle Random Forest threshold 0.35,100.14249689687036,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.14249689687036,0.0
+4321068LA0ZA8,09_croston_ml_hybrid,Croston XGBoost depth2 expected value,87.16517461062986,06_intermittent_tournament,SBA Croston,87.24794616940827,-0.08277155877840414
+4321071L91QC8,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+4321078K6027N,08_fair_champion,Hurdle Random Forest threshold 0.35,104.97781606551922,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,104.97781606551922,0.0
+4321079K510BK,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,103.13318997473266,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,114.1587967626814,-11.025606787948746
+4321080S6027N,09_croston_ml_hybrid,Croston HistGB gated probability size,99.91648926357578,06_intermittent_tournament,SBA Croston,101.72176308539946,-1.8052738218236755
+43210M55R6027N,08_fair_champion,SBA Croston,100.96618006838716,06_intermittent_tournament,SBA Croston,100.96618006838716,0.0
+43210M55RH1QC8,08_fair_champion,SBA Croston,96.93575661353955,06_intermittent_tournament,SBA Croston,96.93575661353955,0.0
+43210M62S0009L,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+43210M62S620CB,08_fair_champion,Aggregate Allocation,92.61040074201505,06_intermittent_tournament,Aggregate Allocation,92.61040074201505,0.0
+43210M68K1109L,09_croston_ml_hybrid,Croston Random Forest gated probability size,107.52032891803604,06_intermittent_tournament,SBA Croston,108.74797212945272,-1.2276432114166766
+43210M74T50QC8,09_croston_ml_hybrid,Croston HistGB gated probability size,100.0,06_intermittent_tournament,SBA Croston,100.0,0.0
+43210M76M5127N,08_fair_champion,SBA Croston,112.19066238100596,06_intermittent_tournament,SBA Croston,112.19066238100596,0.0
+43210M76T50QC8,09_croston_ml_hybrid,Croston XGBoost depth2 expected value,91.31894708700885,06_intermittent_tournament,TSB,93.05365456979368,-1.7347074827848274
+43210M79G5339M,08_fair_champion,SBA Croston,90.93668525738664,06_intermittent_tournament,SBA Croston,90.93668525738664,0.0
+43210M83P0027N,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,106.5144074240736,06_intermittent_tournament,SBA Croston,126.09386870960871,-19.579461285535118
+4325065DA1C48,09_croston_ml_hybrid,Croston Random Forest gated probability size,101.0050818657045,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,106.5038694906642,-5.498787624959704
+4325079P00ZH1,09_croston_ml_hybrid,Croston Random Forest gated probability size,104.08630898748035,06_intermittent_tournament,SBA Croston,111.75771055738409,-7.671401569903736
+43250M53M0027N,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+43250M53T0027N,08_fair_champion,Aggregate Allocation,100.0,06_intermittent_tournament,Aggregate Allocation,100.0,0.0
+43250M68K1027N,08_fair_champion,SBA Croston,106.00756874718802,06_intermittent_tournament,SBA Croston,106.00756874718802,0.0
+43250M68K2027N,08_fair_champion,SBA Croston,101.01522057065598,06_intermittent_tournament,SBA Croston,101.01522057065598,0.0
+43250M74L0027N,08_fair_champion,SBA Croston,91.22772655361436,06_intermittent_tournament,SBA Croston,91.22772655361436,0.0
+43250M74L1027N,08_fair_champion,SBA Croston,118.16004768395088,06_intermittent_tournament,SBA Croston,118.16004768395088,0.0
+43250M79G6027N,08_fair_champion,SBA Croston,82.08995945824005,06_intermittent_tournament,SBA Croston,82.08995945824005,0.0
+43250M79M0027N,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,100.95140415083881,06_intermittent_tournament,SBA Croston,103.7407927134148,-2.7893885625759935
+4325251K20DB7,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,110.3047025296115,08_tuned_capped_full_coverage,Hurdle XGBoost threshold 0.30,128.73785332726035,-18.43315079764885
+4325261J0027S,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,101.98756995300452,08_tuned_capped_full_coverage,Hurdle XGBoost threshold 0.30,103.75568451440196,-1.7681145613974394
+4325283S00CZ2,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,111.58371047770723,06_intermittent_tournament,Recent Mean 6m,115.34869976359336,-3.7649892858861307
+43402M74L21000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,97.15531491246813,06_intermittent_tournament,SBA Croston,110.13878739243891,-12.983472479970786
+4342386G01000,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,102.93398438470912,07_clean_regression,Direct Extra Trees log1p,109.6078630334949,-6.673878648785774
+4345965J00000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+44119M53M00000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+48150M53M10C48,09_croston_ml_hybrid,Croston HistGB gated probability size,96.80752049475163,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,-3.1924795052483717
+48150M68P00C48,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+48150M69R00C48,09_croston_ml_hybrid,Croston Random Forest gated probability size,97.54782852744336,06_intermittent_tournament,SBA Croston,98.48577667323302,-0.9379481457896617
+48150M79M11C48,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+4982162A51000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+5730073R02000,08_fair_champion,Direct Random Forest log1p,87.90469817169125,07_clean_regression,Direct Random Forest log1p,87.90469817169125,0.0
+5730079P02000,08_fair_champion,SBA Croston,97.69387699298576,06_intermittent_tournament,SBA Croston,97.69387699298576,0.0
+57300M66L00000,08_fair_champion,SBA Croston,102.24727059618505,06_intermittent_tournament,SBA Croston,102.24727059618505,0.0
+57300M68K10000,08_fair_champion,SBA Croston,105.72840162740106,06_intermittent_tournament,SBA Croston,105.72840162740106,0.0
+57300M74T00000,08_fair_champion,Direct Extra Trees log1p,82.54326671667057,07_clean_regression,Direct Extra Trees log1p,82.54326671667057,0.0
+57300M75T00000,08_fair_champion,Direct Random Forest log1p,99.05362549343582,07_clean_regression,Direct Random Forest log1p,99.05362549343582,0.0
+5741079P00000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,96.4816465324029,06_intermittent_tournament,SBA Croston,113.06264563402644,-16.580999101623533
+57410M67P00000,08_fair_champion,SBA Croston,90.09712840696778,06_intermittent_tournament,SBA Croston,90.09712840696778,0.0
+5742071L01000,08_fair_champion,SBA Croston,100.77486934496876,06_intermittent_tournament,SBA Croston,100.77486934496876,0.0
+57611M68K10000,08_fair_champion,SBA Croston,93.6338944202878,06_intermittent_tournament,SBA Croston,93.6338944202878,0.0
+57711M66L00000,08_fair_champion,SBA Croston,101.33117943118673,06_intermittent_tournament,SBA Croston,101.33117943118673,0.0
+57711M79G10000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,100.77874715839113,06_intermittent_tournament,TSB,115.60511221290366,-14.826365054512536
+5811077K00000,08_fair_champion,SBA Croston,117.46154328827542,06_intermittent_tournament,SBA Croston,117.46154328827542,0.0
+58110M74L00000,08_fair_champion,SBA Croston,101.41986736145248,06_intermittent_tournament,SBA Croston,101.41986736145248,0.0
+5812165J00000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,112.81604272623858,06_intermittent_tournament,SBA Croston,131.67260638096204,-18.85656365472346
+5823054P00000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,96.27424713837574,06_intermittent_tournament,SBA Croston,117.10955115652388,-20.835304018148136
+5823065J00000,08_fair_champion,SBA Croston,100.36259519987524,06_intermittent_tournament,SBA Croston,100.36259519987524,0.0
+58230M79G01000,08_fair_champion,SBA Croston,100.29152362334992,06_intermittent_tournament,SBA Croston,100.29152362334992,0.0
+58240M53M00000,08_fair_champion,SBA Croston,99.17360399771955,06_intermittent_tournament,SBA Croston,99.17360399771955,0.0
+58240M67P00000,08_fair_champion,SBA Croston,95.64112296963368,06_intermittent_tournament,SBA Croston,95.64112296963368,0.0
+58251M53M00000,08_fair_champion,SBA Croston,98.47535356535488,06_intermittent_tournament,SBA Croston,98.47535356535488,0.0
+5827080J20000,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,112.13202730942798,06_intermittent_tournament,SBA Croston,112.29625308924628,-0.16422577981829534
+61513M56R01000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+64111M56R01P21,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+65500M75L00000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,104.28625868231643,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,122.5857025037485,-18.299443821432064
+65500M79M00000,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,106.101121235702,06_intermittent_tournament,TSB,127.5546517019369,-21.45353046623491
+6570079P11000,08_fair_champion,SBA Croston,102.93072892658066,06_intermittent_tournament,SBA Croston,102.93072892658066,0.0
+65700M72P00000,08_fair_champion,SBA Croston,88.88556188873326,06_intermittent_tournament,SBA Croston,88.88556188873326,0.0
+6800153R00000,08_fair_champion,Direct Extra Trees log1p,84.18373845097565,07_clean_regression,Direct Extra Trees log1p,84.18373845097565,0.0
+6800164J01000,08_fair_champion,SBA Croston,101.47792311253508,06_intermittent_tournament,SBA Croston,101.47792311253508,0.0
+68001M53M50000,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,108.10634925543705,06_intermittent_tournament,SBA Croston,133.5288781684791,-25.422528913042058
+68001M74L21000,08_fair_champion,SBA Croston,100.45976595446407,06_intermittent_tournament,SBA Croston,100.45976595446407,0.0
+68001M75T00000,08_fair_champion,Aggregate Allocation,100.0,06_intermittent_tournament,Aggregate Allocation,100.0,0.0
+6800261M01000,09_croston_ml_hybrid,Croston XGBoost depth2 expected value,81.75731626865077,08_tuned_capped_full_coverage,XGBoost Tweedie depth2 reg10,90.705521488679,-8.948205220028228
+6800271L00000,08_fair_champion,SBA Croston,107.91871229859863,06_intermittent_tournament,SBA Croston,107.91871229859863,0.0
+6800280820000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,94.96230747018542,06_intermittent_tournament,SBA Croston,129.55139280008234,-34.58908532989692
+68002M53M00000,08_fair_champion,SBA Croston,96.68045978363725,06_intermittent_tournament,SBA Croston,96.68045978363725,0.0
+68002M74L31000,08_fair_champion,SBA Croston,81.37167460752025,06_intermittent_tournament,SBA Croston,81.37167460752025,0.0
+68002M75T00000,08_fair_champion,Direct Hist Gradient Squared,87.50521852437406,07_clean_regression,Direct Hist Gradient Squared,87.50521852437406,0.0
+68002M79G01000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+68003M74L31000,08_fair_champion,SBA Croston,103.07574794846306,06_intermittent_tournament,SBA Croston,103.07574794846306,0.0
+6910077R14000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+69100M66L01000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+69100M66L21000,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,98.87780081677985,06_intermittent_tournament,SBA Croston,100.186127971688,-1.3083271549081417
+6932068LA0000,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,103.17726322473622,06_intermittent_tournament,SBA Croston,109.90383333210544,-6.726570107369213
+69330M74L00000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+69410M74L00000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+6942063J00000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+69430M74L00000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+71074M79M00C48,08_fair_champion,Hurdle Random Forest,95.9775794294918,06_intermittent_tournament,Hurdle Random Forest,95.9775794294918,0.0
+71091M843005PK,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,100.14877627236825,06_intermittent_tournament,SBA Croston,131.87462442126665,-31.725848148898393
+7112073R00000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+7148176J00000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+7170059810T2G,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+7171152S005PK,08_fair_champion,SBA Croston Tuned,73.92945562016214,06_intermittent_tournament,SBA Croston Tuned,73.92945562016214,0.0
+7171154L30799,08_fair_champion,SBA Croston,105.37630856134248,06_intermittent_tournament,SBA Croston,105.37630856134248,0.0
+7171161J00799,08_fair_champion,SBA Croston,102.78475644033378,06_intermittent_tournament,SBA Croston,102.78475644033378,0.0
+7171163T20799,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,100.53402355739048,06_intermittent_tournament,SBA Croston,101.1574074074074,-0.6233838500169213
+7171171L00799,08_fair_champion,SBA Croston,103.33987493998194,06_intermittent_tournament,SBA Croston,103.33987493998194,0.0
+7171177K70799,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+7171177KD0799,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+7171181A405PK,08_fair_champion,Hurdle Random Forest,100.0,06_intermittent_tournament,Hurdle Random Forest,100.0,0.0
+71711M53M005PK,08_fair_champion,SBA Croston,91.63332442496748,06_intermittent_tournament,SBA Croston,91.63332442496748,0.0
+71711M53M00799,08_fair_champion,SBA Croston,100.93019045652024,06_intermittent_tournament,SBA Croston,100.93019045652024,0.0
+71711M73T015PK,08_fair_champion,Hurdle XGBoost Tweedie,93.96931210386852,07_clean_regression,Hurdle XGBoost Tweedie,93.96931210386852,0.0
+71711M76M00799,08_fair_champion,SBA Croston,109.25526759654998,06_intermittent_tournament,SBA Croston,109.25526759654998,0.0
+71711M79G105PK,08_fair_champion,SBA Croston,99.15081220365086,06_intermittent_tournament,SBA Croston,99.15081220365086,0.0
+7171284A10W07,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,107.3617456094274,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,111.71123052409544,-4.349484914668039
+7171284A20W07,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+71712M60MA05PK,09_croston_ml_hybrid,Croston XGBoost depth2 expected value,83.92199341367397,06_intermittent_tournament,SBA Croston,90.00303745982949,-6.081044046155512
+71712M69T005PK,08_fair_champion,Direct Hist Gradient Squared,92.63592821827358,07_clean_regression,Direct Hist Gradient Squared,92.63592821827358,0.0
+71712M74T005PK,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,97.6391880609232,06_intermittent_tournament,SBA Croston,101.16768841394828,-3.5285003530250805
+7171584A00ZM2,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,97.81989752479195,06_intermittent_tournament,SBA Croston,112.08388548332938,-14.263987958537427
+7171754GA0000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,106.11375700682402,06_intermittent_tournament,SBA Croston,112.17243336307516,-6.058676356251141
+71721M76M005PK,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+71722M76T005PK,08_fair_champion,TSB,95.92948252399772,06_intermittent_tournament,TSB,95.92948252399772,0.0
+71731M60M00000,08_fair_champion,SBA Croston,92.24223600259768,06_intermittent_tournament,SBA Croston,92.24223600259768,0.0
+7173263T00000,08_fair_champion,Aggregate Allocation,101.92837375312646,06_intermittent_tournament,Aggregate Allocation,101.92837375312646,0.0
+7173277M10000,09_croston_ml_hybrid,Croston XGBoost depth2 expected value,88.2614598876636,06_intermittent_tournament,SBA Croston,90.30296723277635,-2.0415073451127483
+71732M75T00000,08_fair_champion,XGBoost Tweedie depth2 reg10,95.3324754496955,08_tuned_capped_full_coverage,XGBoost Tweedie depth2 reg10,95.3324754496955,0.0
+71732M76T01000,09_croston_ml_hybrid,Croston XGBoost depth2 expected value,93.72702797667964,07_clean_regression,Direct XGBoost Tweedie,98.16701747740244,-4.4399895007228025
+7173368L00000,09_croston_ml_hybrid,Croston Random Forest gated probability size,101.85555937844812,06_intermittent_tournament,SBA Croston,109.03771128463926,-7.182151906191137
+71734M58R00000,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,99.82377448549835,06_intermittent_tournament,SBA Croston,113.39731154511006,-13.57353705961171
+71736M74T00000,08_fair_champion,Direct Random Forest log1p,54.66225446013987,07_clean_regression,Direct Random Forest log1p,54.66225446013987,0.0
+7174050U10CUG,08_fair_champion,Hurdle XGBoost threshold 0.30,99.82441481019268,08_tuned_capped_full_coverage,Hurdle XGBoost threshold 0.30,99.82441481019268,0.0
+7174063T00EJ1,08_fair_champion,SBA Croston,100.84064021783576,06_intermittent_tournament,SBA Croston,100.84064021783576,0.0
+71740M50S00C48,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,102.28460892554253,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,107.21932131011664,-4.934712384574112
+71740M68P20C48,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+71740M74T00C48,08_fair_champion,TSB,91.71141830268672,06_intermittent_tournament,TSB,91.71141830268672,0.0
+71740M74T20KDJ,09_croston_ml_hybrid,Croston XGBoost depth2 expected value,91.81672377974574,06_intermittent_tournament,TSB,91.87154346590908,-0.05481968616334143
+7174173K005PK,08_fair_champion,SBA Croston,102.33660268029602,06_intermittent_tournament,SBA Croston,102.33660268029602,0.0
+71741M66L005PK,08_fair_champion,SBA Croston,109.5199855980926,06_intermittent_tournament,SBA Croston,109.5199855980926,0.0
+71741M79G10000,08_fair_champion,SBA Croston,114.58523324306162,06_intermittent_tournament,SBA Croston,114.58523324306162,0.0
+7174265J010PG,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,106.94377249580319,06_intermittent_tournament,SBA Croston,114.432659218806,-7.488886723002807
+71742M53M100CB,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+71742M79G000PG,08_fair_champion,SBA Croston,114.28276598450108,06_intermittent_tournament,SBA Croston,114.28276598450108,0.0
+71743M53M100CB,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+71744M53M00000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,92.33265908396974,06_intermittent_tournament,SBA Croston,126.4229140919945,-34.090255008024755
+71750M55T30C48,09_croston_ml_hybrid,Croston XGBoost depth2 expected value,81.83043459849313,06_intermittent_tournament,Recent Mean 6m,82.0194202742904,-0.18898567579726944
+7175160B00000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+7175163J105PK,08_fair_champion,Hurdle Random Forest threshold 0.35,90.12328595340314,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,90.12328595340314,0.0
+7175173K105PK,08_fair_champion,SBA Croston,96.47125694166992,06_intermittent_tournament,SBA Croston,96.47125694166992,0.0
+71751M50S005PK,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,99.47361856953711,06_intermittent_tournament,SBA Croston,112.59605771884168,-13.122439149304569
+71751M67P005PK,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,93.88918631399672,06_intermittent_tournament,SBA Croston,120.52009069272704,-26.63090437873032
+71751M68K005PK,08_fair_champion,SBA Croston,102.71844521848494,06_intermittent_tournament,SBA Croston,102.71844521848494,0.0
+71751M75T105PK,08_fair_champion,Aggregate Allocation,100.0,06_intermittent_tournament,Aggregate Allocation,100.0,0.0
+71751M76MB0ZNZ,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,105.37789610589556,06_intermittent_tournament,SBA Croston,105.63038094032018,-0.2524848344246209
+71751M76T005PK,08_fair_champion,Direct Random Forest log1p,88.26395804099867,07_clean_regression,Direct Random Forest log1p,88.26395804099867,0.0
+71751M79G10000,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,102.265005854251,06_intermittent_tournament,SBA Croston,103.34446855940476,-1.0794627051537589
+7175260B00000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+7175360B00000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+7176060P205PK,08_fair_champion,SBA Croston,99.81305611681805,06_intermittent_tournament,SBA Croston,99.81305611681805,0.0
+7176160MB05PK,09_croston_ml_hybrid,Croston Random Forest gated probability size,100.26811219946549,06_intermittent_tournament,SBA Croston,104.7260723467705,-4.457960147305002
+7176171L105PK,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,94.83598151319735,06_intermittent_tournament,SBA Croston,100.747018566893,-5.911037053695651
+7176173K105PK,08_fair_champion,SBA Croston,98.7083750847035,06_intermittent_tournament,SBA Croston,98.7083750847035,0.0
+71761M55T105PK,08_fair_champion,Direct XGBoost Tweedie,83.50909990532094,07_clean_regression,Direct XGBoost Tweedie,83.50909990532094,0.0
+71761M68K005PK,08_fair_champion,SBA Croston,103.58549345189589,06_intermittent_tournament,SBA Croston,103.58549345189589,0.0
+71761M75L005PK,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,124.44610441884687,06_intermittent_tournament,Recent Mean 6m,125.17921146953408,-0.7331070506872095
+71761M75L105PK,08_fair_champion,SBA Croston,103.42069398385108,06_intermittent_tournament,SBA Croston,103.42069398385108,0.0
+71761M75T105PK,08_fair_champion,Direct Extra Trees log1p,84.77368786955812,07_clean_regression,Direct Extra Trees log1p,84.77368786955812,0.0
+71761M76MB0ZNZ,08_fair_champion,Direct Extra Trees log1p,121.30835856109516,07_clean_regression,Direct Extra Trees log1p,121.30835856109516,0.0
+7177161M005PK,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,100.54534800739245,06_intermittent_tournament,SBA Croston,116.44523037050492,-15.899882363112468
+71772M74T00000,08_fair_champion,Hurdle XGBoost Tweedie,95.89997291141164,07_clean_regression,Hurdle XGBoost Tweedie,95.89997291141164,0.0
+71781M66L00000,08_fair_champion,SBA Croston,100.66042248371964,06_intermittent_tournament,SBA Croston,100.66042248371964,0.0
+7178254P00000,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,102.90225575951969,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,107.43184427165164,-4.5295885121319515
+7178277KA05PK,09_croston_ml_hybrid,Croston Random Forest gated probability size,108.91484065152838,06_intermittent_tournament,SBA Croston,121.6668282315848,-12.751987580056422
+7179086R10C48,08_fair_champion,SBA Croston,97.27072872455231,06_intermittent_tournament,SBA Croston,97.27072872455231,0.0
+7179154P00000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,100.69887786394074,06_intermittent_tournament,SBA Croston,126.9904229227628,-26.291545058822066
+7181165DD1799,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+7181172L10799,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,97.14767233666144,06_intermittent_tournament,Recent Mean 6m,105.14835858585856,-8.000686249197116
+7181177MJ0799,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,114.54803267630135,06_intermittent_tournament,SBA Croston,126.50124283837742,-11.953210162076076
+7181180J20799,08_fair_champion,SBA Croston,102.62578706950018,06_intermittent_tournament,SBA Croston,102.62578706950018,0.0
+71811M68P20799,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+71811M68P30799,08_fair_champion,Aggregate Allocation,105.76899284017122,06_intermittent_tournament,Aggregate Allocation,105.76899284017122,0.0
+71811M79G005PK,08_fair_champion,SBA Croston,99.31970908093317,06_intermittent_tournament,SBA Croston,99.31970908093317,0.0
+71812M66L00000,08_fair_champion,SBA Croston,100.71529937586809,06_intermittent_tournament,SBA Croston,100.71529937586809,0.0
+71813M66L00000,08_fair_champion,SBA Croston,105.08964103808889,06_intermittent_tournament,SBA Croston,105.08964103808889,0.0
+7182163J00000,08_fair_champion,SBA Croston,105.04347636408416,06_intermittent_tournament,SBA Croston,105.04347636408416,0.0
+71821M60M00000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,99.22173359202888,07_clean_regression,Direct Extra Trees log1p,107.56071371114146,-8.338980119112577
+7182263J00000,08_fair_champion,SBA Croston,106.62686762885636,06_intermittent_tournament,SBA Croston,106.62686762885636,0.0
+71831M74T00000,08_fair_champion,Aggregate Allocation,100.0,06_intermittent_tournament,Aggregate Allocation,100.0,0.0
+71831M76T00000,08_fair_champion,TSB,90.67587096455752,06_intermittent_tournament,TSB,90.67587096455752,0.0
+7183263J00000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+7185160G00000,08_fair_champion,SBA Croston,100.9272907910525,06_intermittent_tournament,SBA Croston,100.9272907910525,0.0
+7185261J01000,09_croston_ml_hybrid,Croston HistGB gated probability size,96.95602953912827,06_intermittent_tournament,SBA Croston,100.29201902095728,-3.3359894818290172
+7187161M005PK,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,100.94974038052179,06_intermittent_tournament,SBA Croston,110.58920123915392,-9.639460858632134
+7211062R00ES5,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,102.79358510632773,06_intermittent_tournament,SBA Croston,112.97059208143888,-10.177006975111155
+7211157M005PK,08_fair_champion,SBA Croston,103.06872015619209,06_intermittent_tournament,SBA Croston,103.06872015619209,0.0
+72111M8440009E,08_fair_champion,SBA Croston,122.33604456917044,06_intermittent_tournament,SBA Croston,122.33604456917044,0.0
+72111M8450009E,08_fair_champion,SBA Croston,137.46337216803798,06_intermittent_tournament,SBA Croston,137.46337216803798,0.0
+7211254GB0Z2S,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+7211281A005PK,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,103.60468814508594,08_tuned_capped_full_coverage,Hurdle XGBoost threshold 0.30,121.81681550173828,-18.21212735665233
+72211M60M005PK,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+72221M56R005PK,08_fair_champion,SBA Croston,95.17107074007292,06_intermittent_tournament,SBA Croston,95.17107074007292,0.0
+72311M68P01000,09_croston_ml_hybrid,Croston XGBoost depth2 expected value,79.49745067611715,06_intermittent_tournament,SBA Croston,86.93652284767506,-7.4390721715579105
+7231282K00000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+72312M79M00000,08_fair_champion,Hurdle Random Forest,99.7623262219754,06_intermittent_tournament,Hurdle Random Forest,99.7623262219754,0.0
+72320M80T00000,08_fair_champion,Direct Hist Gradient Squared,90.32997557184127,07_clean_regression,Direct Hist Gradient Squared,90.32997557184127,0.0
+72321M76T00000,08_fair_champion,TSB,97.1885543550082,06_intermittent_tournament,TSB,97.1885543550082,0.0
+72321M79G00000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,109.55597380797069,06_intermittent_tournament,SBA Croston,113.13503302051204,-3.5790592125413525
+7232353R00000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,101.41324031891095,06_intermittent_tournament,SBA Croston,101.80311381160118,-0.38987349269022786
+72330M74L005PK,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,100.87049659246054,06_intermittent_tournament,SBA Croston,116.16307275244084,-15.2925761599803
+72333M76M005PK,08_fair_champion,SBA Croston,105.46282634234154,06_intermittent_tournament,SBA Croston,105.46282634234154,0.0
+72361M79M00000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+72372M74L105PK,08_fair_champion,SBA Croston,97.28298006557776,06_intermittent_tournament,SBA Croston,97.28298006557776,0.0
+72381M80T10000,08_fair_champion,Direct Hist Gradient Squared,83.08450547417033,07_clean_regression,Direct Hist Gradient Squared,83.08450547417033,0.0
+7239071L00000,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,105.23837960284689,06_intermittent_tournament,SBA Croston,117.79455252581953,-12.556172922972635
+72390M76T00000,08_fair_champion,SBA Croston,99.47968588357,06_intermittent_tournament,SBA Croston,99.47968588357,0.0
+7243179M00000,08_fair_champion,SBA Croston,92.1644789175989,06_intermittent_tournament,SBA Croston,92.1644789175989,0.0
+72432M74T00000,08_fair_champion,Direct XGBoost Tweedie,82.50058229620969,07_clean_regression,Direct XGBoost Tweedie,82.50058229620969,0.0
+7246073R00000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,100.8699339426433,06_intermittent_tournament,SBA Croston,111.09887151255695,-10.228937569913654
+7246079P00000,08_fair_champion,SBA Croston,99.76452371704468,06_intermittent_tournament,SBA Croston,99.76452371704468,0.0
+72460M60M00000,09_croston_ml_hybrid,Croston HistGB gated probability size,95.65131611073001,06_intermittent_tournament,SBA Croston,101.11222409766737,-5.460907986937357
+72520M68P02000,09_croston_ml_hybrid,Croston HistGB gated probability size,97.43886130116351,06_intermittent_tournament,SBA Croston,108.69804778632478,-11.259186485161266
+7252261M00000,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,100.15903659225481,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,111.94366402393456,-11.784627431679752
+72821M76MA0000,08_fair_champion,SBA Croston,99.45079043515923,06_intermittent_tournament,SBA Croston,99.45079043515923,0.0
+7283165D10000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+7283181A01000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+7287078A33000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,111.16052092249629,07_clean_regression,Direct Extra Trees log1p,126.59889086400491,-15.438369941508626
+73111M62S515PK,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,108.32351094460343,06_intermittent_tournament,SBA Croston,108.81310731515202,-0.48959637054859684
+73310M68P61C8J,08_fair_champion,SBA Croston,97.52671468904036,06_intermittent_tournament,SBA Croston,97.52671468904036,0.0
+73310M68P61GJL,09_croston_ml_hybrid,Croston Random Forest gated probability size,122.1586478051114,06_intermittent_tournament,SBA Croston,124.20634584209344,-2.047698036982041
+73410M74L105PK,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+73412M53M10U3J,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,108.8868076031187,06_intermittent_tournament,SBA Croston,137.51546073944235,-28.62865313632365
+7343061J00R8H,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,105.62865202411068,06_intermittent_tournament,SBA Croston,115.76455081105154,-10.135898786940857
+7361052R005PK,09_croston_ml_hybrid,Croston HistGB gated probability size,99.97782528378755,06_intermittent_tournament,SBA Croston,100.0,-0.022174716212447265
+7361075H015PK,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+73610M68P00C48,08_fair_champion,SBA Croston,100.462048191657,06_intermittent_tournament,SBA Croston,100.462048191657,0.0
+73630M76M01GJL,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,105.77272262838152,06_intermittent_tournament,TSB,117.87708711260012,-12.104364484218607
+73820M55R60PSG,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,102.47561136881511,06_intermittent_tournament,SBA Croston,126.8784071610812,-24.40279579226609
+7382273R505PK,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+7382276J00ZCP,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+73841M68P60C8J,08_fair_champion,SBA Croston,98.52320951617492,06_intermittent_tournament,SBA Croston,98.52320951617492,0.0
+73841M68P60GJL,08_fair_champion,SBA Croston,108.0813529863865,06_intermittent_tournament,SBA Croston,108.0813529863865,0.0
+73910M68P01000,08_fair_champion,SBA Croston,95.72069791374126,06_intermittent_tournament,SBA Croston,95.72069791374126,0.0
+74120M74LA0000,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,102.7995870731495,06_intermittent_tournament,SBA Croston,104.2712635205713,-1.4716764474217996
+74120M79G00000,08_fair_champion,SBA Croston,125.9531538633032,06_intermittent_tournament,SBA Croston,125.9531538633032,0.0
+74461M74L00V6N,08_fair_champion,SBA Croston,94.99904228631074,06_intermittent_tournament,SBA Croston,94.99904228631074,0.0
+74461M76M00000,09_croston_ml_hybrid,Croston XGBoost depth2 expected value,78.55457617818526,07_clean_regression,Direct Extra Trees log1p,82.76145342013703,-4.206877241951773
+75110M76T60R3F,08_fair_champion,Direct XGBoost Tweedie,82.2102117580552,07_clean_regression,Direct XGBoost Tweedie,82.2102117580552,0.0
+75139M70F005PK,09_croston_ml_hybrid,Croston Random Forest gated probability size,100.0,06_intermittent_tournament,SBA Croston,100.0,0.0
+75430M76M00000,08_fair_champion,SBA Croston,97.65448675042704,06_intermittent_tournament,SBA Croston,97.65448675042704,0.0
+75463M75J00000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,95.27910118030779,06_intermittent_tournament,SBA Croston,112.9651102448683,-17.68600906456051
+75463M79G00000,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,108.73546084532371,06_intermittent_tournament,SBA Croston,127.48745654078546,-18.751995695461744
+7552171L00000,08_fair_champion,SBA Croston,98.3130518920495,06_intermittent_tournament,SBA Croston,98.3130518920495,0.0
+7594165J00000,08_fair_champion,SBA Croston,105.69149874311744,06_intermittent_tournament,SBA Croston,105.69149874311744,0.0
+7615181A01P4Z,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,103.71428599156955,06_intermittent_tournament,SBA Croston,107.18679994864402,-3.4725139570744687
+7615181A01T01,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+76237M70F005PK,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+76295M53M10P4Z,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,103.58029245540048,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,120.01957236982918,-16.439279914428695
+7666179P005PK,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,94.0582064524585,06_intermittent_tournament,SBA Croston,98.03089940408417,-3.9726929516256604
+76661M75L005PK,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,92.79111405854583,06_intermittent_tournament,SBA Croston,102.36785631044631,-9.576742251900484
+7672157L005PK,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,97.9622092122833,06_intermittent_tournament,SBA Croston,109.04368412897,-11.081474916686702
+77141M55T000CB,08_fair_champion,SBA Croston,92.31254237055366,06_intermittent_tournament,SBA Croston,92.31254237055366,0.0
+77146M50S000CB,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,103.26157062252362,06_intermittent_tournament,SBA Croston,113.47049998498645,-10.208929362462825
+77171M68L00000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,104.1324430471891,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,115.56260620550523,-11.430163158316134
+77181M68K005PK,08_fair_champion,SBA Croston,107.02889504315516,06_intermittent_tournament,SBA Croston,107.02889504315516,0.0
+77181M76M005PK,09_croston_ml_hybrid,Croston HistGB gated probability size,102.55807463256659,06_intermittent_tournament,SBA Croston,108.32538470614654,-5.767310073579949
+77210M76T015PK,08_fair_champion,TSB,96.43347328814036,06_intermittent_tournament,TSB,96.43347328814036,0.0
+77220M74T005PK,08_fair_champion,Direct XGBoost Tweedie,80.4302000067081,07_clean_regression,Direct XGBoost Tweedie,80.4302000067081,0.0
+77221M55T00799,08_fair_champion,TSB,88.94438238605537,06_intermittent_tournament,TSB,88.94438238605537,0.0
+77230M75L000PG,08_fair_champion,SBA Croston,94.65966139551692,06_intermittent_tournament,SBA Croston,94.65966139551692,0.0
+7724054P105PK,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,100.75414530136864,06_intermittent_tournament,SBA Croston,130.97208636528865,-30.21794106392001
+7724061M005PK,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+77250M74T005PK,08_fair_champion,TSB,97.56660525695426,06_intermittent_tournament,TSB,97.56660525695426,0.0
+77250M79M100PG,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+77510M73T005PK,08_fair_champion,XGBoost Tweedie depth2 reg10,83.23273923111279,08_tuned_capped_full_coverage,XGBoost Tweedie depth2 reg10,83.23273923111279,0.0
+7752061M005PK,08_fair_champion,SBA Croston,103.36874628750944,06_intermittent_tournament,SBA Croston,103.36874628750944,0.0
+77540M74T005PK,08_fair_champion,TSB,89.18660934484903,06_intermittent_tournament,TSB,89.18660934484903,0.0
+7755078K000PG,09_croston_ml_hybrid,Croston XGBoost depth2 expected value,61.830925833009765,07_clean_regression,Direct Extra Trees log1p,68.83152841565648,-7.000602582646714
+7755365D00000,08_fair_champion,Hurdle Random Forest,100.0,06_intermittent_tournament,Hurdle Random Forest,100.0,0.0
+7756178R005PK,08_fair_champion,Hurdle Random Forest,99.91166254998473,06_intermittent_tournament,Hurdle Random Forest,99.91166254998473,0.0
+7758064J10Z2S,08_fair_champion,SBA Croston,94.50386674917688,06_intermittent_tournament,SBA Croston,94.50386674917688,0.0
+7781163J200PG,09_croston_ml_hybrid,Croston XGBoost depth2 expected value,78.81160762062714,07_clean_regression,Direct Extra Trees log1p,81.9441830875181,-3.1325754668909553
+77811M58J100PG,08_fair_champion,SBA Croston,100.7232677188592,06_intermittent_tournament,SBA Croston,100.7232677188592,0.0
+7783179J000PG,08_fair_champion,Hurdle Random Forest threshold 0.35,100.14951675615808,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.14951675615808,0.0
+77831M79M000PG,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,101.19569828225808,06_intermittent_tournament,TSB,111.24073251386515,-10.045034231607076
+77831M80E50000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,103.65224376872735,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,105.4201414796494,-1.7678977109220568
+77831M80EC00PG,08_fair_champion,SBA Croston,102.12291982306176,06_intermittent_tournament,SBA Croston,102.12291982306176,0.0
+7783278R000PG,08_fair_champion,Hurdle XGBoost threshold 0.30,96.0223019298984,08_tuned_capped_full_coverage,Hurdle XGBoost threshold 0.30,96.0223019298984,0.0
+77832M67P000PG,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,105.76780680063608,06_intermittent_tournament,SBA Croston,117.1208983504166,-11.353091549780515
+7784161M00A93,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,103.94451436069276,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,105.64222631750864,-1.6977119568158798
+7813257L01000,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,117.83492482301766,06_intermittent_tournament,SBA Croston,120.31576696394362,-2.480842140925958
+7821565J105PK,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,102.33679421921315,06_intermittent_tournament,SBA Croston,115.79100000850524,-13.45420578929209
+7821965J105PK,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,114.13234404155186,07_clean_regression,Direct Extra Trees log1p,130.8046384896631,-16.67229444811123
+7822565J105PK,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,109.93584955947986,06_intermittent_tournament,SBA Croston Tuned,134.05873718192032,-24.12288762244046
+7877361M00000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+8143061A00000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+8181065J02000,08_fair_champion,SBA Croston,92.12189283906324,06_intermittent_tournament,SBA Croston,92.12189283906324,0.0
+8181086R00000,08_fair_champion,SBA Croston,87.7961394139729,06_intermittent_tournament,SBA Croston,87.7961394139729,0.0
+81810M55T01000,08_fair_champion,Direct XGBoost Tweedie,82.88403162782335,07_clean_regression,Direct XGBoost Tweedie,82.88403162782335,0.0
+8183065J02000,08_fair_champion,Hurdle XGBoost threshold 0.30,96.69035078370092,08_tuned_capped_full_coverage,Hurdle XGBoost threshold 0.30,96.69035078370092,0.0
+8185080G00000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+81850M67P00000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+81850M74L00000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,100.89713203625416,06_intermittent_tournament,SBA Croston,100.89773900634816,-0.0006069700939974609
+81850M79G10000,08_fair_champion,Recent Mean 6m,125.39983164983164,06_intermittent_tournament,Recent Mean 6m,125.39983164983164,0.0
+81850M79G20000,08_fair_champion,SBA Croston,139.20425161208263,06_intermittent_tournament,SBA Croston,139.20425161208263,0.0
+81860M67P00000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+81860M79G10000,08_fair_champion,SBA Croston Tuned,124.49628842844729,06_intermittent_tournament,SBA Croston Tuned,124.49628842844729,0.0
+8211065J01000,08_fair_champion,SBA Croston,97.20127784372208,06_intermittent_tournament,SBA Croston,97.20127784372208,0.0
+82110M55T10000,08_fair_champion,Hurdle XGBoost Tweedie,74.06779249715176,07_clean_regression,Hurdle XGBoost Tweedie,74.06779249715176,0.0
+82150M820005ES,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+82160M67P10000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+8220061870000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+82200M84880000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+8228061810000,08_fair_champion,Hurdle Random Forest threshold 0.35,97.77207866075685,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,97.77207866075685,0.0
+8228076872000,08_fair_champion,Hurdle Random Forest threshold 0.35,101.20556010626144,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,101.20556010626144,0.0
+82280M79811000,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,97.2874286662114,06_intermittent_tournament,SBA Croston,97.88666039777588,-0.5992317315644868
+82302M68P15000,09_croston_ml_hybrid,Croston HistGB gated probability size,98.83620433244684,06_intermittent_tournament,SBA Croston,104.82652672265016,-5.990322390203318
+82504M84500000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,101.16350815859262,06_intermittent_tournament,TSB,132.33553962299538,-31.172031464402764
+82510M53M00000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,92.41332441764207,06_intermittent_tournament,SBA Croston,115.80033846786507,-23.387014050223
+82510M60M51000,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,100.19202037878475,06_intermittent_tournament,SBA Croston,115.92572399927498,-15.733703620490232
+82510M75T20000,08_fair_champion,Direct Extra Trees log1p,65.89229864619921,07_clean_regression,Direct Extra Trees log1p,65.89229864619921,0.0
+82570M53810000,08_fair_champion,SBA Croston,93.36359559326226,06_intermittent_tournament,SBA Croston,93.36359559326226,0.0
+82570M53M00000,09_croston_ml_hybrid,Croston HistGB gated probability size,100.02760849584187,06_intermittent_tournament,SBA Croston,103.65659008950765,-3.6289815936657703
+82651M74K00000,08_fair_champion,Aggregate Allocation,96.3380267485004,06_intermittent_tournament,Aggregate Allocation,96.3380267485004,0.0
+8276161A00000,08_fair_champion,Hurdle Random Forest threshold 0.35,101.63804817808251,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,101.63804817808251,0.0
+82811M75J00000,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,100.0091504668578,06_intermittent_tournament,SBA Croston,104.97353455305203,-4.964384086194229
+8281257LA0ZNL,08_fair_champion,Hurdle XGBoost threshold 0.30,100.32252846260334,08_tuned_capped_full_coverage,Hurdle XGBoost threshold 0.30,100.32252846260334,0.0
+82814M75J00000,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,102.38046869897006,06_intermittent_tournament,SBA Croston,112.84009187974716,-10.4596231807771
+82840M68P005PK,08_fair_champion,Hurdle Random Forest,100.0,06_intermittent_tournament,Hurdle Random Forest,100.0,0.0
+8285081A125PK,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+8285081A225PK,08_fair_champion,Hurdle Random Forest threshold 0.35,101.7406509638366,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,101.7406509638366,0.0
+8296060G00T01,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+82960M60G005ES,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,100.46705016787261,07_clean_regression,Direct Extra Trees log1p,119.94149500084067,-19.47444483296806
+82960M60G00P4Z,08_fair_champion,SBA Croston,105.9596312545258,06_intermittent_tournament,SBA Croston,105.9596312545258,0.0
+82960M60G00V6N,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+8298265D00P4Z,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,108.54611306582801,07_clean_regression,Direct Extra Trees log1p,148.09435657908966,-39.54824351326165
+82982M65D00000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,103.38629629767793,07_clean_regression,Direct Extra Trees log1p,107.68750703745538,-4.301210739777446
+82982M65D005PK,08_fair_champion,Direct Extra Trees log1p,98.5647505943998,07_clean_regression,Direct Extra Trees log1p,98.5647505943998,0.0
+83101M53M10GCY,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+8313063JC0C48,08_fair_champion,SBA Croston,100.0,06_intermittent_tournament,SBA Croston,100.0,0.0
+83401M55R01000,08_fair_champion,Hurdle Random Forest threshold 0.35,104.19705554904836,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,104.19705554904836,0.0
+83402M79G50000,08_fair_champion,SBA Croston,94.28228554906153,06_intermittent_tournament,SBA Croston,94.28228554906153,0.0
+8344060A00000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+8366152R01000,08_fair_champion,SBA Croston,109.47821434767576,06_intermittent_tournament,SBA Croston,109.47821434767576,0.0
+83661M68P01000,08_fair_champion,SBA Croston,101.17547001609906,06_intermittent_tournament,SBA Croston,101.17547001609906,0.0
+83665M68P01000,08_fair_champion,SBA Croston,104.5213026641168,06_intermittent_tournament,SBA Croston,104.5213026641168,0.0
+83714M62B00000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+83740M62S005PK,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+83755M74L005PK,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,102.70403962509305,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,104.75283926805862,-2.0487996429655766
+83770M55T005PK,08_fair_champion,XGBoost Tweedie depth2 reg10,94.51499120912727,08_tuned_capped_full_coverage,XGBoost Tweedie depth2 reg10,94.51499120912727,0.0
+8381065A00000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+8381152R02000,08_fair_champion,SBA Croston,109.8534350505404,06_intermittent_tournament,SBA Croston,109.8534350505404,0.0
+8381165J00000,08_fair_champion,SBA Croston,107.1977244369246,06_intermittent_tournament,SBA Croston,107.1977244369246,0.0
+8381173R00000,09_croston_ml_hybrid,Croston HistGB gated probability size,98.12312338480785,08_tuned_capped_full_coverage,Hurdle XGBoost threshold 0.30,99.2578387615497,-1.1347153767418519
+8381180J00000,08_fair_champion,Direct Extra Trees log1p,87.75804981751632,07_clean_regression,Direct Extra Trees log1p,87.75804981751632,0.0
+83811M68P00000,08_fair_champion,SBA Croston,100.36295460340052,06_intermittent_tournament,SBA Croston,100.36295460340052,0.0
+83811M74L01000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,103.27328351947169,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,109.04511550042172,-5.771831980950026
+83811M79G11000,09_croston_ml_hybrid,Croston XGBoost depth2 gated size,98.97810152718719,06_intermittent_tournament,SBA Croston,100.16459079903602,-1.1864892718488278
+8382065A00000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+8382165J00000,08_fair_champion,SBA Croston,103.42824461904554,06_intermittent_tournament,SBA Croston,103.42824461904554,0.0
+83821M74L01000,09_croston_ml_hybrid,Croston XGBoost depth2 expected value,82.28610000832775,06_intermittent_tournament,Seasonal SBA Croston,83.73607819809092,-1.449978189763172
+83821M79G11000,09_croston_ml_hybrid,Croston XGBoost depth2 gated size,102.73630472970386,06_intermittent_tournament,SBA Croston,103.13585686122072,-0.399552131516856
+8383165J00000,08_fair_champion,SBA Croston,115.32371309123978,06_intermittent_tournament,SBA Croston,115.32371309123978,0.0
+83831M79G00000,09_croston_ml_hybrid,Croston XGBoost depth2 gated size,106.88487500906176,06_intermittent_tournament,SBA Croston,107.31199226052372,-0.427117251461965
+8384165J00000,08_fair_champion,SBA Croston,105.24778530599085,06_intermittent_tournament,SBA Croston,105.24778530599085,0.0
+83841M75T00000,08_fair_champion,Aggregate Allocation,100.0,06_intermittent_tournament,Aggregate Allocation,100.0,0.0
+83841M79G01000,08_fair_champion,SBA Croston,109.27070810822164,06_intermittent_tournament,SBA Croston,109.27070810822164,0.0
+8392165J010CB,08_fair_champion,SBA Croston,98.93520137543752,06_intermittent_tournament,SBA Croston,98.93520137543752,0.0
+83922M68P000CB,08_fair_champion,Seasonal SBA Croston,131.28505909813194,06_intermittent_tournament,Seasonal SBA Croston,131.28505909813194,0.0
+8392364J010CB,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+8392471L200CE,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,105.09801850257777,06_intermittent_tournament,SBA Croston,114.80835641189036,-9.710337909312585
+83924M74T000CB,09_croston_ml_hybrid,Croston XGBoost depth2 expected value,93.71295179090623,06_intermittent_tournament,TSB,93.75776954177898,-0.044817750872752526
+83924M76T100CB,08_fair_champion,Recent Mean 6m,99.66485507246377,06_intermittent_tournament,Recent Mean 6m,99.66485507246377,0.0
+83932M75T000CB,08_fair_champion,Direct Hist Gradient Squared,80.09365133260927,07_clean_regression,Direct Hist Gradient Squared,80.09365133260927,0.0
+83934M75T000CB,08_fair_champion,Direct Hist Gradient Squared,70.55707636066535,07_clean_regression,Direct Hist Gradient Squared,70.55707636066535,0.0
+8394068L50000,09_croston_ml_hybrid,Croston XGBoost depth2 expected value,90.94460283915201,06_intermittent_tournament,SBA Croston,94.13809944469332,-3.1934966055413128
+83940M55T010PG,08_fair_champion,Boosted SBA Hybrid,79.86783927359514,06_intermittent_tournament,Boosted SBA Hybrid,79.86783927359514,0.0
+83940M74L00000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+83940M74T01ZHJ,08_fair_champion,Aggregate Allocation,100.0,06_intermittent_tournament,Aggregate Allocation,100.0,0.0
+83943M68P00000,08_fair_champion,SBA Croston,149.37600521901942,06_intermittent_tournament,SBA Croston,149.37600521901942,0.0
+83970M55T00000,08_fair_champion,Aggregate Allocation,101.17680832446337,06_intermittent_tournament,Aggregate Allocation,101.17680832446337,0.0
+8450162R02000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+8450171L02000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+84501M56R00000,08_fair_champion,SBA Croston,94.69465650085225,06_intermittent_tournament,SBA Croston,94.69465650085225,0.0
+8450373R00000,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,102.97083651477641,06_intermittent_tournament,SBA Croston,117.91710769587984,-14.946271181103427
+84503M62S00000,08_fair_champion,SBA Croston,93.9625695391566,06_intermittent_tournament,SBA Croston,93.9625695391566,0.0
+84503M80T20000,09_croston_ml_hybrid,Croston XGBoost depth2 expected value,89.39164401099721,08_tuned_capped_full_coverage,Hurdle XGBoost threshold 0.30,89.72582802706087,-0.33418401606365933
+84504M68P00000,08_fair_champion,SBA Croston,101.55606393475628,06_intermittent_tournament,SBA Croston,101.55606393475628,0.0
+8451061M02000,08_fair_champion,SBA Croston,91.78298055549276,06_intermittent_tournament,SBA Croston,91.78298055549276,0.0
+84510M76T21000,08_fair_champion,Aggregate Allocation,98.5195402784002,06_intermittent_tournament,Aggregate Allocation,98.5195402784002,0.0
+84510M76T31000,08_fair_champion,Recent Mean 6m,98.7584068936528,06_intermittent_tournament,Recent Mean 6m,98.7584068936528,0.0
+84510M80T11000,08_fair_champion,Direct Random Forest log1p,63.77485357440322,07_clean_regression,Direct Random Forest log1p,63.77485357440322,0.0
+84511M53M00000,09_croston_ml_hybrid,Croston Random Forest gated probability size,95.42597969846746,06_intermittent_tournament,SBA Croston,100.60842105143163,-5.182441352964176
+84511M68K00000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,114.52659956451987,06_intermittent_tournament,Seasonal SBA Croston,115.98524341622526,-1.4586438517053892
+8454154P01000,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,101.8029938686041,06_intermittent_tournament,SBA Croston,114.08538404745586,-12.282390178851756
+84541M56R00000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,95.34533430673496,06_intermittent_tournament,SBA Croston,99.58530849209652,-4.239974185361561
+84556M80T00000,08_fair_champion,Direct Hist Gradient Squared,93.58488594516302,07_clean_regression,Direct Hist Gradient Squared,93.58488594516302,0.0
+84570M62S10000,09_croston_ml_hybrid,Croston XGBoost depth2 expected value,87.9601271047729,06_intermittent_tournament,SBA Croston,94.0359142903877,-6.0757871856148
+84570M67P10000,08_fair_champion,SBA Croston,107.92519723469206,06_intermittent_tournament,SBA Croston,107.92519723469206,0.0
+84570M75T00000,08_fair_champion,Aggregate Allocation,100.0,06_intermittent_tournament,Aggregate Allocation,100.0,0.0
+8458065J02000,08_fair_champion,SBA Croston,85.8731383020737,06_intermittent_tournament,SBA Croston,85.8731383020737,0.0
+8458080J01000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+84611M76M00000,08_fair_champion,SBA Croston,100.20286294532048,06_intermittent_tournament,SBA Croston,100.20286294532048,0.0
+84641M77G00000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+8470161LVBZJ3,08_fair_champion,SBA Croston,102.22704845927258,06_intermittent_tournament,SBA Croston,102.22704845927258,0.0
+8470178R005PK,08_fair_champion,SBA Croston,100.0,06_intermittent_tournament,SBA Croston,100.0,0.0
+8470181A015PK,08_fair_champion,SBA Croston,115.40325463415856,06_intermittent_tournament,SBA Croston,115.40325463415856,0.0
+84701M53M005PK,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,102.55365782271961,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,103.06921080462573,-0.5155529819061115
+84701M53T3026U,09_croston_ml_hybrid,Croston XGBoost depth2 expected value,94.95036066820225,07_clean_regression,Hurdle XGBoost Tweedie,98.21588880250782,-3.265528134305569
+84701M55TG0ZHJ,08_fair_champion,Recent Mean 6m,93.89443277310924,06_intermittent_tournament,Recent Mean 6m,93.89443277310924,0.0
+84701M56R50ZHJ,08_fair_champion,SBA Croston,96.50015847069386,06_intermittent_tournament,SBA Croston,96.50015847069386,0.0
+84701M67P30000,09_croston_ml_hybrid,Croston Random Forest gated probability size,100.20267901829287,06_intermittent_tournament,TSB,116.77393522343758,-16.571256205144707
+84701M68K1026U,08_fair_champion,SBA Croston,108.7764073446857,06_intermittent_tournament,SBA Croston,108.7764073446857,0.0
+84701M79G30000,08_fair_champion,SBA Croston,96.07662695160283,06_intermittent_tournament,SBA Croston,96.07662695160283,0.0
+84701M80TA05PK,09_croston_ml_hybrid,Croston HistGB gated probability size,100.0,06_intermittent_tournament,Aggregate Allocation,100.87065321309365,-0.8706532130936466
+84701M80TJ0WB3,08_fair_champion,Aggregate Allocation,100.0,06_intermittent_tournament,Aggregate Allocation,100.0,0.0
+84701M84330000,08_fair_champion,SBA Croston,101.97394923587332,06_intermittent_tournament,SBA Croston,101.97394923587332,0.0
+8470277A005PK,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,113.73829228537423,06_intermittent_tournament,Recent Mean 6m,122.85714285714286,-9.118850571768633
+8470281A215PK,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+84702M53T005PK,08_fair_champion,Direct XGBoost Tweedie,94.04846561584122,07_clean_regression,Direct XGBoost Tweedie,94.04846561584122,0.0
+84702M67P30000,08_fair_champion,SBA Croston,116.42295980093591,06_intermittent_tournament,SBA Croston,116.42295980093591,0.0
+84702M67P4026U,08_fair_champion,SBA Croston,92.35195706373813,06_intermittent_tournament,SBA Croston,92.35195706373813,0.0
+84702M68K1026U,08_fair_champion,SBA Croston,103.20393393994136,06_intermittent_tournament,SBA Croston,103.20393393994136,0.0
+84702M74L215PK,08_fair_champion,SBA Croston,99.3199423088572,06_intermittent_tournament,SBA Croston,99.3199423088572,0.0
+84702M80TA05PK,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,99.99128032562345,06_intermittent_tournament,Aggregate Allocation,100.25332101693066,-0.262040691307206
+84702M80TJ0WB3,08_fair_champion,Boosted SBA Hybrid,97.4592418964035,06_intermittent_tournament,Boosted SBA Hybrid,97.4592418964035,0.0
+84702M84320000,08_fair_champion,SBA Croston,115.4889724149043,06_intermittent_tournament,SBA Croston,115.4889724149043,0.0
+8470381A14V12,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+8471573K00RX0OTS,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+84728M80T005PK,08_fair_champion,Aggregate Allocation,100.0,06_intermittent_tournament,Aggregate Allocation,100.0,0.0
+8473077MB1000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+84730M55T00000,09_croston_ml_hybrid,Croston XGBoost depth3 gated probability size,98.19693760336386,06_intermittent_tournament,SBA Croston,98.65748183407324,-0.4605442307093739
+84730M56R00000,08_fair_champion,SBA Croston,99.09517312037786,06_intermittent_tournament,SBA Croston,99.09517312037786,0.0
+84730M67P00000,08_fair_champion,SBA Croston,104.53548871331964,06_intermittent_tournament,SBA Croston,104.53548871331964,0.0
+84730M74L20000,09_croston_ml_hybrid,Croston HistGB gated probability size,99.69922472973644,06_intermittent_tournament,SBA Croston,101.83012562220088,-2.130900892464439
+84730M74T00000,09_croston_ml_hybrid,Croston HistGB gated probability size,99.9933556491058,06_intermittent_tournament,Aggregate Allocation,101.17848328229692,-1.1851276331911293
+84730M76T00000,08_fair_champion,Aggregate Allocation,103.82291855232796,06_intermittent_tournament,Aggregate Allocation,103.82291855232796,0.0
+84740M74L20000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,100.13128803682801,06_intermittent_tournament,SBA Croston,107.67807336863775,-7.546785331809744
+84740M74T00000,09_croston_ml_hybrid,Croston HistGB gated probability size,99.9949001692698,06_intermittent_tournament,SBA Croston,101.4132553606238,-1.4183551913539958
+84740M76T00000,08_fair_champion,Aggregate Allocation,108.21167747152076,06_intermittent_tournament,Aggregate Allocation,108.21167747152076,0.0
+8480254P446GS,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,100.35241759485669,06_intermittent_tournament,TSB,115.82677057979272,-15.474352984936033
+8485165D006GS,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+8485177K006GS,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,98.95293080555881,07_clean_regression,Direct Extra Trees log1p,105.9399780066547,-6.987047201095891
+84901M56R63HLK,09_croston_ml_hybrid,Croston Random Forest gated probability size,104.18618760804806,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,118.22325332905764,-14.037065721009583
+84901M62S51BHE,08_fair_champion,Direct Hist Gradient Squared,83.89607953552151,07_clean_regression,Direct Hist Gradient Squared,83.89607953552151,0.0
+84902M62S43BHE,08_fair_champion,Direct Extra Trees log1p,91.09479590515208,07_clean_regression,Direct Extra Trees log1p,91.09479590515208,0.0
+85355M68PA1000,08_fair_champion,SBA Croston,125.28078167190624,06_intermittent_tournament,SBA Croston,125.28078167190624,0.0
+8687761JA0000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+87205M79G51000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,126.36608273279471,07_clean_regression,Direct Extra Trees log1p,133.53764742240497,-7.171564689610264
+8721174G10P4Z,08_fair_champion,Hurdle XGBoost threshold 0.30,84.66286311299388,08_tuned_capped_full_coverage,Hurdle XGBoost threshold 0.30,84.66286311299388,0.0
+8721176G11T01,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,103.88554156410929,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,105.84014927589836,-1.9546077117890661
+87211M76G00T01,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+87286M81P00000,09_croston_ml_hybrid,Croston XGBoost depth2 gated probability size,100.95003836322576,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,102.30866996039686,-1.3586315971710974
+87491M68P105PK,09_croston_ml_hybrid,Croston HistGB gated probability size,102.13525572297594,06_intermittent_tournament,SBA Croston,102.13743405533974,-0.002178332363797608
+87991M68P105PK,08_fair_champion,SBA Croston,97.2990633023338,06_intermittent_tournament,SBA Croston,97.2990633023338,0.0
+88912M76M00000,08_fair_champion,Hurdle Random Forest threshold 0.35,100.0,08_tuned_capped_full_coverage,Hurdle Random Forest threshold 0.35,100.0,0.0
+88921M68P01000,08_fair_champion,SBA Croston,90.38944575056462,06_intermittent_tournament,SBA Croston,90.38944575056462,0.0
+8926050J00000,08_fair_champion,SBA Croston,98.49626634958508,06_intermittent_tournament,SBA Croston,98.49626634958508,0.0
+89267M60M00000,08_fair_champion,Direct XGBoost Tweedie,97.17765804930396,07_clean_regression,Direct XGBoost Tweedie,97.17765804930396,0.0
+89969M52R00000,08_fair_champion,SBA Croston,87.28891081638217,06_intermittent_tournament,SBA Croston,87.28891081638217,0.0
+89969M63J00000,08_fair_champion,Direct Random Forest log1p,86.91496251633133,07_clean_regression,Direct Random Forest log1p,86.91496251633133,0.0
+9531071L01000,08_fair_champion,SBA Croston,95.08359956096731,06_intermittent_tournament,SBA Croston,95.08359956096731,0.0
+95310M68K00000,08_fair_champion,SBA Croston,101.54146728932638,06_intermittent_tournament,SBA Croston,101.54146728932638,0.0
+95310M75T00000,08_fair_champion,Hurdle Random Forest,83.6007564978447,06_intermittent_tournament,Hurdle Random Forest,83.6007564978447,0.0

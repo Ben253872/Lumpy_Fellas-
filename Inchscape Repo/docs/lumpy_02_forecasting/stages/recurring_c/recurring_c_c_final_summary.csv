@@ -1,0 +1,2 @@
+cohort,router_policy,locked_before_final,all_skus,positive_skus,under_50,under_70,under_100,median_wmape,p75_wmape,median_mase,portfolio_wmape,actual_total,forecast_total,bias_pct
+established_recurring_c,pool10__margin10__weight1.00,True,35,35,0,0,14,104.30432572050374,130.90719734531746,0.3989559328831858,103.59782532362877,178.0,76.90443425011988,-56.79526165723602

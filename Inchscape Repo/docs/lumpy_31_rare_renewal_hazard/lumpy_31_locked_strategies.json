@@ -1,0 +1,35 @@
+[
+  {
+    "cohort":"rare_a",
+    "locked_source":"notebook_29_incumbent",
+    "candidate_id":"FAMILY_DESCRIPTION__gs20__is5__size_positive_p75__horizon_gate_full__h0.75__s0.50",
+    "challenger_under_50":1,
+    "challenger_under_70":1,
+    "challenger_under_100":3,
+    "incumbent_under_50":1,
+    "incumbent_under_70":1,
+    "incumbent_under_100":1
+  },
+  {
+    "cohort":"rare_b",
+    "locked_source":"renewal_hazard",
+    "candidate_id":"SUBFAMILY_DESCRIPTION__gs5__is10__size_positive_mean__horizon_gate_full__h0.25__s1.25",
+    "challenger_under_50":0,
+    "challenger_under_70":4,
+    "challenger_under_100":6,
+    "incumbent_under_50":0,
+    "incumbent_under_70":0,
+    "incumbent_under_100":0
+  },
+  {
+    "cohort":"rare_c",
+    "locked_source":"renewal_hazard",
+    "candidate_id":"SUBFAMILY_DESCRIPTION__gs5__is10__size_positive_median__horizon_gate_full__h0.25__s1.25",
+    "challenger_under_50":6,
+    "challenger_under_70":7,
+    "challenger_under_100":7,
+    "incumbent_under_50":3,
+    "incumbent_under_70":3,
+    "incumbent_under_100":3
+  }
+]

@@ -1,0 +1,6 @@
+reliability_tier,skus,positive_skus,actual_units,forecast_units
+exception_policy,265,225,1363.0,1851.977767682569
+forecast_led,63,63,964.0,715.7514914398022
+forecast_plus_review,143,143,2823.0,1680.9862229416801
+manual_lifecycle_review,53,45,188.0,547.5124830784528
+manual_review_with_forecast,166,166,3773.0,1642.7400702511604

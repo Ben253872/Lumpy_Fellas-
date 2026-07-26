@@ -1,0 +1,2 @@
+candidate_id,positive_cases,under_50,under_70,under_100,median_wmape,portfolio_wmape,actual_total,forecast_total,share_50,share_70,share_100
+predicted_horizon_total_q0.75__low_1.00__high_1.50,199,8,28,45,214.9917658478446,148.98260762561242,2700.0,3749.661680158325,0.04020100502512563,0.1407035175879397,0.22613065326633167

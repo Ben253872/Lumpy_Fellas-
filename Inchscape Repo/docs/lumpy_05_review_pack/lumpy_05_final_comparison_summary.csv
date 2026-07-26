@@ -1,0 +1,3 @@
+scope,selected_model,last_actual_month,forecast_start,expected_forecast_start,start_date_check,forecast_months,horizon_check,sku_count,forecast_total,backtest_rolling_3m_average_wmape_percent,backtest_confidence
+lumpy_all_sku_history,SBA Croston Tuned,2026-04-01,2026-08-01,2026-08-01,True,18,True,690,10154.703994476182,32.167980032053435,established_lumpy_02_result
+lumpy_collision_flag_only,Boosted SBA Hybrid,2026-04-01,2026-08-01,2026-08-01,True,18,True,381,8319.0,19.74349248288284,directional_low_confidence

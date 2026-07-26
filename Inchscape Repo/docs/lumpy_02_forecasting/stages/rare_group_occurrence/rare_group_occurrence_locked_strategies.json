@@ -1,0 +1,35 @@
+[
+  {
+    "cohort":"rare_a",
+    "locked_source":"group_occurrence_prior",
+    "candidate_id":"established_transfer__hurdle_d2_full_log__w24__cal_sigmoid__size_ml__prior_blend_p0.50__top1_full__s1.00",
+    "challenger_under_50":1,
+    "challenger_under_70":1,
+    "challenger_under_100":1,
+    "incumbent_under_50":0,
+    "incumbent_under_70":0,
+    "incumbent_under_100":3
+  },
+  {
+    "cohort":"rare_b",
+    "locked_source":"rare_baseline_incumbent",
+    "candidate_id":"established_transfer__hurdle_d2_full_log__w24__cal_raw__size_median__prior_subfamily_p0.50__top1_expected__s0.50",
+    "challenger_under_50":0,
+    "challenger_under_70":0,
+    "challenger_under_100":0,
+    "incumbent_under_50":0,
+    "incumbent_under_70":0,
+    "incumbent_under_100":0
+  },
+  {
+    "cohort":"rare_c",
+    "locked_source":"group_occurrence_prior",
+    "candidate_id":"established_transfer__hurdle_d2_sqrt_log__w24__cal_raw__size_blend50_mean__prior_subfamily_p2.00__top1_expected__s0.50",
+    "challenger_under_50":3,
+    "challenger_under_70":3,
+    "challenger_under_100":3,
+    "incumbent_under_50":2,
+    "incumbent_under_70":3,
+    "incumbent_under_100":3
+  }
+]

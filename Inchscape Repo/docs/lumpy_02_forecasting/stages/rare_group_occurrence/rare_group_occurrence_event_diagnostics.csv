@@ -1,0 +1,5 @@
+cohort,actual_positive_blocks,forecast_positive_blocks,true_positive_blocks,event_recall,event_precision,false_positive_blocks
+rare_a,18,22,6,0.3333333333333333,0.2727272727272727,16
+rare_b,4,0,0,0.0,,0
+rare_c,30,23,9,0.3,0.391304347826087,14
+all_rare,52,45,15,0.28846153846153844,0.3333333333333333,30

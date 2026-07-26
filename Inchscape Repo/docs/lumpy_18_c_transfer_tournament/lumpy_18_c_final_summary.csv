@@ -1,0 +1,2 @@
+cohort,all_skus,positive_skus,under_50,under_70,under_100,median_wmape,p75_wmape,median_mase,portfolio_wmape,actual_total,forecast_total,bias_pct
+established_recurring_c,35,19,0,8,19,70.76223255251678,85.09187420753169,0.3602049587108239,95.84130519059751,35.0,12.351408526753255,-64.71026135213356

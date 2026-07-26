@@ -1,0 +1,3 @@
+candidate_id,positive_cases,under_50,under_70,under_100,median_wmape,portfolio_wmape,actual_total,forecast_total,pct_below_50,pct_below_70,pct_below_100,bias_pct
+Developing-SKU model route incumbent,24,2,12,16,69.4586607567144,84.16810066137654,635.0,383.2522428784972,8.333333333333334,50.0,66.66666666666667,-39.64531608212643
+Developing high-volume routing locked challenger,24,3,12,16,69.4586607567144,84.69096954516658,635.0,442.50500151501194,12.5,50.0,66.66666666666667,-30.3141729897619

@@ -1,0 +1,12 @@
+sku_predictability_segment,champion_quality,sku_count,actual_total,median_rolling_wmape
+high_volume_repeatable,under_100,100,29441.0,91.80831515114244
+high_volume_repeatable,under_200,31,7802.0,102.33660268029602
+high_volume_repeatable,under_70,1,179.0,68.83152841565648
+repeatable_lumpy,over_200,1,1311.0,350.62074127654734
+repeatable_lumpy,under_100,112,10296.0,98.48580995746998
+repeatable_lumpy,under_200,278,28908.0,110.02131036227217
+repeatable_lumpy,under_70,2,187.0,59.21855401727154
+sparse_lumpy,under_100,135,6034.0,100.0
+sparse_lumpy,under_200,23,1405.0,105.84014927589836
+ultra_sparse,under_100,6,59.0,100.0
+ultra_sparse,under_70,1,6.0,65.89229864619921

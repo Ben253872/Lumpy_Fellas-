@@ -1,0 +1,16 @@
+[
+  {
+    "selection_horizon":"18_month",
+    "selection_source":"historical_validation_only",
+    "strategy_type":"ensemble",
+    "strategy":"mean_top5",
+    "method":"mean",
+    "candidate_ids":[
+      "c_only__hurdle_d1_sqrt_log__w24__soft__p1.25__t0.00__s1.00__none__b0.00",
+      "c_only__hurdle_d1_sqrt_log__w24__soft__p0.50__t0.00__s0.75__none__b0.00",
+      "c_only__hurdle_d1_sqrt_log__w48__soft__p0.50__t0.00__s0.75__none__b0.00",
+      "c_only__hurdle_d1_sqrt_log__w48__soft__p1.25__t0.00__s1.00__none__b0.00",
+      "pooled_transfer__hurdle_d1_sqrt_log__w24__expected__p1.00__t0.00__s0.75__none__b0.00"
+    ]
+  }
+]

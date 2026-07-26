@@ -1,0 +1,4 @@
+cohort,all_skus,positive_skus,oracle_under50,oracle_under70,oracle_under100,oracle_under70_pct,oracle_median,candidate_count
+recurring_a,215,213,77,152,193,71.36150234741784,57.142857142857146,180
+recurring_b,110,110,30,57,88,51.81818181818182,66.66666666666667,180
+combined,325,323,107,209,281,64.70588235294117,60.67251350198473,103

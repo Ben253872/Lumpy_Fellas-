@@ -1,0 +1,3 @@
+candidate_id,positive_skus,under_50,under_70,under_100,median_wmape,portfolio_wmape,actual_total,forecast_total,pct_below_50,pct_below_70,pct_below_100,bias_pct
+Notebook 33 incumbent,40,1,10,21,97.97219774522105,90.43516861624767,775.0,470.78888198467223,2.5,25.0,52.5,-39.25304748584875
+Notebook 34 locked challenger,40,1,9,23,92.46325986851363,88.19459500000099,775.0,456.23740251787365,2.5,22.5,57.5,-41.13065773962921

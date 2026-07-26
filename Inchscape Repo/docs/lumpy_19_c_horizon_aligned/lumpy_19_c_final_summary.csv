@@ -1,0 +1,2 @@
+cohort,selection_horizon,locked_before_final,all_skus,positive_skus,under_50,under_70,under_100,median_wmape,p75_wmape,median_mase,portfolio_wmape,actual_total,forecast_total,bias_pct
+established_recurring_c,18_month,True,35,19,10,11,19,47.49155110746022,73.12999847872504,0.5540680962537026,95.01193250055411,35.0,21.362741090668443,-38.96359688380445

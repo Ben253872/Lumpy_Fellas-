@@ -1,0 +1,3 @@
+origin_id,role,train_start,train_end,test_start,test_end
+1,horizon_validation,2021-01-01,2023-01-01,2023-05-01,2024-10-01
+99,final_test,2021-01-01,2024-07-01,2024-11-01,2026-04-01

@@ -1,0 +1,2 @@
+result_lane,horizon_months,gap_months,block_months,status,comparison_rule
+required,18,3,3,official,A/B/C reported together

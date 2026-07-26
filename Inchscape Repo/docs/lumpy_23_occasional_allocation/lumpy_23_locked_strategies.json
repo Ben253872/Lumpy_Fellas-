@@ -1,0 +1,35 @@
+[
+  {
+    "cohort":"occasional_a",
+    "locked_source":"notebook_22_incumbent",
+    "allocation_config":"group-cohort__level-seasonal12__share24__prior10__gatenone__scale0.75",
+    "challenger_under_70":0,
+    "challenger_under_50":0,
+    "challenger_median_wmape":107.3012756023,
+    "incumbent_under_70":0,
+    "incumbent_under_50":0,
+    "incumbent_median_wmape":108.4438781405
+  },
+  {
+    "cohort":"occasional_b",
+    "locked_source":"notebook_22_incumbent",
+    "allocation_config":"group-cohort__level-seasonal12__share12__prior10__gatenone__scale0.75",
+    "challenger_under_70":0,
+    "challenger_under_50":0,
+    "challenger_median_wmape":129.3113049759,
+    "incumbent_under_70":0,
+    "incumbent_under_50":0,
+    "incumbent_median_wmape":105.8445076285
+  },
+  {
+    "cohort":"occasional_c",
+    "locked_source":"notebook_22_incumbent",
+    "allocation_config":"group-cohort__level-seasonal12__share24__prior10__gatenone__scale0.75",
+    "challenger_under_70":0,
+    "challenger_under_50":0,
+    "challenger_median_wmape":163.9091705607,
+    "incumbent_under_70":2,
+    "incumbent_under_50":0,
+    "incumbent_median_wmape":100.0
+  }
+]

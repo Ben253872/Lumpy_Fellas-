@@ -1,0 +1,7 @@
+model_key,model,sku_rows,matching_actual_skus,actual_total_model,actual_total_06,same_coverage_as_06,median_rolling_wmape,under_100_skus
+croston_hist_gate_probsize,Croston HistGB gated probability size,690,690,85628.0,85628.0,True,106.23999491986248,55
+croston_rf_gate_probsize,Croston Random Forest gated probability size,690,690,85628.0,85628.0,True,105.36331872092003,52
+croston_xgb_d2_expected,Croston XGBoost depth2 expected value,690,690,85628.0,85628.0,True,120.51023710738923,94
+croston_xgb_d2_gate_probsize,Croston XGBoost depth2 gated probability size,690,690,85628.0,85628.0,True,103.14674724325172,92
+croston_xgb_d2_gate_size,Croston XGBoost depth2 gated size,690,690,85628.0,85628.0,True,114.11285516678119,20
+croston_xgb_d3_gate_probsize,Croston XGBoost depth3 gated probability size,690,690,85628.0,85628.0,True,103.03103740791754,79

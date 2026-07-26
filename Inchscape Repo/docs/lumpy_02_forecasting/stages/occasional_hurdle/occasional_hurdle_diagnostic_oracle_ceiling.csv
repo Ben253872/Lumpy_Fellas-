@@ -1,0 +1,4 @@
+cohort,positive_skus,below_50,below_70,below_100,median_wmape,selection_eligible
+occasional_a,9,5,6,7,47.2972972972973,False
+occasional_b,22,20,20,21,0.0,False
+occasional_c,72,58,58,62,0.0,False

@@ -1,0 +1,32 @@
+[
+  {
+    "cohort":"rare_a",
+    "candidate_id":"established_transfer__hurdle_d2_sqrt_log__w24__cal_sigmoid__size_blend50_mean__top2_expected__h0.00__s0.50",
+    "architecture":"single_event_hurdle",
+    "validation_under_50":0,
+    "validation_under_70":0,
+    "validation_under_100":3,
+    "validation_median_wmape":102.2112414141,
+    "locked_before_final":true
+  },
+  {
+    "cohort":"rare_b",
+    "candidate_id":"established_transfer__hurdle_d1_sqrt_log__w24__cal_isotonic__size_blend50_mean__horizon_gate_expected__h0.75__s0.50",
+    "architecture":"single_event_hurdle",
+    "validation_under_50":0,
+    "validation_under_70":0,
+    "validation_under_100":0,
+    "validation_median_wmape":100.0,
+    "locked_before_final":true
+  },
+  {
+    "cohort":"rare_c",
+    "candidate_id":"established_transfer__hurdle_d2_full_log__w24__cal_raw__size_median__horizon_gate_full__h0.50__s1.00",
+    "architecture":"single_event_hurdle",
+    "validation_under_50":2,
+    "validation_under_70":3,
+    "validation_under_100":3,
+    "validation_median_wmape":100.0,
+    "locked_before_final":true
+  }
+]

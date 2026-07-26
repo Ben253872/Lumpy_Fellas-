@@ -1,0 +1,2 @@
+candidate_id,positive_cases,under_50,under_70,under_100,median_wmape,portfolio_wmape,actual_total,forecast_total,share_50,share_70,share_100
+recency__smooth_15__size_0.5__expected_0.00__scale_0.75,203,0,5,13,153.75596342884353,148.516659610859,1865.0,1403.69066918932,0.0,0.024630541871921183,0.06403940886699508

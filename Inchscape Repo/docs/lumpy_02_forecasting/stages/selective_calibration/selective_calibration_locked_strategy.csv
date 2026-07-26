@@ -1,0 +1,6 @@
+segment,candidate_id,positive_cases,under_50,under_70,under_100,median_wmape
+developing,strength_1.00__upper_2.00,118,4,15,39,102.17532249128959
+new,strength_0.75__upper_2.00,116,11,49,78,73.71515497599276
+occasional,strength_0.00__upper_1.25,312,2,11,36,143.54299669410358
+rare,strength_0.00__upper_1.25,81,0,0,3,122.5562358667159
+recurring,strength_1.00__upper_1.25,1570,222,531,879,88.9320011984272

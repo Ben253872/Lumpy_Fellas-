@@ -1,0 +1,642 @@
+sku_id,selected_model_key,selected_model,score,policy
+01550M0612A,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,506.5002794067065,required_18m_gap3
+021620616A000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,108.68965702694516,required_18m_gap3
+083100012A000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,242.8497838973999,required_18m_gap3
+083161010A000,block_recent6,Block recent 6-month mean,100.0,required_18m_gap3
+083313124A000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,159.9553066950578,required_18m_gap3
+0911605023000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,915.7537596566336,required_18m_gap3
+0911912006XC0,block_recent6,Block recent 6-month mean,100.0,required_18m_gap3
+0911912007000,block_sba,Block SBA Croston,84.46230083530999,required_18m_gap3
+09136M05078000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,133.02934623899915,required_18m_gap3
+0914016023000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,152.7800623859678,required_18m_gap3
+0914806007000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,146.75514441111991,required_18m_gap3
+09148M06022000,block_recent6,Block recent 6-month mean,111.76470588235294,required_18m_gap3
+0915912024000,block_recent6,Block recent 6-month mean,100.0,required_18m_gap3
+0915912079000,block_recent6,Block recent 6-month mean,113.88888888888889,required_18m_gap3
+0915912L02000,block_recent6,Block recent 6-month mean,100.0,required_18m_gap3
+0915918022000,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,59.06644186170975,required_18m_gap3
+0915918024000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,793.5134090483189,required_18m_gap3
+0915924009000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,108.55373779068823,required_18m_gap3
+0916435003000,block_sba,Block SBA Croston,121.82875310269083,required_18m_gap3
+0924130010000,block_sba,Block SBA Croston,100.0,required_18m_gap3
+0928017002000,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,61.261910305747506,required_18m_gap3
+0928022020000,block_sba,Block SBA Croston,82.11786643182614,required_18m_gap3
+0928056004000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,106.1252717578083,required_18m_gap3
+0928314005000,block_recent6,Block recent 6-month mean,103.77358490566037,required_18m_gap3
+0928326016000,block_hurdle_d2_sqrt_log,Block hurdle XGB depth2 sqrt-weight log-size,55.83856919916665,required_18m_gap3
+0928335036000,block_recent6,Block recent 6-month mean,100.0,required_18m_gap3
+0928340021000,block_sba,Block SBA Croston,51.93846141209872,required_18m_gap3
+0928340027000,block_sba,Block SBA Croston,44.27316824269786,required_18m_gap3
+0928345012000,block_seasonal,Block historical month-of-year mean,46.13095238095238,required_18m_gap3
+0928906003000,block_tsb,Block TSB,61.94221169827176,required_18m_gap3
+0928948004000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,137.42863908410072,required_18m_gap3
+0930508011000,block_recent6,Block recent 6-month mean,100.0,required_18m_gap3
+0931912047000,block_recent6,Block recent 6-month mean,106.12244897959184,required_18m_gap3
+0932010024000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,82.01778178152286,required_18m_gap3
+0938019004000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,133.0038811479296,required_18m_gap3
+0938168001000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,144.43825563559164,required_18m_gap3
+0940307333000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,115.68842716515064,required_18m_gap3
+09403M07311000,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,58.35952374560774,required_18m_gap3
+09409063095ES,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,338.3289933204651,required_18m_gap3
+09409063145PK,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,103.6375282978525,required_18m_gap3
+09409073255PK,block_recent6,Block recent 6-month mean,100.0,required_18m_gap3
+0940907332000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,160.21369257751778,required_18m_gap3
+0940908322000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,241.85287925330076,required_18m_gap3
+0940908327000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,119.83830438369161,required_18m_gap3
+0940909309000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,272.6395233110948,required_18m_gap3
+0940910313000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,401.81258966525394,required_18m_gap3
+0940910318000,block_recent6,Block recent 6-month mean,206.25,required_18m_gap3
+0940915304000,block_recent6,Block recent 6-month mean,90.74074074074075,required_18m_gap3
+09409M06L05000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,109.54945646226406,required_18m_gap3
+09409M07308P4Z,block_recent6,Block recent 6-month mean,120.0,required_18m_gap3
+09409M07308R8J,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,449.8554264505704,required_18m_gap3
+09409M07L025PK,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,130.44916155054705,required_18m_gap3
+09409M08308R8J,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,inf,required_18m_gap3
+09409M15L01000,block_hurdle_d2_sqrt_log,Block hurdle XGB depth2 sqrt-weight log-size,62.738751187736604,required_18m_gap3
+0944829004000,block_recent6,Block recent 6-month mean,100.0,required_18m_gap3
+0947112236000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,93.97640433362736,required_18m_gap3
+09471M12182000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,91.16053997228543,required_18m_gap3
+1161054G30000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,140.51890545769743,required_18m_gap3
+1161060R00000,block_seasonal,Block historical month-of-year mean,86.36363636363636,required_18m_gap3
+1161061M01000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,166.12792725746448,required_18m_gap3
+1161073K00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,212.03843688263612,required_18m_gap3
+11610M65L00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,75.88646045097938,required_18m_gap3
+11610M67P10000,block_hurdle_d2_sqrt_log,Block hurdle XGB depth2 sqrt-weight log-size,48.204081949561534,required_18m_gap3
+11610M76M00000,block_hurdle_d2_sqrt_log,Block hurdle XGB depth2 sqrt-weight log-size,46.39605203190365,required_18m_gap3
+11610M79F30000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,325.6726553806892,required_18m_gap3
+11610M79G50000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,183.5284411907196,required_18m_gap3
+11620M65L10000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,210.84205702595088,required_18m_gap3
+11620M67P00000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,248.8937684893608,required_18m_gap3
+11620M68K00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,89.39967785241468,required_18m_gap3
+11620M76M00000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,122.19338346930111,required_18m_gap3
+11620M79F40000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,180.62116945943524,required_18m_gap3
+11710M65L00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,62.14562622706095,required_18m_gap3
+11710M68K00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,87.17969954013824,required_18m_gap3
+11710M68K10000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,133.12417259987663,required_18m_gap3
+11710M76M00000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,47.439177938409756,required_18m_gap3
+11710M79F70000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,174.69116357656625,required_18m_gap3
+11710M79F80000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,177.80348472297192,required_18m_gap3
+1172080JA0000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,118.79801792757851,required_18m_gap3
+1194152R00000,block_recent6,Block recent 6-month mean,100.0,required_18m_gap3
+13870M71L00000,block_recent6,Block recent 6-month mean,100.0,required_18m_gap3
+1428180JA0000,block_seasonal,Block historical month-of-year mean,71.33333333333334,required_18m_gap3
+1435772J00000,block_sba,Block SBA Croston,262.0,required_18m_gap3
+1591063A0V000,block_recent6,Block recent 6-month mean,100.0,required_18m_gap3
+15910M79GB1000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,84.30686831474304,required_18m_gap3
+15910M79GC0000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,121.25264047521405,required_18m_gap3
+1711279P01000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,57.37563922549739,required_18m_gap3
+1770054P30000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,46.7408444042559,required_18m_gap3
+1770079P21000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,61.48888956416737,required_18m_gap3
+1770080J00000,block_recent6,Block recent 6-month mean,100.0,required_18m_gap3
+1770081P00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,36.67245152450743,required_18m_gap3
+17700M50U00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,90.32273943777437,required_18m_gap3
+17700M60M00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,48.19148698095548,required_18m_gap3
+17700M67L00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,65.26275152041589,required_18m_gap3
+17700M67P00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,30.003904566472894,required_18m_gap3
+17700M79F02000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,68.00568887165615,required_18m_gap3
+1776071L00000,block_recent6,Block recent 6-month mean,123.80952380952381,required_18m_gap3
+17760M67P00000,block_hurdle_d2_sqrt_log,Block hurdle XGB depth2 sqrt-weight log-size,35.03336999565363,required_18m_gap3
+1781254G00000,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,53.58714351376283,required_18m_gap3
+17861M68P00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,59.01440365446938,required_18m_gap3
+1787880G00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,192.19446286559105,required_18m_gap3
+17878M74L00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,92.18693879934457,required_18m_gap3
+17920M76M00000,block_hurdle_d2_sqrt_log,Block hurdle XGB depth2 sqrt-weight log-size,75.06986682177984,required_18m_gap3
+1793160A10000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,325.9197322030862,required_18m_gap3
+1793161M10000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,113.79886531829834,required_18m_gap3
+1793163J01000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,79.51623502984104,required_18m_gap3
+1793165D00000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,143.52117566501394,required_18m_gap3
+1793168P00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,233.0937597155571,required_18m_gap3
+17931M71P00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,43.43943238258362,required_18m_gap3
+1793276G00000,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,81.11961993078391,required_18m_gap3
+2371081A40000,block_recent6,Block recent 6-month mean,100.0,required_18m_gap3
+27431M79F00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,48.61080786015125,required_18m_gap3
+2811380J015PK,block_seasonal,Block historical month-of-year mean,54.59183673469388,required_18m_gap3
+28113M62S015PK,block_sba,Block SBA Croston,105.5615815556992,required_18m_gap3
+2818060B00000,block_recent6,Block recent 6-month mean,100.0,required_18m_gap3
+2818084A20000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,116.54113496051116,required_18m_gap3
+2824178K00000,block_recent6,Block recent 6-month mean,110.0,required_18m_gap3
+28300M55R42000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,99.33681423249452,required_18m_gap3
+2961081A00000,block_recent6,Block recent 6-month mean,100.0,required_18m_gap3
+33690M60M00000,block_hurdle_d2_sqrt_log,Block hurdle XGB depth2 sqrt-weight log-size,40.67309566519477,required_18m_gap3
+3495561M00000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,8550.969958305359,required_18m_gap3
+3512052R21000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,119.59989698309647,required_18m_gap3
+3512052S10000,block_recent6,Block recent 6-month mean,41.24087591240876,required_18m_gap3
+3512062R60000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,126.92829581598441,required_18m_gap3
+3512065J12000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,101.74699425697327,required_18m_gap3
+3512080G21000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,65.49990002701922,required_18m_gap3
+3512150A30000,block_tsb,Block TSB,132.95700647887406,required_18m_gap3
+35121M66L10000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,97.74194603616542,required_18m_gap3
+3515365J00000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,71.16067336316695,required_18m_gap3
+3515379P00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,201.04462050578812,required_18m_gap3
+35153M59K20000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,101.37596898827671,required_18m_gap3
+35153M75L00000,block_seasonal,Block historical month-of-year mean,62.78065630397237,required_18m_gap3
+3526779P00000,block_recent6,Block recent 6-month mean,110.52631578947368,required_18m_gap3
+3532052R20000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,149.99635374104534,required_18m_gap3
+3532065D41000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,191.42644447939733,required_18m_gap3
+3532077R10000,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,58.515983108264294,required_18m_gap3
+3532080G21000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,267.20782173307316,required_18m_gap3
+35321M60M10000,block_recent6,Block recent 6-month mean,30.17241379310345,required_18m_gap3
+35321M66L10000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,72.22803359807924,required_18m_gap3
+3550065P02000,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,101.86385626203558,required_18m_gap3
+3552686R20000,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,35.31179679067511,required_18m_gap3
+35601M74TA0000,block_sba,Block SBA Croston,67.6,required_18m_gap3
+35603M79G30000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,113.30892518162727,required_18m_gap3
+3560461J10000,block_seasonal,Block historical month-of-year mean,85.23809523809523,required_18m_gap3
+35604M84400000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,325.9434239222453,required_18m_gap3
+35612M60B50000,block_sba,Block SBA Croston,128.92857142857142,required_18m_gap3
+3565050J10000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,106.79003850302912,required_18m_gap3
+35650M53T00000,block_recent6,Block recent 6-month mean,61.904761904761905,required_18m_gap3
+35650M60M00000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,58.345200419425964,required_18m_gap3
+35651M79G40000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,307.54545951883,required_18m_gap3
+35651M79M00000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,68.42979289764581,required_18m_gap3
+35670M76T00000,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,79.97115161683824,required_18m_gap3
+35671M79G30000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,68.7703455819024,required_18m_gap3
+35671M79G40000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,145.70148269335428,required_18m_gap3
+3570186R00000,block_seasonal,Block historical month-of-year mean,31.90883190883191,required_18m_gap3
+35701M76T00000,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,74.44728451260066,required_18m_gap3
+3570273R10000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,83.39851331710815,required_18m_gap3
+35702M76T00000,block_seasonal,Block historical month-of-year mean,58.501006036217305,required_18m_gap3
+35750M53T01000,block_recent6,Block recent 6-month mean,60.0,required_18m_gap3
+35750M68P00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,322.88331886132556,required_18m_gap3
+35750M68P11000,block_recent6,Block recent 6-month mean,116.0,required_18m_gap3
+35750M68P20000,block_recent6,Block recent 6-month mean,115.38461538461539,required_18m_gap3
+3591075F31000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,82.96535257683244,required_18m_gap3
+3591075F61000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,209.27839167416096,required_18m_gap3
+35910M74L01000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,41.813840839889025,required_18m_gap3
+3611050A30000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,263.3658690111978,required_18m_gap3
+3613050A30000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,318.8188796242078,required_18m_gap3
+36230M70CA1000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,114.68541584908962,required_18m_gap3
+3627479P01000,block_hurdle_d2_sqrt_log,Block hurdle XGB depth2 sqrt-weight log-size,51.77408109108607,required_18m_gap3
+3641054G01000,block_hurdle_d2_sqrt_log,Block hurdle XGB depth2 sqrt-weight log-size,71.2045247554779,required_18m_gap3
+3641063J02000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,113.69937759334758,required_18m_gap3
+3641075F01000,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,95.08833654072819,required_18m_gap3
+36410M60B30000,block_recent6,Block recent 6-month mean,100.0,required_18m_gap3
+36410M67K10000,block_sba,Block SBA Croston,39.43210942734324,required_18m_gap3
+3641275F00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,1020.415350794792,required_18m_gap3
+36430M76M00000,block_recent6,Block recent 6-month mean,100.0,required_18m_gap3
+3658054P00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,119.19101653275666,required_18m_gap3
+3658354P01000,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,46.06318164754797,required_18m_gap3
+37019M79MK0000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,150.4870642633999,required_18m_gap3
+37145M55B21000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,47.908080803169,required_18m_gap3
+37145M56R20000,block_recent6,Block recent 6-month mean,124.0,required_18m_gap3
+37145M66L00000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,51.91525233288606,required_18m_gap3
+37736M58R00000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,60.64696538616234,required_18m_gap3
+37736M79M00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,182.2177560890422,required_18m_gap3
+3773773R00Z2S,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,65.46904651486143,required_18m_gap3
+38315M68K00000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,116.9309734304746,required_18m_gap3
+38330M68K01000,block_recent6,Block recent 6-month mean,100.0,required_18m_gap3
+3834062R30000,block_seasonal,Block historical month-of-year mean,91.44736842105263,required_18m_gap3
+38340M51K42000,block_recent6,Block recent 6-month mean,54.066985645933016,required_18m_gap3
+3834651K42000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,610.3868385155996,required_18m_gap3
+3845061J12000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,343.8224306702614,required_18m_gap3
+3845062R00000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,116.54500427998994,required_18m_gap3
+3845065J10000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,84.05848054422273,required_18m_gap3
+3845071L10000,block_hurdle_d2_sqrt_log,Block hurdle XGB depth2 sqrt-weight log-size,36.09582086404165,required_18m_gap3
+38450M79M00000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,106.69773377604403,required_18m_gap3
+38452M56R30000,block_recent6,Block recent 6-month mean,49.12280701754386,required_18m_gap3
+38452M65L00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,45.85837826394198,required_18m_gap3
+38452M68K00000,block_recent6,Block recent 6-month mean,157.14285714285714,required_18m_gap3
+38480M68P01000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,148.04686402732676,required_18m_gap3
+38500M55T01000,block_seasonal,Block historical month-of-year mean,84.19068736141907,required_18m_gap3
+3882151K02000,block_recent6,Block recent 6-month mean,141.02564102564102,required_18m_gap3
+3882165J00000,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,70.97083604013598,required_18m_gap3
+38821M67P00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,71.73521113845537,required_18m_gap3
+3910268L01000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,326.16021973746166,required_18m_gap3
+3925061J00000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,42.43807079745274,required_18m_gap3
+39321M56R00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,277.1261528134346,required_18m_gap3
+39321M67P00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,47.15377176017092,required_18m_gap3
+39322M56R00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,228.90900923655585,required_18m_gap3
+39322M67P00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,47.20105622944079,required_18m_gap3
+39322M67P10000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,84.32269843958191,required_18m_gap3
+3F11579S10ZWG,block_seasonal,Block historical month-of-year mean,64.0625,required_18m_gap3
+3F11779S00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,268.4639744460583,required_18m_gap3
+4171080J00000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,75.05372884945992,required_18m_gap3
+41710M68K00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,72.0883574427628,required_18m_gap3
+41710M76M00000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,98.92367984239871,required_18m_gap3
+41710M82000000,block_hurdle_d2_sqrt_log,Block hurdle XGB depth2 sqrt-weight log-size,73.98571570714314,required_18m_gap3
+4311052R71000,block_recent6,Block recent 6-month mean,121.42857142857143,required_18m_gap3
+4311078K00000,block_recent6,Block recent 6-month mean,133.33333333333334,required_18m_gap3
+43110M75J80000-OP,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,448.75214045697993,required_18m_gap3
+432006682227S,block_recent6,Block recent 6-month mean,100.0,required_18m_gap3
+4321052R5027N,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,63.97091140970588,required_18m_gap3
+4321052S0039M,block_seasonal,Block historical month-of-year mean,80.19005847953215,required_18m_gap3
+4321053R100CE,block_seasonal,Block historical month-of-year mean,51.12433862433863,required_18m_gap3
+4321057M100BK,block_recent6,Block recent 6-month mean,106.89655172413794,required_18m_gap3
+4321061J01ZBP,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,80.90782002969222,required_18m_gap3
+4321064J01ZBP,block_sba,Block SBA Croston,87.28175225943129,required_18m_gap3
+4321068LA0ZA8,block_hurdle_d2_sqrt_log,Block hurdle XGB depth2 sqrt-weight log-size,38.94517375427542,required_18m_gap3
+4321071L91QC8,block_recent6,Block recent 6-month mean,112.5,required_18m_gap3
+4321078K6027N,block_recent6,Block recent 6-month mean,157.14285714285714,required_18m_gap3
+4321079K510BK,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,98.2293572028478,required_18m_gap3
+4321080S6027N,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,408.82890820503235,required_18m_gap3
+43210M55R6027N,block_hurdle_d2_sqrt_log,Block hurdle XGB depth2 sqrt-weight log-size,41.5206849936283,required_18m_gap3
+43210M55RH1QC8,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,86.59887389019804,required_18m_gap3
+43210M62S0009L,block_tsb,Block TSB,116.93156986590895,required_18m_gap3
+43210M62S620CB,block_recent6,Block recent 6-month mean,65.32663316582915,required_18m_gap3
+43210M68K1109L,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,83.0708726814815,required_18m_gap3
+43210M76M5127N,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,39.41489635287105,required_18m_gap3
+43210M76T50QC8,block_seasonal,Block historical month-of-year mean,69.11764705882354,required_18m_gap3
+43210M79G5339M,block_seasonal,Block historical month-of-year mean,41.6213768115942,required_18m_gap3
+43210M83P0027N,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,76.29330158233643,required_18m_gap3
+4325065DA1C48,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,97.46422185784294,required_18m_gap3
+4325079P00ZH1,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,75.36106926423533,required_18m_gap3
+43250M53M0027N,block_recent6,Block recent 6-month mean,100.0,required_18m_gap3
+43250M68K1027N,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,171.35178006213644,required_18m_gap3
+43250M68K2027N,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,68.79124396886581,required_18m_gap3
+43250M74L0027N,block_hurdle_d2_sqrt_log,Block hurdle XGB depth2 sqrt-weight log-size,41.62098846847205,required_18m_gap3
+43250M74L1027N,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,97.26109266281128,required_18m_gap3
+43250M79G6027N,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,44.238412702405775,required_18m_gap3
+43250M79M0027N,block_seasonal,Block historical month-of-year mean,63.8888888888889,required_18m_gap3
+4325251K20DB7,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,105.201990567908,required_18m_gap3
+4325261J0027S,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,147.74305418133736,required_18m_gap3
+4325283S00CZ2,block_tsb,Block TSB,88.22057558608154,required_18m_gap3
+43402M74L21000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,64.29940216681537,required_18m_gap3
+4342386G01000,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,71.40343329127954,required_18m_gap3
+4345965J00000,block_recent6,Block recent 6-month mean,135.71428571428572,required_18m_gap3
+44119M53M00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,127.60926289483905,required_18m_gap3
+48150M53M10C48,block_recent6,Block recent 6-month mean,114.28571428571429,required_18m_gap3
+48150M68P00C48,block_recent6,Block recent 6-month mean,100.0,required_18m_gap3
+48150M69R00C48,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,20.68209876405432,required_18m_gap3
+48150M79M11C48,block_recent6,Block recent 6-month mean,100.0,required_18m_gap3
+4982162A51000,block_seasonal,Block historical month-of-year mean,86.43410852713178,required_18m_gap3
+5730073R02000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,48.65434373297342,required_18m_gap3
+5730079P02000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,58.18784681417174,required_18m_gap3
+57300M66L00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,74.343917104933,required_18m_gap3
+57300M68K10000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,114.14597348163002,required_18m_gap3
+5741079P00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,81.62419226239709,required_18m_gap3
+57410M67P00000,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,46.12551029990701,required_18m_gap3
+5742071L01000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,77.06098556518555,required_18m_gap3
+57611M68K10000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,63.60063478350639,required_18m_gap3
+57711M66L00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,59.23597979545593,required_18m_gap3
+57711M79G10000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,251.83786377310753,required_18m_gap3
+5811077K00000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,119.81471135066106,required_18m_gap3
+58110M74L00000,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,42.143465140286615,required_18m_gap3
+5812165J00000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,230.31534552574158,required_18m_gap3
+5823054P00000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,169.1011349360148,required_18m_gap3
+5823065J00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,72.95448437128981,required_18m_gap3
+58230M79G01000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,185.18259628959325,required_18m_gap3
+58240M53M00000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,85.97942848097195,required_18m_gap3
+58240M67P00000,block_hurdle_d2_sqrt_log,Block hurdle XGB depth2 sqrt-weight log-size,55.88956341147423,required_18m_gap3
+58251M53M00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,64.46369886398315,required_18m_gap3
+5827080J20000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,83.74298298081686,required_18m_gap3
+61513M56R01000,block_recent6,Block recent 6-month mean,158.33333333333334,required_18m_gap3
+64111M56R01P21,block_recent6,Block recent 6-month mean,100.0,required_18m_gap3
+65500M75L00000,block_recent6,Block recent 6-month mean,54.54545454545455,required_18m_gap3
+65500M79M00000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,192.99570441246033,required_18m_gap3
+6570079P11000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,63.19855487707889,required_18m_gap3
+65700M72P00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,29.56480137507121,required_18m_gap3
+6800153R00000,block_sba,Block SBA Croston,36.8201769689443,required_18m_gap3
+6800164J01000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,77.46861836184625,required_18m_gap3
+68001M53M50000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,122.58620004762302,required_18m_gap3
+68001M74L21000,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,62.33961120728524,required_18m_gap3
+6800261M01000,block_hurdle_d2_sqrt_log,Block hurdle XGB depth2 sqrt-weight log-size,45.443915128707886,required_18m_gap3
+6800271L00000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,65.09572088718414,required_18m_gap3
+6800280820000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,163.7786335178784,required_18m_gap3
+68002M53M00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,43.7520043324616,required_18m_gap3
+68002M74L31000,block_hurdle_d2_sqrt_log,Block hurdle XGB depth2 sqrt-weight log-size,50.22345894858951,required_18m_gap3
+68002M79G01000,block_seasonal,Block historical month-of-year mean,92.54385964912281,required_18m_gap3
+68003M74L31000,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,44.89502012729645,required_18m_gap3
+6910077R14000,block_recent6,Block recent 6-month mean,100.0,required_18m_gap3
+69100M66L01000,block_recent6,Block recent 6-month mean,136.36363636363637,required_18m_gap3
+69100M66L21000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,57.46142491698265,required_18m_gap3
+6932068LA0000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,54.72480906380547,required_18m_gap3
+69330M74L00000,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,94.77160274982452,required_18m_gap3
+69410M74L00000,block_sba,Block SBA Croston,114.73917091765682,required_18m_gap3
+6942063J00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,270.7628285884857,required_18m_gap3
+69430M74L00000,block_recent6,Block recent 6-month mean,118.18181818181819,required_18m_gap3
+71074M79M00C48,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,99.42050480236442,required_18m_gap3
+71091M843005PK,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,303.7695075456913,required_18m_gap3
+7112073R00000,block_sba,Block SBA Croston,262.7397260273973,required_18m_gap3
+7148176J00000,block_recent6,Block recent 6-month mean,100.0,required_18m_gap3
+7170059810T2G,block_recent6,Block recent 6-month mean,100.0,required_18m_gap3
+7171152S005PK,block_recent6,Block recent 6-month mean,40.32258064516129,required_18m_gap3
+7171154L30799,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,45.173239483023586,required_18m_gap3
+7171161J00799,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,61.03047023014147,required_18m_gap3
+7171163T20799,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,97.85394709218632,required_18m_gap3
+7171171L00799,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,43.64875727578213,required_18m_gap3
+7171177K70799,block_seasonal,Block historical month-of-year mean,88.42592592592592,required_18m_gap3
+7171177KD0799,block_sba,Block SBA Croston,104.17471475097403,required_18m_gap3
+7171181A405PK,block_recent6,Block recent 6-month mean,100.0,required_18m_gap3
+71711M53M005PK,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,107.18986798846532,required_18m_gap3
+71711M53M00799,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,95.34772686336352,required_18m_gap3
+71711M76M00799,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,84.43358331113248,required_18m_gap3
+71711M79G105PK,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,53.675570636987686,required_18m_gap3
+7171284A10W07,block_recent6,Block recent 6-month mean,109.7560975609756,required_18m_gap3
+7171284A20W07,block_recent6,Block recent 6-month mean,100.0,required_18m_gap3
+71712M60MA05PK,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,36.341210882714456,required_18m_gap3
+71712M74T005PK,block_seasonal,Block historical month-of-year mean,62.22222222222222,required_18m_gap3
+7171584A00ZM2,block_recent6,Block recent 6-month mean,115.51724137931035,required_18m_gap3
+7171754GA0000,block_recent6,Block recent 6-month mean,111.32075471698113,required_18m_gap3
+71721M76M005PK,block_recent6,Block recent 6-month mean,107.27272727272727,required_18m_gap3
+71722M76T005PK,block_recent6,Block recent 6-month mean,76.47058823529412,required_18m_gap3
+71731M60M00000,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,55.849687570936226,required_18m_gap3
+7173263T00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,152.7249359836181,required_18m_gap3
+7173277M10000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,51.60994588592906,required_18m_gap3
+71732M76T01000,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,80.77606189100048,required_18m_gap3
+7173368L00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,117.89838150143623,required_18m_gap3
+71734M58R00000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,61.13459248291819,required_18m_gap3
+7174050U10CUG,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,inf,required_18m_gap3
+7174063T00EJ1,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,61.50531283644743,required_18m_gap3
+71740M50S00C48,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,121.02967079343468,required_18m_gap3
+71740M68P20C48,block_recent6,Block recent 6-month mean,100.0,required_18m_gap3
+71740M74T00C48,block_seasonal,Block historical month-of-year mean,81.86274509803921,required_18m_gap3
+71740M74T20KDJ,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,88.30248376108565,required_18m_gap3
+7174173K005PK,block_hurdle_d2_sqrt_log,Block hurdle XGB depth2 sqrt-weight log-size,36.81685102952493,required_18m_gap3
+71741M66L005PK,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,70.75903211769305,required_18m_gap3
+71741M79G10000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,124.75231687227885,required_18m_gap3
+7174265J010PG,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,100.23246485936015,required_18m_gap3
+71742M53M100CB,block_tsb,Block TSB,106.6768624930276,required_18m_gap3
+71742M79G000PG,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,174.4758578447195,required_18m_gap3
+71743M53M100CB,block_tsb,Block TSB,102.852833675011,required_18m_gap3
+71744M53M00000,block_recent6,Block recent 6-month mean,212.5,required_18m_gap3
+71750M55T30C48,block_recent6,Block recent 6-month mean,61.42857142857143,required_18m_gap3
+7175160B00000,block_seasonal,Block historical month-of-year mean,97.5,required_18m_gap3
+7175163J105PK,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,155.10953747563892,required_18m_gap3
+7175173K105PK,block_hurdle_d2_sqrt_log,Block hurdle XGB depth2 sqrt-weight log-size,48.9715895652771,required_18m_gap3
+71751M50S005PK,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,97.20351203628208,required_18m_gap3
+71751M67P005PK,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,101.76117886667666,required_18m_gap3
+71751M68K005PK,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,85.621897613301,required_18m_gap3
+71751M76MB0ZNZ,block_seasonal,Block historical month-of-year mean,51.36054421768707,required_18m_gap3
+71751M76T005PK,block_sba,Block SBA Croston,70.34482758620689,required_18m_gap3
+71751M79G10000,block_hurdle_d2_sqrt_log,Block hurdle XGB depth2 sqrt-weight log-size,65.94876076312775,required_18m_gap3
+7175260B00000,block_seasonal,Block historical month-of-year mean,97.5,required_18m_gap3
+7175360B00000,block_seasonal,Block historical month-of-year mean,97.5,required_18m_gap3
+7176060P205PK,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,58.3476355974225,required_18m_gap3
+7176160MB05PK,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,72.40554216580513,required_18m_gap3
+7176171L105PK,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,33.47100019454956,required_18m_gap3
+7176173K105PK,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,101.5612781047821,required_18m_gap3
+71761M55T105PK,block_sba,Block SBA Croston,68.82143701512565,required_18m_gap3
+71761M68K005PK,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,70.27825190096485,required_18m_gap3
+71761M75L005PK,block_recent6,Block recent 6-month mean,75.0,required_18m_gap3
+71761M75L105PK,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,45.500015500766125,required_18m_gap3
+71761M76MB0ZNZ,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,136.3070571422577,required_18m_gap3
+7177161M005PK,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,112.63430985537443,required_18m_gap3
+71781M66L00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,54.08827049631468,required_18m_gap3
+7178254P00000,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,90.04646492631812,required_18m_gap3
+7178277KA05PK,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,106.24632573127747,required_18m_gap3
+7179086R10C48,block_hurdle_d2_sqrt_log,Block hurdle XGB depth2 sqrt-weight log-size,44.533699088626435,required_18m_gap3
+7179154P00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,172.11145559946695,required_18m_gap3
+7181165DD1799,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,126.86416879296303,required_18m_gap3
+7181172L10799,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,95.96621327930026,required_18m_gap3
+7181177MJ0799,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,160.97905119260153,required_18m_gap3
+7181180J20799,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,51.01689973347624,required_18m_gap3
+71811M68P20799,block_recent6,Block recent 6-month mean,100.0,required_18m_gap3
+71811M68P30799,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,75.95781055944306,required_18m_gap3
+71811M79G005PK,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,41.70008770624796,required_18m_gap3
+71812M66L00000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,88.75815090925798,required_18m_gap3
+71813M66L00000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,88.36980965630761,required_18m_gap3
+7182163J00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,91.14849029315843,required_18m_gap3
+71821M60M00000,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,61.43107401827971,required_18m_gap3
+7182263J00000,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,75.09187722206116,required_18m_gap3
+71831M76T00000,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,71.50853598440015,required_18m_gap3
+7183263J00000,block_recent6,Block recent 6-month mean,200.0,required_18m_gap3
+7185160G00000,block_hurdle_d2_sqrt_log,Block hurdle XGB depth2 sqrt-weight log-size,47.87942635385614,required_18m_gap3
+7185261J01000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,43.67643987076192,required_18m_gap3
+7187161M005PK,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,79.16324019432068,required_18m_gap3
+7211062R00ES5,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,41.06362440237185,required_18m_gap3
+7211157M005PK,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,52.29805378537429,required_18m_gap3
+72111M8440009E,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,167.0811641216278,required_18m_gap3
+72111M8450009E,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,138.39656032364945,required_18m_gap3
+7211254GB0Z2S,block_recent6,Block recent 6-month mean,104.16666666666667,required_18m_gap3
+7211281A005PK,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,87.19865241737077,required_18m_gap3
+72211M60M005PK,block_recent6,Block recent 6-month mean,inf,required_18m_gap3
+72221M56R005PK,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,38.55224669664756,required_18m_gap3
+72311M68P01000,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,42.98001673986327,required_18m_gap3
+7231282K00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,145.3646634306226,required_18m_gap3
+72312M79M00000,block_seasonal,Block historical month-of-year mean,100.88652482269502,required_18m_gap3
+72321M76T00000,block_seasonal,Block historical month-of-year mean,71.69811320754717,required_18m_gap3
+72321M79G00000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,103.73730730442773,required_18m_gap3
+7232353R00000,block_hurdle_d2_sqrt_log,Block hurdle XGB depth2 sqrt-weight log-size,68.46017297041618,required_18m_gap3
+72330M74L005PK,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,195.45854087918997,required_18m_gap3
+72333M76M005PK,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,62.801432880488306,required_18m_gap3
+72361M79M00000,block_recent6,Block recent 6-month mean,104.54545454545455,required_18m_gap3
+72372M74L105PK,block_hurdle_d2_sqrt_log,Block hurdle XGB depth2 sqrt-weight log-size,70.06718836332622,required_18m_gap3
+7239071L00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,81.63282023026393,required_18m_gap3
+72390M76T00000,block_sba,Block SBA Croston,60.51282051282051,required_18m_gap3
+7243179M00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,48.26784610748291,required_18m_gap3
+72432M74T00000,block_seasonal,Block historical month-of-year mean,70.6896551724138,required_18m_gap3
+7246073R00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,81.81299967843978,required_18m_gap3
+7246079P00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,81.86997815414712,required_18m_gap3
+72460M60M00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,62.54111698695591,required_18m_gap3
+72520M68P02000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,61.811568226133076,required_18m_gap3
+7252261M00000,block_recent6,Block recent 6-month mean,277.77777777777777,required_18m_gap3
+72821M76MA0000,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,97.83620640829012,required_18m_gap3
+7283165D10000,block_recent6,Block recent 6-month mean,inf,required_18m_gap3
+7283181A01000,block_seasonal,Block historical month-of-year mean,97.61904761904762,required_18m_gap3
+7287078A33000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,121.2314477397336,required_18m_gap3
+73111M62S515PK,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,69.5272802698369,required_18m_gap3
+73310M68P61C8J,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,41.10101012440471,required_18m_gap3
+73310M68P61GJL,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,94.16797498487077,required_18m_gap3
+73410M74L105PK,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,116.19039624929428,required_18m_gap3
+73412M53M10U3J,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,92.38288662125987,required_18m_gap3
+7343061J00R8H,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,56.895622713812465,required_18m_gap3
+7361052R005PK,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,1315.615780012948,required_18m_gap3
+7361075H015PK,block_recent6,Block recent 6-month mean,100.0,required_18m_gap3
+73610M68P00C48,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,51.20124078315237,required_18m_gap3
+73630M76M01GJL,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,82.3283958115748,required_18m_gap3
+73820M55R60PSG,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,280.4021006822586,required_18m_gap3
+7382273R505PK,block_recent6,Block recent 6-month mean,112.0,required_18m_gap3
+7382276J00ZCP,block_sba,Block SBA Croston,108.85952880226965,required_18m_gap3
+73841M68P60C8J,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,46.15287631750107,required_18m_gap3
+73841M68P60GJL,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,56.84700481227187,required_18m_gap3
+73910M68P01000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,50.85623434611729,required_18m_gap3
+74120M74LA0000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,79.71310768185592,required_18m_gap3
+74120M79G00000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,178.49692392349243,required_18m_gap3
+74461M74L00V6N,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,67.42910733446479,required_18m_gap3
+74461M76M00000,block_seasonal,Block historical month-of-year mean,45.86206896551724,required_18m_gap3
+75110M76T60R3F,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,128.26858446711586,required_18m_gap3
+75430M76M00000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,53.00878114619498,required_18m_gap3
+75463M75J00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,86.13996391112988,required_18m_gap3
+75463M79G00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,45.23870214339225,required_18m_gap3
+7552171L00000,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,64.28657887687146,required_18m_gap3
+7594165J00000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,51.35003484663416,required_18m_gap3
+7615181A01P4Z,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,94.65670145370744,required_18m_gap3
+7615181A01T01,block_recent6,Block recent 6-month mean,100.0,required_18m_gap3
+76237M70F005PK,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,177.5212012706919,required_18m_gap3
+76295M53M10P4Z,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,107.56886199764584,required_18m_gap3
+7666179P005PK,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,53.140178373304465,required_18m_gap3
+76661M75L005PK,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,81.77490722049366,required_18m_gap3
+7672157L005PK,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,60.595958957485124,required_18m_gap3
+77141M55T000CB,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,45.28992076714834,required_18m_gap3
+77146M50S000CB,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,44.61249272028605,required_18m_gap3
+77171M68L00000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,106.5512145820417,required_18m_gap3
+77181M68K005PK,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,153.30688403202936,required_18m_gap3
+77181M76M005PK,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,112.95173000066708,required_18m_gap3
+77210M76T015PK,block_seasonal,Block historical month-of-year mean,85.61643835616438,required_18m_gap3
+77220M74T005PK,block_tsb,Block TSB,76.37647058823529,required_18m_gap3
+77221M55T00799,block_recent6,Block recent 6-month mean,69.54545454545455,required_18m_gap3
+77230M75L000PG,block_hurdle_d2_sqrt_log,Block hurdle XGB depth2 sqrt-weight log-size,44.81936210318457,required_18m_gap3
+7724054P105PK,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,137.06925822340924,required_18m_gap3
+7724061M005PK,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,247.44771619637808,required_18m_gap3
+77250M74T005PK,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,68.2813536736273,required_18m_gap3
+77250M79M100PG,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,104.3758077280862,required_18m_gap3
+7752061M005PK,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,45.55794331762526,required_18m_gap3
+77540M74T005PK,block_seasonal,Block historical month-of-year mean,72.53521126760563,required_18m_gap3
+7755078K000PG,block_hurdle_d2_sqrt_log,Block hurdle XGB depth2 sqrt-weight log-size,32.12844596968757,required_18m_gap3
+7755365D00000,block_recent6,Block recent 6-month mean,inf,required_18m_gap3
+7756178R005PK,block_recent6,Block recent 6-month mean,100.0,required_18m_gap3
+7758064J10Z2S,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,50.415935480233394,required_18m_gap3
+7781163J200PG,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,24.59324345444188,required_18m_gap3
+77811M58J100PG,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,52.625851782541424,required_18m_gap3
+7783179J000PG,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,127.26556304199943,required_18m_gap3
+77831M79M000PG,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,89.66515927265088,required_18m_gap3
+77831M80E50000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,109.8702735742744,required_18m_gap3
+77831M80EC00PG,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,53.447230656941734,required_18m_gap3
+7783278R000PG,block_recent6,Block recent 6-month mean,128.57142857142858,required_18m_gap3
+77832M67P000PG,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,219.1117562353611,required_18m_gap3
+7784161M00A93,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,82.04105993111928,required_18m_gap3
+7813257L01000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,106.99274714400129,required_18m_gap3
+7821565J105PK,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,97.50137562845268,required_18m_gap3
+7821965J105PK,block_recent6,Block recent 6-month mean,147.05882352941177,required_18m_gap3
+7822565J105PK,block_recent6,Block recent 6-month mean,154.54545454545453,required_18m_gap3
+7877361M00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,287.7909609675407,required_18m_gap3
+8143061A00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,765.2389913797379,required_18m_gap3
+8181065J02000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,112.71875482052565,required_18m_gap3
+8181086R00000,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,79.39088957332005,required_18m_gap3
+81810M55T01000,block_recent6,Block recent 6-month mean,58.0,required_18m_gap3
+8183065J02000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,200.6079355875651,required_18m_gap3
+8185080G00000,block_recent6,Block recent 6-month mean,133.33333333333334,required_18m_gap3
+81850M67P00000,block_recent6,Block recent 6-month mean,110.8108108108108,required_18m_gap3
+81850M74L00000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,81.58834467128831,required_18m_gap3
+81850M79G10000,block_recent6,Block recent 6-month mean,283.3333333333333,required_18m_gap3
+81850M79G20000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,46.13146978555267,required_18m_gap3
+81860M67P00000,block_tsb,Block TSB,120.72034199862091,required_18m_gap3
+81860M79G10000,block_recent6,Block recent 6-month mean,114.28571428571429,required_18m_gap3
+8211065J01000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,35.65282184783727,required_18m_gap3
+82110M55T10000,block_sba,Block SBA Croston,60.76353390917715,required_18m_gap3
+82150M820005ES,block_recent6,Block recent 6-month mean,100.0,required_18m_gap3
+82160M67P10000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,218.4995378057162,required_18m_gap3
+8220061870000,block_recent6,Block recent 6-month mean,100.0,required_18m_gap3
+82200M84880000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,111.52280153746301,required_18m_gap3
+8228061810000,block_recent6,Block recent 6-month mean,100.0,required_18m_gap3
+8228076872000,block_seasonal,Block historical month-of-year mean,96.03174603174602,required_18m_gap3
+82280M79811000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,45.36861613556579,required_18m_gap3
+82302M68P15000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,63.79428758569386,required_18m_gap3
+82504M84500000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,125.72527180115382,required_18m_gap3
+82510M53M00000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,190.98909172144803,required_18m_gap3
+82510M60M51000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,83.42914002783158,required_18m_gap3
+82570M53810000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,38.249260332526234,required_18m_gap3
+82570M53M00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,99.39421125080274,required_18m_gap3
+82651M74K00000,block_seasonal,Block historical month-of-year mean,79.24528301886792,required_18m_gap3
+8276161A00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,170.52350789308548,required_18m_gap3
+82811M75J00000,block_sba,Block SBA Croston,58.30524532026191,required_18m_gap3
+8281257LA0ZNL,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,104.00803229388069,required_18m_gap3
+82814M75J00000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,86.32527009436959,required_18m_gap3
+82840M68P005PK,block_recent6,Block recent 6-month mean,100.0,required_18m_gap3
+8285081A125PK,block_recent6,Block recent 6-month mean,100.0,required_18m_gap3
+8285081A225PK,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,102.69786227080557,required_18m_gap3
+8296060G00T01,block_recent6,Block recent 6-month mean,100.0,required_18m_gap3
+82960M60G005ES,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,74.02917428149118,required_18m_gap3
+82960M60G00P4Z,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,75.15671633291936,required_18m_gap3
+82960M60G00V6N,block_recent6,Block recent 6-month mean,100.0,required_18m_gap3
+8298265D00P4Z,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,147.6126910804154,required_18m_gap3
+82982M65D00000,block_hurdle_d2_sqrt_log,Block hurdle XGB depth2 sqrt-weight log-size,61.02445010734661,required_18m_gap3
+82982M65D005PK,block_tsb,Block TSB,64.73682941098686,required_18m_gap3
+83101M53M10GCY,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,187.2677872578303,required_18m_gap3
+8313063JC0C48,block_tsb,Block TSB,145.63608462222226,required_18m_gap3
+83401M55R01000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,99.52311803187642,required_18m_gap3
+83402M79G50000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,74.55005711979337,required_18m_gap3
+8344060A00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,360.90555526316166,required_18m_gap3
+8366152R01000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,57.00787761632134,required_18m_gap3
+83661M68P01000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,50.885499355404875,required_18m_gap3
+83665M68P01000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,64.81607921661869,required_18m_gap3
+83714M62B00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,1531.643022596836,required_18m_gap3
+83740M62S005PK,block_recent6,Block recent 6-month mean,123.07692307692308,required_18m_gap3
+83755M74L005PK,block_tsb,Block TSB,69.97027716175208,required_18m_gap3
+8381065A00000,block_recent6,Block recent 6-month mean,100.0,required_18m_gap3
+8381152R02000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,65.89002527039627,required_18m_gap3
+8381165J00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,44.04341014655861,required_18m_gap3
+8381173R00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,311.6703920894199,required_18m_gap3
+8381180J00000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,82.60366497813044,required_18m_gap3
+83811M68P00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,61.4653642215426,required_18m_gap3
+83811M74L01000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,95.61130868537086,required_18m_gap3
+83811M79G11000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,53.19058179855347,required_18m_gap3
+8382065A00000,block_recent6,Block recent 6-month mean,100.0,required_18m_gap3
+8382165J00000,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,53.28320870175958,required_18m_gap3
+83821M74L01000,block_recent6,Block recent 6-month mean,31.182795698924732,required_18m_gap3
+83821M79G11000,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,71.52961337048075,required_18m_gap3
+8383165J00000,block_recent6,Block recent 6-month mean,78.26086956521739,required_18m_gap3
+83831M79G00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,72.5085973739624,required_18m_gap3
+8384165J00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,53.01255656961809,required_18m_gap3
+83841M79G01000,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,58.267721245365756,required_18m_gap3
+8392165J010CB,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,51.46060143747638,required_18m_gap3
+83922M68P000CB,block_recent6,Block recent 6-month mean,84.0,required_18m_gap3
+8392364J010CB,block_recent6,Block recent 6-month mean,140.0,required_18m_gap3
+8392471L200CE,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,66.64152838463006,required_18m_gap3
+83924M74T000CB,block_recent6,Block recent 6-month mean,66.66666666666667,required_18m_gap3
+83924M76T100CB,block_recent6,Block recent 6-month mean,66.66666666666667,required_18m_gap3
+8394068L50000,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,50.743254514840935,required_18m_gap3
+83940M55T010PG,block_recent6,Block recent 6-month mean,72.79236276849642,required_18m_gap3
+83940M74L00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,109.72518675467548,required_18m_gap3
+83943M68P00000,block_recent6,Block recent 6-month mean,475.0,required_18m_gap3
+83970M55T00000,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,102.2455507709134,required_18m_gap3
+8450162R02000,block_recent6,Block recent 6-month mean,136.36363636363637,required_18m_gap3
+8450171L02000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,112.57305917414752,required_18m_gap3
+84501M56R00000,block_hurdle_d2_sqrt_log,Block hurdle XGB depth2 sqrt-weight log-size,42.94920090971322,required_18m_gap3
+8450373R00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,111.54394041408192,required_18m_gap3
+84503M62S00000,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,47.2149138138673,required_18m_gap3
+84504M68P00000,block_hurdle_d2_sqrt_log,Block hurdle XGB depth2 sqrt-weight log-size,30.659865940871992,required_18m_gap3
+8451061M02000,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,39.13430006880509,required_18m_gap3
+84510M76T21000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,65.09040055736419,required_18m_gap3
+84510M76T31000,block_sba,Block SBA Croston,68.72237970014686,required_18m_gap3
+84511M53M00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,78.47977952351646,required_18m_gap3
+84511M68K00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,106.22880756855011,required_18m_gap3
+8454154P01000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,61.85517933057702,required_18m_gap3
+84541M56R00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,68.51844202008164,required_18m_gap3
+84570M62S10000,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,64.56281848070098,required_18m_gap3
+84570M67P10000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,45.58449374868515,required_18m_gap3
+8458065J02000,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,42.81310712968981,required_18m_gap3
+8458080J01000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,154.0570467710495,required_18m_gap3
+84611M76M00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,48.66443713506063,required_18m_gap3
+84641M77G00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,380.516160428524,required_18m_gap3
+8470161LVBZJ3,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,78.5714265373018,required_18m_gap3
+8470178R005PK,block_recent6,Block recent 6-month mean,115.99999999999999,required_18m_gap3
+8470181A015PK,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,128.0336715158869,required_18m_gap3
+84701M53M005PK,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,94.7027278913034,required_18m_gap3
+84701M55TG0ZHJ,block_hurdle_d2_sqrt_log,Block hurdle XGB depth2 sqrt-weight log-size,73.22572737228214,required_18m_gap3
+84701M56R50ZHJ,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,41.69543359590613,required_18m_gap3
+84701M67P30000,block_recent6,Block recent 6-month mean,108.51063829787235,required_18m_gap3
+84701M68K1026U,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,100.66064919455577,required_18m_gap3
+84701M79G30000,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,62.68968594074249,required_18m_gap3
+84701M84330000,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,77.15039211553294,required_18m_gap3
+8470277A005PK,block_recent6,Block recent 6-month mean,171.42857142857142,required_18m_gap3
+8470281A215PK,block_recent6,Block recent 6-month mean,100.0,required_18m_gap3
+84702M67P30000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,108.44059094550117,required_18m_gap3
+84702M67P4026U,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,50.659698684041096,required_18m_gap3
+84702M68K1026U,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,83.96847203925803,required_18m_gap3
+84702M74L215PK,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,35.54247981972165,required_18m_gap3
+84702M84320000,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,44.57029641514093,required_18m_gap3
+8470381A14V12,block_tsb,Block TSB,116.37583319120229,required_18m_gap3
+8471573K00RX0OTS,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,128.46797452204757,required_18m_gap3
+8473077MB1000,block_tsb,Block TSB,114.68891762092403,required_18m_gap3
+84730M55T00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,60.02876656029814,required_18m_gap3
+84730M56R00000,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,59.80924001106849,required_18m_gap3
+84730M67P00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,266.62364261490956,required_18m_gap3
+84730M74L20000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,62.88876039225881,required_18m_gap3
+84730M74T00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,48.58737587928772,required_18m_gap3
+84730M76T00000,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,88.01082393952778,required_18m_gap3
+84740M74L20000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,70.2210193095,required_18m_gap3
+84740M74T00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,60.473570227622986,required_18m_gap3
+84740M76T00000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,82.59262570313045,required_18m_gap3
+8480254P446GS,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,116.33840447122401,required_18m_gap3
+8485165D006GS,block_seasonal,Block historical month-of-year mean,91.95402298850576,required_18m_gap3
+8485177K006GS,block_sba,Block SBA Croston,51.952057274636374,required_18m_gap3
+84901M56R63HLK,block_recent6,Block recent 6-month mean,88.23529411764706,required_18m_gap3
+84901M62S51BHE,block_hurdle_d2_sqrt_log,Block hurdle XGB depth2 sqrt-weight log-size,57.80044240180892,required_18m_gap3
+84902M62S43BHE,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,55.34777841648134,required_18m_gap3
+85355M68PA1000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,117.32384865744072,required_18m_gap3
+8687761JA0000,block_recent6,Block recent 6-month mean,137.5,required_18m_gap3
+87205M79G51000,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,137.5683207064867,required_18m_gap3
+8721174G10P4Z,block_recent6,Block recent 6-month mean,141.50943396226415,required_18m_gap3
+8721176G11T01,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,261.79182529449463,required_18m_gap3
+87211M76G00T01,block_direct_d2_tweedie,Block direct XGB depth2 Tweedie,201.8087251484394,required_18m_gap3
+87286M81P00000,block_seasonal,Block historical month-of-year mean,67.36842105263158,required_18m_gap3
+87491M68P105PK,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,55.48560431709996,required_18m_gap3
+87991M68P105PK,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,54.193066798888886,required_18m_gap3
+88912M76M00000,block_recent6,Block recent 6-month mean,100.0,required_18m_gap3
+88921M68P01000,block_seasonal,Block historical month-of-year mean,61.986301369863014,required_18m_gap3
+8926050J00000,block_hurdle_d2_full_log,Block hurdle XGB depth2 full-weight log-size,65.54625601995559,required_18m_gap3
+89969M52R00000,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,43.56029744100089,required_18m_gap3
+89969M63J00000,block_tsb,Block TSB,53.69070735043977,required_18m_gap3
+9531071L01000,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,43.63680570975117,required_18m_gap3
+95310M68K00000,block_hurdle_d3_sqrt_log,Block hurdle XGB depth3 sqrt-weight log-size,61.29544576009115,required_18m_gap3

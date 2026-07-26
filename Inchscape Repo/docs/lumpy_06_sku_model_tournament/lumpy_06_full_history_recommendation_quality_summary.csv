@@ -1,0 +1,5 @@
+recommendation_quality,sku_count,actual_total,median_rolling_wmape
+under_200,519,46669.0,108.21167747152076
+under_100,167,36812.0,94.13809944469331
+over_200,3,2037.0,327.2157594212734
+under_70,1,110.0,68.5921800511448

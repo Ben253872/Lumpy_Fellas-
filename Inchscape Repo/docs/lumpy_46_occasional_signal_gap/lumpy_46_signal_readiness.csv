@@ -1,0 +1,9 @@
+signal,required_columns,present_columns,column_coverage,purpose,recommendation,ready
+stock_history,"STOCK_END_MONTH, STOCK_START_MONTH, NEW_ENTRY_STOCK","STOCK_END_MONTH, STOCK_START_MONTH, NEW_ENTRY_STOCK",1.0,distinguish observed zero demand from potential stock constraint,already_tested,True
+product_hierarchy,"FAMILY_DESCRIPTION, SUBFAMILY_DESCRIPTION, MATERIAL_DESCRIPTION","FAMILY_DESCRIPTION, SUBFAMILY_DESCRIPTION, MATERIAL_DESCRIPTION",1.0,peer grouping and product similarity,already_tested,True
+supersession_chain,"SUPERSESSION_FROM, SUPERSESSION_TO",,0.0,transfer demand between replaced and replacement parts,required_new_signal,False
+vehicle_fitment,"VEHICLE_MODEL, MODEL_YEAR, FITMENT",,0.0,link collision exposure to compatible parts,required_new_signal,False
+quote_order_pipeline,"QUOTE_DATE, OPEN_ORDER_QTY",,0.0,observe demand before invoiced sales,required_new_signal,False
+backorder_lost_sales,"BACKORDER_QTY, LOST_SALES_QTY",,0.0,separate no demand from unfulfilled demand,required_new_signal,False
+lead_time_supplier,"SUPPLIER_LEAD_TIME, SUPPLIER_AVAILABILITY",,0.0,convert uncertainty into replenishment policy,required_new_signal,False
+lifecycle_dates,"LAUNCH_DATE, DISCONTINUE_DATE",,0.0,"identify launch, decline and obsolescence transitions",required_new_signal,False

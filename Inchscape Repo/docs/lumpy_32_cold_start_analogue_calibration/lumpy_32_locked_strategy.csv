@@ -1,0 +1,2 @@
+candidate_id,positive_skus,under_50,under_70,under_100,median_wmape,portfolio_wmape,actual_total,forecast_total
+cold_subfamily_mean__all_blocks__scale_0.30,636,47,194,331,97.08785276452377,100.2792450350121,41120.0,32976.57012226124

@@ -1,0 +1,11 @@
+scope,window_label,test_months,gap_months,model,folds,months,actual_total,forecast_total,absolute_error,mean_monthly_wmape_percent,mean_rolling_3m_wmape_percent,monthly_total_wmape_percent,rolling_3m_average_wmape_percent,rank,confidence,train_months
+lumpy_all_sku_history,18_month_test_lag_3m,18,3,SBA Croston Tuned,9,162,85628.0,107636.8841395658,27729.55827670804,36.253919586896494,32.167980032053435,32.383750965464614,32.167980032053435,1,established_lumpy_02_result,
+lumpy_collision_flag_only,18_month_test_lag_3m,18,3,Boosted SBA Hybrid,1,18,8028.0,7713.0,1582.505099095632,20.022781216969562,19.74349248288284,19.712320616537518,19.74349248288284,1,directional_low_confidence,7.0
+lumpy_collision_flag_only,18_month_test_lag_3m,18,3,Aggregate Allocation,1,18,8028.0,7795.5,1584.5,20.23694943302039,19.839388123033096,19.737169905331342,19.839388123033096,2,directional_low_confidence,7.0
+lumpy_collision_flag_only,18_month_test_lag_3m,18,3,SBA Croston Tuned,1,18,8028.0,10178.010225560682,2390.230175436086,35.91782421505571,31.920424836803008,29.773669350225287,31.920424836803008,3,directional_low_confidence,7.0
+lumpy_collision_flag_only,18_month_test_lag_3m,18,3,Seasonal SBA Croston,1,18,8028.0,10178.010225560682,2390.230175436086,35.91782421505571,31.920424836803008,29.773669350225287,31.920424836803008,4,directional_low_confidence,7.0
+lumpy_collision_flag_only,18_month_test_lag_3m,18,3,Recent Mean 6m,1,18,8028.0,10305.9,2489.6999999999994,37.346443814699,33.33856706254511,31.012705530642744,33.33856706254511,5,directional_low_confidence,7.0
+lumpy_collision_flag_only,18_month_test_lag_3m,18,3,SBA Croston,1,18,8028.0,3503.3207500000003,4524.679249999999,53.90723488479234,55.42640074499113,56.361226332835066,55.42640074499113,6,directional_low_confidence,7.0
+lumpy_collision_flag_only,18_month_test_lag_3m,18,3,Hurdle Random Forest,1,18,8028.0,12316.154441054066,4288.154441054066,61.91042854541955,56.447374783428614,53.414978089861314,56.447374783428614,7,directional_low_confidence,7.0
+lumpy_collision_flag_only,18_month_test_lag_3m,18,3,TSB,1,18,8028.0,14155.312265062561,6127.312265062562,86.23972223095667,80.10146979331267,76.32426837397311,80.10146979331267,8,directional_low_confidence,7.0
+lumpy_collision_flag_only,18_month_test_lag_3m,18,3,Zero Forecast,1,18,8028.0,0.0,8028.0,100.0,100.0,100.0,100.0,9,directional_low_confidence,7.0

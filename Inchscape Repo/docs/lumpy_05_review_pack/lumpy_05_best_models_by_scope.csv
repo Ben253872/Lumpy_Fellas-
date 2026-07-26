@@ -1,0 +1,3 @@
+scope,window_label,test_months,gap_months,model,folds,months,actual_total,forecast_total,absolute_error,mean_monthly_wmape_percent,mean_rolling_3m_wmape_percent,monthly_total_wmape_percent,rolling_3m_average_wmape_percent,rank,confidence,train_months
+lumpy_all_sku_history,18_month_test_lag_3m,18,3,SBA Croston Tuned,9,162,85628.0,107636.8841395658,27729.55827670804,36.253919586896494,32.167980032053435,32.383750965464614,32.167980032053435,1,established_lumpy_02_result,
+lumpy_collision_flag_only,18_month_test_lag_3m,18,3,Boosted SBA Hybrid,1,18,8028.0,7713.0,1582.505099095632,20.022781216969562,19.74349248288284,19.712320616537518,19.74349248288284,1,directional_low_confidence,7.0
